@@ -1,0 +1,4367 @@
+
+Final Project.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000000ba  00000000  00000000  000000d4  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00800060  00800060  000019c1  2**0
+                  ALLOC, LOAD, DATA
+  2 .bss          00000001  00800060  00800060  000019c1  2**0
+                  ALLOC
+  3 .comment      0000002f  00000000  00000000  000019c1  2**0
+                  CONTENTS, READONLY
+  4 .stack.descriptors.hdr 000000ee  00000000  00000000  000019f0  2**0
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000398  00000000  00000000  00001ade  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00006c81  00000000  00000000  00001e76  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00001462  00000000  00000000  00008af7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00002954  00000000  00000000  00009f59  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000ad0  00000000  00000000  0000c8b0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    0000055f  00000000  00000000  0000d380  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00002bd4  00000000  00000000  0000d8df  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 000002f8  00000000  00000000  000104b3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .text         00000004  0000188a  0000188a  0000195e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 14 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000107ac  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .data.HDCMotor_ArrayOfMotors 0000001a  0080008e  000018c7  0000199b  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+ 16 .text.HDCMotor_voidInit 00000084  00000f44  00000f44  00001018  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 17 .text.HDCMotor_voidStartMotor 0000002a  0000169c  0000169c  00001770  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 18 .text.HDCMotor_voidStopMotor 00000010  0000180a  0000180a  000018de  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 19 .data.HLCDArrayOfLCD 0000002d  00800061  0000189a  0000196e  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+ 20 .text.HLCD_enuWriteData 00000204  000000da  000000da  000001ae  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 21 .text.HLCD_enuIntegerToString 000000c0  00000c9c  00000c9c  00000d70  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 22 .text.HLCD_enuDisplayString 00000046  00001418  00001418  000014ec  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 23 .text.HLCD_enuClearScreen 00000016  000017cc  000017cc  000018a0  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 24 .text.HLCD_enuGoToXY 00000040  000014e6  000014e6  000015ba  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 25 .rodata       0000000c  008000a8  000018e1  000019b5  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+ 26 .progmemx.data 00000020  000000ba  000000ba  0000018e  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, PROGMEMX
+ 27 .text.Forward 000000f4  00000914  00000914  000009e8  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 28 .text.Stop    00000050  000012de  000012de  000013b2  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 29 .text.Scan    000000b8  00000d5c  00000d5c  00000e30  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 30 .text.Steer   0000002a  000016c6  000016c6  0000179a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 31 .text.main    00000034  000015a0  000015a0  00001674  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 32 .text.MADC_voidGetCurrentActiveCh 00000012  000017f8  000017f8  000018cc  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 33 .text.__vector_16 00000114  00000800  00000800  000008d4  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 34 .bss.MADC_enumGlobalCurrentChannel 0000000a  008000b4  008000b4  000019c1  2**0
+                  ALLOC
+ 35 .bss.ADCINT_CallBack 00000002  008000dc  008000dc  000019c1  2**0
+                  ALLOC
+ 36 .text.MDIO_enumDIOInit 00000002  00001892  00001892  00001966  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 37 .text.MDIO_enumPinDirection 00000152  00000432  00000432  00000506  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 38 .text.MDIO_enumPinValue 00000132  000006ce  000006ce  000007a2  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 39 .text.MINT_enuSetINTLevel 000000f2  00000a08  00000a08  00000adc  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 40 .text.MINT_enuEnableINTHandler 00000032  00001608  00001608  000016dc  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 41 .text.MINT_enuDisableINTHandler 00000032  0000163a  0000163a  0000170e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 42 .text.MINT_enuInit 0000003a  00001566  00001566  0000163a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 43 .text.MINT_voidSetCallBack 00000030  0000166c  0000166c  00001740  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 44 .text.__vector_1 0000004e  0000132e  0000132e  00001402  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 45 .text.__vector_2 0000004e  0000137c  0000137c  00001450  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 46 .text.__vector_3 0000004e  000013ca  000013ca  0000149e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 47 .bss.ExINT_CallBack 00000006  008000be  008000be  000019c1  2**0
+                  ALLOC
+ 48 .text.func    0000009a  00000e14  00000e14  00000ee8  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 49 .text.MICU_voidInit 00000040  00001526  00001526  000015fa  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 50 .text.MICU_voidFetchData 00000034  000015d4  000015d4  000016a8  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 51 .bss.MICU_Obj 00000005  008000c4  008000c4  000019c1  2**0
+                  ALLOC
+ 52 .bss.inter    00000003  008000d9  008000d9  000019c1  2**0
+                  ALLOC
+ 53 .bss.timer    00000004  008000c9  008000c9  000019c1  2**0
+                  ALLOC
+ 54 .bss.temp     00000002  008000de  008000de  000019c1  2**0
+                  ALLOC
+ 55 .bss.x        00000001  008000ee  008000ee  000019c1  2**0
+                  ALLOC
+ 56 .text.MPWM_voidInit 0000014a  00000584  00000584  00000658  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 57 .text.MTimerCounter_voidIncTim0OVFCounter 00000028  000016f0  000016f0  000017c4  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 58 .text.MTimerCounter_voidIncTim1OVFCounter 00000028  00001718  00001718  000017ec  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 59 .text.MTimerCounter_voidIncTim2OVFCounter 00000028  00001740  00001740  00001814  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 60 .text.MTimerCounter_voidStartTimer 00000096  00000eae  00000eae  00000f82  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 61 .text.MTimerCounter_f32GetTimerValue 00000154  000002de  000002de  000003b2  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 62 .bss.MTimerCounter_u32Tim2OVFCounter 00000004  008000cd  008000cd  000019c1  2**0
+                  ALLOC
+ 63 .bss.MTimerCounter_u32Tim1OVFCounter 00000004  008000d1  008000d1  000019c1  2**0
+                  ALLOC
+ 64 .bss.MTimerCounter_u32Tim0OVFCounter 00000004  008000d5  008000d5  000019c1  2**0
+                  ALLOC
+ 65 .text.__vector_11 00000052  000010a0  000010a0  00001174  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 66 .text.__vector_10 00000052  000010f2  000010f2  000011c6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 67 .text.__vector_9 00000052  00001144  00001144  00001218  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 68 .text.__vector_7 00000052  00001196  00001196  0000126a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 69 .text.__vector_8 00000052  000011e8  000011e8  000012bc  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 70 .text.__vector_5 00000052  0000123a  0000123a  0000130e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 71 .text.__vector_4 00000052  0000128c  0000128c  00001360  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 72 .text.MTIMER_voidTIM0OVFSetCallBack 0000000a  0000185e  0000185e  00001932  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 73 .text.MTIMER_voidTIM1OVFSetCallBack 0000000a  00001868  00001868  0000193c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 74 .text.MTIMER_voidTIM2OVFSetCallBack 0000000a  00001872  00001872  00001946  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 75 .bss.G_TIMER2_COMP 00000002  008000e0  008000e0  000019c1  2**0
+                  ALLOC
+ 76 .bss.G_TIMER2_OVF 00000002  008000e2  008000e2  000019c1  2**0
+                  ALLOC
+ 77 .bss.G_TIMER1_COMPB 00000002  008000e4  008000e4  000019c1  2**0
+                  ALLOC
+ 78 .bss.G_TIMER1_COMPA 00000002  008000e6  008000e6  000019c1  2**0
+                  ALLOC
+ 79 .bss.G_TIMER1_OVF 00000002  008000e8  008000e8  000019c1  2**0
+                  ALLOC
+ 80 .bss.G_TIMER0_COMP 00000002  008000ea  008000ea  000019c1  2**0
+                  ALLOC
+ 81 .bss.G_TIMER0_OVF 00000002  008000ec  008000ec  000019c1  2**0
+                  ALLOC
+ 82 .text         0000000e  0000181a  0000181a  000018ee  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 83 .text         000000ce  00000bce  00000bce  00000ca2  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 84 .text         0000005e  00001042  00001042  00001116  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 85 .text         0000007a  00000fc8  00000fc8  0000109c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 86 .text         0000000c  00001852  00001852  00001926  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 87 .text         00000006  00001884  00001884  00001958  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 88 .text         0000000e  00001828  00001828  000018fc  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 89 .text         0000000e  00001836  00001836  0000190a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 90 .text         00000022  00001790  00001790  00001864  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 91 .text         00000044  0000145e  0000145e  00001532  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 92 .text         0000000e  00001844  00001844  00001918  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 93 .text         00000008  0000187c  0000187c  00001950  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 94 .text         000000d4  00000afa  00000afa  00000bce  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 95 .text.libgcc.div 00000028  00001768  00001768  0000183c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 96 .text.libgcc.div 00000044  000014a2  000014a2  00001576  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 97 .text.libgcc  0000001a  000017b2  000017b2  00001886  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 98 .text.__dummy_fini 00000002  00001894  00001894  00001968  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 99 .text.__dummy_funcs_on_exit 00000002  00001896  00001896  0000196a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+100 .text.__dummy_simulator_exit 00000002  00001898  00001898  0000196c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+101 .text.exit    00000016  000017e2  000017e2  000018b6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+102 .text._Exit   00000004  0000188e  0000188e  00001962  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 33 00 	jmp	0x66	; 0x66 <__ctors_end>
+   4:	0c 94 97 09 	jmp	0x132e	; 0x132e <__vector_1>
+   8:	0c 94 be 09 	jmp	0x137c	; 0x137c <__vector_2>
+   c:	0c 94 e5 09 	jmp	0x13ca	; 0x13ca <__vector_3>
+  10:	0c 94 46 09 	jmp	0x128c	; 0x128c <__vector_4>
+  14:	0c 94 1d 09 	jmp	0x123a	; 0x123a <__vector_5>
+  18:	0c 94 45 0c 	jmp	0x188a	; 0x188a <__bad_interrupt>
+  1c:	0c 94 cb 08 	jmp	0x1196	; 0x1196 <__vector_7>
+  20:	0c 94 f4 08 	jmp	0x11e8	; 0x11e8 <__vector_8>
+  24:	0c 94 a2 08 	jmp	0x1144	; 0x1144 <__vector_9>
+  28:	0c 94 79 08 	jmp	0x10f2	; 0x10f2 <__vector_10>
+  2c:	0c 94 50 08 	jmp	0x10a0	; 0x10a0 <__vector_11>
+  30:	0c 94 45 0c 	jmp	0x188a	; 0x188a <__bad_interrupt>
+  34:	0c 94 45 0c 	jmp	0x188a	; 0x188a <__bad_interrupt>
+  38:	0c 94 45 0c 	jmp	0x188a	; 0x188a <__bad_interrupt>
+  3c:	0c 94 45 0c 	jmp	0x188a	; 0x188a <__bad_interrupt>
+  40:	0c 94 00 04 	jmp	0x800	; 0x800 <__DATA_REGION_LENGTH__>
+  44:	0c 94 45 0c 	jmp	0x188a	; 0x188a <__bad_interrupt>
+  48:	0c 94 45 0c 	jmp	0x188a	; 0x188a <__bad_interrupt>
+  4c:	0c 94 45 0c 	jmp	0x188a	; 0x188a <__bad_interrupt>
+  50:	0c 94 45 0c 	jmp	0x188a	; 0x188a <__bad_interrupt>
+
+00000054 <.dinit>:
+  54:	00 60       	ori	r16, 0x00	; 0
+  56:	00 61       	ori	r16, 0x10	; 16
+  58:	80 00       	.word	0x0080	; ????
+  5a:	61 00       	.word	0x0061	; ????
+  5c:	b4 00       	.word	0x00b4	; ????
+  5e:	18 9a       	sbi	0x03, 0	; 3
+  60:	00 b4       	in	r0, 0x20	; 32
+  62:	00 ef       	ldi	r16, 0xF0	; 240
+  64:	80 00       	.word	0x0080	; ????
+
+00000066 <__ctors_end>:
+  66:	11 24       	eor	r1, r1
+  68:	1f be       	out	0x3f, r1	; 63
+  6a:	cf e5       	ldi	r28, 0x5F	; 95
+  6c:	d8 e0       	ldi	r29, 0x08	; 8
+  6e:	de bf       	out	0x3e, r29	; 62
+  70:	cd bf       	out	0x3d, r28	; 61
+
+00000072 <__do_copy_data>:
+  72:	e4 e5       	ldi	r30, 0x54	; 84
+  74:	f0 e0       	ldi	r31, 0x00	; 0
+  76:	40 e0       	ldi	r20, 0x00	; 0
+  78:	17 c0       	rjmp	.+46     	; 0xa8 <__do_clear_bss+0x8>
+  7a:	b5 91       	lpm	r27, Z+
+  7c:	a5 91       	lpm	r26, Z+
+  7e:	35 91       	lpm	r19, Z+
+  80:	25 91       	lpm	r18, Z+
+  82:	05 91       	lpm	r16, Z+
+  84:	07 fd       	sbrc	r16, 7
+  86:	0c c0       	rjmp	.+24     	; 0xa0 <__do_clear_bss>
+  88:	95 91       	lpm	r25, Z+
+  8a:	85 91       	lpm	r24, Z+
+  8c:	ef 01       	movw	r28, r30
+  8e:	f9 2f       	mov	r31, r25
+  90:	e8 2f       	mov	r30, r24
+  92:	05 90       	lpm	r0, Z+
+  94:	0d 92       	st	X+, r0
+  96:	a2 17       	cp	r26, r18
+  98:	b3 07       	cpc	r27, r19
+  9a:	d9 f7       	brne	.-10     	; 0x92 <__do_copy_data+0x20>
+  9c:	fe 01       	movw	r30, r28
+  9e:	04 c0       	rjmp	.+8      	; 0xa8 <__do_clear_bss+0x8>
+
+000000a0 <__do_clear_bss>:
+  a0:	1d 92       	st	X+, r1
+  a2:	a2 17       	cp	r26, r18
+  a4:	b3 07       	cpc	r27, r19
+  a6:	e1 f7       	brne	.-8      	; 0xa0 <__do_clear_bss>
+  a8:	e5 36       	cpi	r30, 0x65	; 101
+  aa:	f4 07       	cpc	r31, r20
+  ac:	31 f7       	brne	.-52     	; 0x7a <__do_copy_data+0x8>
+  ae:	0e 94 d0 0a 	call	0x15a0	; 0x15a0 <main>
+  b2:	0c 94 f1 0b 	jmp	0x17e2	; 0x17e2 <exit>
+
+000000b6 <_exit>:
+  b6:	f8 94       	cli
+
+000000b8 <__stop_program>:
+  b8:	ff cf       	rjmp	.-2      	; 0xb8 <__stop_program>
+
+Disassembly of section .text:
+
+0000188a <__bad_interrupt>:
+    188a:	0c 94 00 00 	jmp	0	; 0x0 <__TEXT_REGION_ORIGIN__>
+
+Disassembly of section .text.HDCMotor_voidInit:
+
+00000f44 <HDCMotor_voidInit>:
+#include "HDCMotor_config.h"
+#include "HDCMotor_interface.h"
+#include "../../MCAL/MDIO/MDIO_interface.h"
+
+void HDCMotor_voidInit(void)
+{
+ f44:	cf 92       	push	r12
+ f46:	df 92       	push	r13
+ f48:	ef 92       	push	r14
+ f4a:	ff 92       	push	r15
+ f4c:	0f 93       	push	r16
+ f4e:	1f 93       	push	r17
+ f50:	cf 93       	push	r28
+	u8 u8Local_Iterator ;
+	
+	for(u8Local_Iterator = 0 ; u8Local_Iterator < NUM_OF_DC_MOTORS ; u8Local_Iterator++)
+ f52:	c0 e0       	ldi	r28, 0x00	; 0
+ f54:	2f c0       	rjmp	.+94     	; 0xfb4 <HDCMotor_voidInit+0x70>
+	{
+		MDIO_enumPinDirection(&HDCMotor_ArrayOfMotors[u8Local_Iterator].DIO_tPosTerminal);
+ f56:	cc 2e       	mov	r12, r28
+ f58:	d1 2c       	mov	r13, r1
+ f5a:	8d e0       	ldi	r24, 0x0D	; 13
+ f5c:	8c 9d       	mul	r24, r12
+ f5e:	80 01       	movw	r16, r0
+ f60:	8d 9d       	mul	r24, r13
+ f62:	10 0d       	add	r17, r0
+ f64:	11 24       	eor	r1, r1
+ f66:	c8 01       	movw	r24, r16
+ f68:	82 57       	subi	r24, 0x72	; 114
+ f6a:	9f 4f       	sbci	r25, 0xFF	; 255
+ f6c:	7c 01       	movw	r14, r24
+ f6e:	0e 94 19 02 	call	0x432	; 0x432 <MDIO_enumPinDirection>
+		MDIO_enumPinDirection(&HDCMotor_ArrayOfMotors[u8Local_Iterator].DIO_tNegTerminal);
+ f72:	c8 01       	movw	r24, r16
+ f74:	8e 56       	subi	r24, 0x6E	; 110
+ f76:	9f 4f       	sbci	r25, 0xFF	; 255
+ f78:	0e 94 19 02 	call	0x432	; 0x432 <MDIO_enumPinDirection>
+		MDIO_enumPinDirection(&HDCMotor_ArrayOfMotors[u8Local_Iterator].DIO_tEnable);
+ f7c:	c8 01       	movw	r24, r16
+ f7e:	8a 56       	subi	r24, 0x6A	; 106
+ f80:	9f 4f       	sbci	r25, 0xFF	; 255
+ f82:	0e 94 19 02 	call	0x432	; 0x432 <MDIO_enumPinDirection>
+		
+		if(HDCMotor_ArrayOfMotors[u8Local_Iterator].enumDirection == HDCMotor_CW)
+ f86:	f7 01       	movw	r30, r14
+ f88:	84 85       	ldd	r24, Z+12	; 0x0c
+ f8a:	81 30       	cpi	r24, 0x01	; 1
+ f8c:	29 f4       	brne	.+10     	; 0xf98 <HDCMotor_voidInit+0x54>
+		{
+			HDCMotor_ArrayOfMotors[u8Local_Iterator].DIO_tPosTerminal.enumOutputLevel = MDIO_High;
+ f8e:	f7 01       	movw	r30, r14
+ f90:	8f ef       	ldi	r24, 0xFF	; 255
+ f92:	83 83       	std	Z+3, r24	; 0x03
+			HDCMotor_ArrayOfMotors[u8Local_Iterator].DIO_tNegTerminal.enumOutputLevel = MDIO_Low;
+ f94:	17 82       	std	Z+7, r1	; 0x07
+ f96:	0d c0       	rjmp	.+26     	; 0xfb2 <HDCMotor_voidInit+0x6e>
+		}
+		else if(HDCMotor_ArrayOfMotors[u8Local_Iterator].enumDirection == HDCMotor_CCW)
+ f98:	81 11       	cpse	r24, r1
+ f9a:	0b c0       	rjmp	.+22     	; 0xfb2 <HDCMotor_voidInit+0x6e>
+		{
+			HDCMotor_ArrayOfMotors[u8Local_Iterator].DIO_tPosTerminal.enumOutputLevel = MDIO_Low;
+ f9c:	8d e0       	ldi	r24, 0x0D	; 13
+ f9e:	8c 9d       	mul	r24, r12
+ fa0:	f0 01       	movw	r30, r0
+ fa2:	8d 9d       	mul	r24, r13
+ fa4:	f0 0d       	add	r31, r0
+ fa6:	11 24       	eor	r1, r1
+ fa8:	e2 57       	subi	r30, 0x72	; 114
+ faa:	ff 4f       	sbci	r31, 0xFF	; 255
+ fac:	13 82       	std	Z+3, r1	; 0x03
+			HDCMotor_ArrayOfMotors[u8Local_Iterator].DIO_tNegTerminal.enumOutputLevel = MDIO_High;	
+ fae:	8f ef       	ldi	r24, 0xFF	; 255
+ fb0:	87 83       	std	Z+7, r24	; 0x07
+
+void HDCMotor_voidInit(void)
+{
+	u8 u8Local_Iterator ;
+	
+	for(u8Local_Iterator = 0 ; u8Local_Iterator < NUM_OF_DC_MOTORS ; u8Local_Iterator++)
+ fb2:	cf 5f       	subi	r28, 0xFF	; 255
+ fb4:	c2 30       	cpi	r28, 0x02	; 2
+ fb6:	78 f2       	brcs	.-98     	; 0xf56 <HDCMotor_voidInit+0x12>
+		{
+			HDCMotor_ArrayOfMotors[u8Local_Iterator].DIO_tPosTerminal.enumOutputLevel = MDIO_Low;
+			HDCMotor_ArrayOfMotors[u8Local_Iterator].DIO_tNegTerminal.enumOutputLevel = MDIO_High;	
+		}
+	}
+}
+ fb8:	cf 91       	pop	r28
+ fba:	1f 91       	pop	r17
+ fbc:	0f 91       	pop	r16
+ fbe:	ff 90       	pop	r15
+ fc0:	ef 90       	pop	r14
+ fc2:	df 90       	pop	r13
+ fc4:	cf 90       	pop	r12
+ fc6:	08 95       	ret
+
+Disassembly of section .text.HDCMotor_voidStartMotor:
+
+0000169c <HDCMotor_voidStartMotor>:
+
+void HDCMotor_voidStartMotor(HDCMotor* pstructCpy_DCMotorObj)
+{
+    169c:	cf 93       	push	r28
+    169e:	df 93       	push	r29
+	if(pstructCpy_DCMotorObj != NULL)
+    16a0:	00 97       	sbiw	r24, 0x00	; 0
+    16a2:	71 f0       	breq	.+28     	; 0x16c0 <HDCMotor_voidStartMotor+0x24>
+    16a4:	ec 01       	movw	r28, r24
+	{
+		pstructCpy_DCMotorObj->DIO_tEnable.enumOutputLevel      = MDIO_High;
+    16a6:	8f ef       	ldi	r24, 0xFF	; 255
+    16a8:	8b 87       	std	Y+11, r24	; 0x0b
+	
+		MDIO_enumPinValue(&pstructCpy_DCMotorObj->DIO_tNegTerminal);
+    16aa:	ce 01       	movw	r24, r28
+    16ac:	04 96       	adiw	r24, 0x04	; 4
+    16ae:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+		MDIO_enumPinValue(&pstructCpy_DCMotorObj->DIO_tPosTerminal);
+    16b2:	ce 01       	movw	r24, r28
+    16b4:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+		MDIO_enumPinValue(&pstructCpy_DCMotorObj->DIO_tEnable);	
+    16b8:	ce 01       	movw	r24, r28
+    16ba:	08 96       	adiw	r24, 0x08	; 8
+    16bc:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+	}
+}
+    16c0:	df 91       	pop	r29
+    16c2:	cf 91       	pop	r28
+    16c4:	08 95       	ret
+
+Disassembly of section .text.HDCMotor_voidStopMotor:
+
+0000180a <HDCMotor_voidStopMotor>:
+
+void HDCMotor_voidStopMotor(HDCMotor* pstructCpy_DCMotorObj)
+{
+	if(pstructCpy_DCMotorObj != NULL)
+    180a:	00 97       	sbiw	r24, 0x00	; 0
+    180c:	29 f0       	breq	.+10     	; 0x1818 <HDCMotor_voidStopMotor+0xe>
+	{
+		pstructCpy_DCMotorObj->DIO_tEnable.enumOutputLevel      = MDIO_Low;
+    180e:	fc 01       	movw	r30, r24
+    1810:	13 86       	std	Z+11, r1	; 0x0b
+
+		MDIO_enumPinValue(&pstructCpy_DCMotorObj->DIO_tEnable);
+    1812:	08 96       	adiw	r24, 0x08	; 8
+    1814:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+    1818:	08 95       	ret
+
+Disassembly of section .text.HLCD_enuWriteData:
+
+000000da <HLCD_enuWriteData>:
+	else
+	{
+		enumLocal_errState = LSTY_NULL_POINTER;
+	}
+	return enumLocal_errState;
+}
+  da:	6f 92       	push	r6
+  dc:	7f 92       	push	r7
+  de:	8f 92       	push	r8
+  e0:	9f 92       	push	r9
+  e2:	af 92       	push	r10
+  e4:	bf 92       	push	r11
+  e6:	cf 92       	push	r12
+  e8:	df 92       	push	r13
+  ea:	ef 92       	push	r14
+  ec:	ff 92       	push	r15
+  ee:	0f 93       	push	r16
+  f0:	1f 93       	push	r17
+  f2:	cf 93       	push	r28
+  f4:	df 93       	push	r29
+  f6:	41 15       	cp	r20, r1
+  f8:	51 05       	cpc	r21, r1
+  fa:	09 f4       	brne	.+2      	; 0xfe <HLCD_enuWriteData+0x24>
+  fc:	de c0       	rjmp	.+444    	; 0x2ba <HLCD_enuWriteData+0x1e0>
+  fe:	81 30       	cpi	r24, 0x01	; 1
+ 100:	21 f4       	brne	.+8      	; 0x10a <HLCD_enuWriteData+0x30>
+ 102:	8f ef       	ldi	r24, 0xFF	; 255
+ 104:	fa 01       	movw	r30, r20
+ 106:	84 a3       	std	Z+36, r24	; 0x24
+ 108:	04 c0       	rjmp	.+8      	; 0x112 <HLCD_enuWriteData+0x38>
+ 10a:	81 11       	cpse	r24, r1
+ 10c:	02 c0       	rjmp	.+4      	; 0x112 <HLCD_enuWriteData+0x38>
+ 10e:	fa 01       	movw	r30, r20
+ 110:	14 a2       	std	Z+36, r1	; 0x24
+ 112:	ea 01       	movw	r28, r20
+ 114:	76 2e       	mov	r7, r22
+ 116:	18 a6       	std	Y+40, r1	; 0x28
+ 118:	ca 01       	movw	r24, r20
+ 11a:	81 96       	adiw	r24, 0x21	; 33
+ 11c:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 120:	ce 01       	movw	r24, r28
+ 122:	85 96       	adiw	r24, 0x25	; 37
+ 124:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 128:	88 81       	ld	r24, Y
+ 12a:	81 11       	cpse	r24, r1
+ 12c:	70 c0       	rjmp	.+224    	; 0x20e <HLCD_enuWriteData+0x134>
+ 12e:	87 2d       	mov	r24, r7
+ 130:	80 7f       	andi	r24, 0xF0	; 240
+ 132:	84 fb       	bst	r24, 4
+ 134:	99 27       	eor	r25, r25
+ 136:	90 f9       	bld	r25, 0
+ 138:	9c 8b       	std	Y+20, r25	; 0x14
+ 13a:	85 fb       	bst	r24, 5
+ 13c:	99 27       	eor	r25, r25
+ 13e:	90 f9       	bld	r25, 0
+ 140:	98 8f       	std	Y+24, r25	; 0x18
+ 142:	86 fb       	bst	r24, 6
+ 144:	99 27       	eor	r25, r25
+ 146:	90 f9       	bld	r25, 0
+ 148:	9c 8f       	std	Y+28, r25	; 0x1c
+ 14a:	87 fb       	bst	r24, 7
+ 14c:	88 27       	eor	r24, r24
+ 14e:	80 f9       	bld	r24, 0
+ 150:	88 a3       	std	Y+32, r24	; 0x20
+ 152:	5e 01       	movw	r10, r28
+ 154:	f1 e1       	ldi	r31, 0x11	; 17
+ 156:	af 0e       	add	r10, r31
+ 158:	b1 1c       	adc	r11, r1
+ 15a:	c5 01       	movw	r24, r10
+ 15c:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 160:	6e 01       	movw	r12, r28
+ 162:	85 e1       	ldi	r24, 0x15	; 21
+ 164:	c8 0e       	add	r12, r24
+ 166:	d1 1c       	adc	r13, r1
+ 168:	c6 01       	movw	r24, r12
+ 16a:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 16e:	7e 01       	movw	r14, r28
+ 170:	99 e1       	ldi	r25, 0x19	; 25
+ 172:	e9 0e       	add	r14, r25
+ 174:	f1 1c       	adc	r15, r1
+ 176:	c7 01       	movw	r24, r14
+ 178:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 17c:	4e 01       	movw	r8, r28
+ 17e:	ed e1       	ldi	r30, 0x1D	; 29
+ 180:	8e 0e       	add	r8, r30
+ 182:	91 1c       	adc	r9, r1
+ 184:	c4 01       	movw	r24, r8
+ 186:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 18a:	66 24       	eor	r6, r6
+ 18c:	6a 94       	dec	r6
+ 18e:	6c a6       	std	Y+44, r6	; 0x2c
+ 190:	8e 01       	movw	r16, r28
+ 192:	07 5d       	subi	r16, 0xD7	; 215
+ 194:	1f 4f       	sbci	r17, 0xFF	; 255
+ 196:	c8 01       	movw	r24, r16
+ 198:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 19c:	8f e3       	ldi	r24, 0x3F	; 63
+ 19e:	9c e9       	ldi	r25, 0x9C	; 156
+ 1a0:	01 97       	sbiw	r24, 0x01	; 1
+ 1a2:	f1 f7       	brne	.-4      	; 0x1a0 <HLCD_enuWriteData+0xc6>
+ 1a4:	00 c0       	rjmp	.+0      	; 0x1a6 <HLCD_enuWriteData+0xcc>
+ 1a6:	00 00       	nop
+ 1a8:	1c a6       	std	Y+44, r1	; 0x2c
+ 1aa:	c8 01       	movw	r24, r16
+ 1ac:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 1b0:	67 2d       	mov	r22, r7
+ 1b2:	62 95       	swap	r22
+ 1b4:	60 7f       	andi	r22, 0xF0	; 240
+ 1b6:	64 fb       	bst	r22, 4
+ 1b8:	88 27       	eor	r24, r24
+ 1ba:	80 f9       	bld	r24, 0
+ 1bc:	8c 8b       	std	Y+20, r24	; 0x14
+ 1be:	65 fb       	bst	r22, 5
+ 1c0:	88 27       	eor	r24, r24
+ 1c2:	80 f9       	bld	r24, 0
+ 1c4:	88 8f       	std	Y+24, r24	; 0x18
+ 1c6:	66 fb       	bst	r22, 6
+ 1c8:	88 27       	eor	r24, r24
+ 1ca:	80 f9       	bld	r24, 0
+ 1cc:	8c 8f       	std	Y+28, r24	; 0x1c
+ 1ce:	67 fb       	bst	r22, 7
+ 1d0:	66 27       	eor	r22, r22
+ 1d2:	60 f9       	bld	r22, 0
+ 1d4:	68 a3       	std	Y+32, r22	; 0x20
+ 1d6:	c5 01       	movw	r24, r10
+ 1d8:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 1dc:	c6 01       	movw	r24, r12
+ 1de:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 1e2:	c7 01       	movw	r24, r14
+ 1e4:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 1e8:	c4 01       	movw	r24, r8
+ 1ea:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 1ee:	6c a6       	std	Y+44, r6	; 0x2c
+ 1f0:	c8 01       	movw	r24, r16
+ 1f2:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 1f6:	ef e3       	ldi	r30, 0x3F	; 63
+ 1f8:	fc e9       	ldi	r31, 0x9C	; 156
+ 1fa:	31 97       	sbiw	r30, 0x01	; 1
+ 1fc:	f1 f7       	brne	.-4      	; 0x1fa <HLCD_enuWriteData+0x120>
+ 1fe:	00 c0       	rjmp	.+0      	; 0x200 <HLCD_enuWriteData+0x126>
+ 200:	00 00       	nop
+ 202:	1c a6       	std	Y+44, r1	; 0x2c
+ 204:	c8 01       	movw	r24, r16
+ 206:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 20a:	80 e0       	ldi	r24, 0x00	; 0
+ 20c:	59 c0       	rjmp	.+178    	; 0x2c0 <HLCD_enuWriteData+0x1e6>
+ 20e:	81 30       	cpi	r24, 0x01	; 1
+ 210:	09 f0       	breq	.+2      	; 0x214 <HLCD_enuWriteData+0x13a>
+ 212:	55 c0       	rjmp	.+170    	; 0x2be <HLCD_enuWriteData+0x1e4>
+ 214:	87 2d       	mov	r24, r7
+ 216:	81 70       	andi	r24, 0x01	; 1
+ 218:	8c 83       	std	Y+4, r24	; 0x04
+ 21a:	71 fa       	bst	r7, 1
+ 21c:	88 27       	eor	r24, r24
+ 21e:	80 f9       	bld	r24, 0
+ 220:	88 87       	std	Y+8, r24	; 0x08
+ 222:	72 fa       	bst	r7, 2
+ 224:	88 27       	eor	r24, r24
+ 226:	80 f9       	bld	r24, 0
+ 228:	8c 87       	std	Y+12, r24	; 0x0c
+ 22a:	73 fa       	bst	r7, 3
+ 22c:	88 27       	eor	r24, r24
+ 22e:	80 f9       	bld	r24, 0
+ 230:	88 8b       	std	Y+16, r24	; 0x10
+ 232:	74 fa       	bst	r7, 4
+ 234:	88 27       	eor	r24, r24
+ 236:	80 f9       	bld	r24, 0
+ 238:	8c 8b       	std	Y+20, r24	; 0x14
+ 23a:	75 fa       	bst	r7, 5
+ 23c:	88 27       	eor	r24, r24
+ 23e:	80 f9       	bld	r24, 0
+ 240:	88 8f       	std	Y+24, r24	; 0x18
+ 242:	76 fa       	bst	r7, 6
+ 244:	88 27       	eor	r24, r24
+ 246:	80 f9       	bld	r24, 0
+ 248:	8c 8f       	std	Y+28, r24	; 0x1c
+ 24a:	77 fa       	bst	r7, 7
+ 24c:	66 27       	eor	r22, r22
+ 24e:	60 f9       	bld	r22, 0
+ 250:	68 a3       	std	Y+32, r22	; 0x20
+ 252:	ce 01       	movw	r24, r28
+ 254:	01 96       	adiw	r24, 0x01	; 1
+ 256:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 25a:	ce 01       	movw	r24, r28
+ 25c:	05 96       	adiw	r24, 0x05	; 5
+ 25e:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 262:	ce 01       	movw	r24, r28
+ 264:	09 96       	adiw	r24, 0x09	; 9
+ 266:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 26a:	ce 01       	movw	r24, r28
+ 26c:	0d 96       	adiw	r24, 0x0d	; 13
+ 26e:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 272:	ce 01       	movw	r24, r28
+ 274:	41 96       	adiw	r24, 0x11	; 17
+ 276:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 27a:	ce 01       	movw	r24, r28
+ 27c:	45 96       	adiw	r24, 0x15	; 21
+ 27e:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 282:	ce 01       	movw	r24, r28
+ 284:	49 96       	adiw	r24, 0x19	; 25
+ 286:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 28a:	ce 01       	movw	r24, r28
+ 28c:	4d 96       	adiw	r24, 0x1d	; 29
+ 28e:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 292:	8f ef       	ldi	r24, 0xFF	; 255
+ 294:	8c a7       	std	Y+44, r24	; 0x2c
+ 296:	8e 01       	movw	r16, r28
+ 298:	07 5d       	subi	r16, 0xD7	; 215
+ 29a:	1f 4f       	sbci	r17, 0xFF	; 255
+ 29c:	c8 01       	movw	r24, r16
+ 29e:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 2a2:	8f e3       	ldi	r24, 0x3F	; 63
+ 2a4:	9c e9       	ldi	r25, 0x9C	; 156
+ 2a6:	01 97       	sbiw	r24, 0x01	; 1
+ 2a8:	f1 f7       	brne	.-4      	; 0x2a6 <HLCD_enuWriteData+0x1cc>
+ 2aa:	00 c0       	rjmp	.+0      	; 0x2ac <HLCD_enuWriteData+0x1d2>
+ 2ac:	00 00       	nop
+ 2ae:	1c a6       	std	Y+44, r1	; 0x2c
+ 2b0:	c8 01       	movw	r24, r16
+ 2b2:	0e 94 67 03 	call	0x6ce	; 0x6ce <MDIO_enumPinValue>
+ 2b6:	80 e0       	ldi	r24, 0x00	; 0
+ 2b8:	03 c0       	rjmp	.+6      	; 0x2c0 <HLCD_enuWriteData+0x1e6>
+ 2ba:	82 e0       	ldi	r24, 0x02	; 2
+ 2bc:	01 c0       	rjmp	.+2      	; 0x2c0 <HLCD_enuWriteData+0x1e6>
+ 2be:	83 e0       	ldi	r24, 0x03	; 3
+ 2c0:	df 91       	pop	r29
+ 2c2:	cf 91       	pop	r28
+ 2c4:	1f 91       	pop	r17
+ 2c6:	0f 91       	pop	r16
+ 2c8:	ff 90       	pop	r15
+ 2ca:	ef 90       	pop	r14
+ 2cc:	df 90       	pop	r13
+ 2ce:	cf 90       	pop	r12
+ 2d0:	bf 90       	pop	r11
+ 2d2:	af 90       	pop	r10
+ 2d4:	9f 90       	pop	r9
+ 2d6:	8f 90       	pop	r8
+ 2d8:	7f 90       	pop	r7
+ 2da:	6f 90       	pop	r6
+ 2dc:	08 95       	ret
+
+Disassembly of section .text.HLCD_enuIntegerToString:
+
+00000c9c <HLCD_enuIntegerToString>:
+ c9c:	cf 92       	push	r12
+ c9e:	df 92       	push	r13
+ ca0:	ef 92       	push	r14
+ ca2:	ff 92       	push	r15
+ ca4:	0f 93       	push	r16
+ ca6:	1f 93       	push	r17
+ ca8:	cf 93       	push	r28
+ caa:	df 93       	push	r29
+ cac:	8b 01       	movw	r16, r22
+ cae:	9c 01       	movw	r18, r24
+ cb0:	ea 01       	movw	r28, r20
+ cb2:	20 97       	sbiw	r28, 0x00	; 0
+ cb4:	39 f5       	brne	.+78     	; 0xd04 <HLCD_enuIntegerToString+0x68>
+ cb6:	82 e0       	ldi	r24, 0x02	; 2
+ cb8:	48 c0       	rjmp	.+144    	; 0xd4a <HLCD_enuIntegerToString+0xae>
+ cba:	dc 01       	movw	r26, r24
+ cbc:	cb 01       	movw	r24, r22
+ cbe:	88 0f       	add	r24, r24
+ cc0:	99 1f       	adc	r25, r25
+ cc2:	aa 1f       	adc	r26, r26
+ cc4:	bb 1f       	adc	r27, r27
+ cc6:	6c 01       	movw	r12, r24
+ cc8:	7d 01       	movw	r14, r26
+ cca:	cc 0c       	add	r12, r12
+ ccc:	dd 1c       	adc	r13, r13
+ cce:	ee 1c       	adc	r14, r14
+ cd0:	ff 1c       	adc	r15, r15
+ cd2:	cc 0c       	add	r12, r12
+ cd4:	dd 1c       	adc	r13, r13
+ cd6:	ee 1c       	adc	r14, r14
+ cd8:	ff 1c       	adc	r15, r15
+ cda:	c8 0e       	add	r12, r24
+ cdc:	d9 1e       	adc	r13, r25
+ cde:	ea 1e       	adc	r14, r26
+ ce0:	fb 1e       	adc	r15, r27
+ ce2:	c9 01       	movw	r24, r18
+ ce4:	b8 01       	movw	r22, r16
+ ce6:	2a e0       	ldi	r18, 0x0A	; 10
+ ce8:	30 e0       	ldi	r19, 0x00	; 0
+ cea:	40 e0       	ldi	r20, 0x00	; 0
+ cec:	50 e0       	ldi	r21, 0x00	; 0
+ cee:	0e 94 51 0a 	call	0x14a2	; 0x14a2 <__udivmodsi4>
+ cf2:	6c 0d       	add	r22, r12
+ cf4:	7d 1d       	adc	r23, r13
+ cf6:	8e 1d       	adc	r24, r14
+ cf8:	9f 1d       	adc	r25, r15
+ cfa:	02 2f       	mov	r16, r18
+ cfc:	13 2f       	mov	r17, r19
+ cfe:	24 2f       	mov	r18, r20
+ d00:	35 2f       	mov	r19, r21
+ d02:	04 c0       	rjmp	.+8      	; 0xd0c <HLCD_enuIntegerToString+0x70>
+ d04:	61 e0       	ldi	r22, 0x01	; 1
+ d06:	70 e0       	ldi	r23, 0x00	; 0
+ d08:	80 e0       	ldi	r24, 0x00	; 0
+ d0a:	90 e0       	ldi	r25, 0x00	; 0
+ d0c:	01 15       	cp	r16, r1
+ d0e:	11 05       	cpc	r17, r1
+ d10:	21 05       	cpc	r18, r1
+ d12:	31 05       	cpc	r19, r1
+ d14:	91 f6       	brne	.-92     	; 0xcba <HLCD_enuIntegerToString+0x1e>
+ d16:	13 c0       	rjmp	.+38     	; 0xd3e <HLCD_enuIntegerToString+0xa2>
+ d18:	2a e0       	ldi	r18, 0x0A	; 10
+ d1a:	30 e0       	ldi	r19, 0x00	; 0
+ d1c:	40 e0       	ldi	r20, 0x00	; 0
+ d1e:	50 e0       	ldi	r21, 0x00	; 0
+ d20:	0e 94 51 0a 	call	0x14a2	; 0x14a2 <__udivmodsi4>
+ d24:	e2 2e       	mov	r14, r18
+ d26:	f3 2e       	mov	r15, r19
+ d28:	04 2f       	mov	r16, r20
+ d2a:	15 2f       	mov	r17, r21
+ d2c:	60 5d       	subi	r22, 0xD0	; 208
+ d2e:	ae 01       	movw	r20, r28
+ d30:	81 e0       	ldi	r24, 0x01	; 1
+ d32:	0e 94 6d 00 	call	0xda	; 0xda <HLCD_enuWriteData>
+ d36:	6e 2d       	mov	r22, r14
+ d38:	7f 2d       	mov	r23, r15
+ d3a:	80 2f       	mov	r24, r16
+ d3c:	91 2f       	mov	r25, r17
+ d3e:	61 30       	cpi	r22, 0x01	; 1
+ d40:	71 05       	cpc	r23, r1
+ d42:	81 05       	cpc	r24, r1
+ d44:	91 05       	cpc	r25, r1
+ d46:	41 f7       	brne	.-48     	; 0xd18 <HLCD_enuIntegerToString+0x7c>
+ d48:	80 e0       	ldi	r24, 0x00	; 0
+ d4a:	df 91       	pop	r29
+ d4c:	cf 91       	pop	r28
+ d4e:	1f 91       	pop	r17
+ d50:	0f 91       	pop	r16
+ d52:	ff 90       	pop	r15
+ d54:	ef 90       	pop	r14
+ d56:	df 90       	pop	r13
+ d58:	cf 90       	pop	r12
+ d5a:	08 95       	ret
+
+Disassembly of section .text.HLCD_enuDisplayString:
+
+00001418 <HLCD_enuDisplayString>:
+
+tenumFncErrorState HLCD_enuDisplayString(u8 u8String[], u8 u8Cpy_size, HLCD* pstructCpy_HLCDObj)
+{
+    1418:	ef 92       	push	r14
+    141a:	ff 92       	push	r15
+    141c:	0f 93       	push	r16
+    141e:	1f 93       	push	r17
+    1420:	cf 93       	push	r28
+    1422:	df 93       	push	r29
+	tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+
+	if(pstructCpy_HLCDObj != NULL)
+    1424:	41 15       	cp	r20, r1
+    1426:	51 05       	cpc	r21, r1
+    1428:	61 f4       	brne	.+24     	; 0x1442 <HLCD_enuDisplayString+0x2a>
+			HLCD_enuWriteData(Data, u8String[u8Local_Iter] , pstructCpy_HLCDObj);
+		}
+	}
+	else
+	{
+		enumLocal_errState = LSTY_NULL_POINTER;
+    142a:	82 e0       	ldi	r24, 0x02	; 2
+    142c:	11 c0       	rjmp	.+34     	; 0x1450 <HLCD_enuDisplayString+0x38>
+	if(pstructCpy_HLCDObj != NULL)
+	{
+		u8 u8Local_Iter;
+		for(u8Local_Iter = 0 ; u8Local_Iter < u8Cpy_size ; u8Local_Iter++)
+		{
+			HLCD_enuWriteData(Data, u8String[u8Local_Iter] , pstructCpy_HLCDObj);
+    142e:	f7 01       	movw	r30, r14
+    1430:	ec 0f       	add	r30, r28
+    1432:	f1 1d       	adc	r31, r1
+    1434:	a8 01       	movw	r20, r16
+    1436:	60 81       	ld	r22, Z
+    1438:	81 e0       	ldi	r24, 0x01	; 1
+    143a:	0e 94 6d 00 	call	0xda	; 0xda <HLCD_enuWriteData>
+	tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+
+	if(pstructCpy_HLCDObj != NULL)
+	{
+		u8 u8Local_Iter;
+		for(u8Local_Iter = 0 ; u8Local_Iter < u8Cpy_size ; u8Local_Iter++)
+    143e:	cf 5f       	subi	r28, 0xFF	; 255
+    1440:	04 c0       	rjmp	.+8      	; 0x144a <HLCD_enuDisplayString+0x32>
+    1442:	8a 01       	movw	r16, r20
+    1444:	d6 2f       	mov	r29, r22
+    1446:	7c 01       	movw	r14, r24
+    1448:	c0 e0       	ldi	r28, 0x00	; 0
+    144a:	cd 17       	cp	r28, r29
+    144c:	80 f3       	brcs	.-32     	; 0x142e <HLCD_enuDisplayString+0x16>
+	return enumLocal_errState;
+}
+
+tenumFncErrorState HLCD_enuDisplayString(u8 u8String[], u8 u8Cpy_size, HLCD* pstructCpy_HLCDObj)
+{
+	tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+    144e:	80 e0       	ldi	r24, 0x00	; 0
+	else
+	{
+		enumLocal_errState = LSTY_NULL_POINTER;
+	}
+	return enumLocal_errState;
+}
+    1450:	df 91       	pop	r29
+    1452:	cf 91       	pop	r28
+    1454:	1f 91       	pop	r17
+    1456:	0f 91       	pop	r16
+    1458:	ff 90       	pop	r15
+    145a:	ef 90       	pop	r14
+    145c:	08 95       	ret
+
+Disassembly of section .text.HLCD_enuClearScreen:
+
+000017cc <HLCD_enuClearScreen>:
+
+tenumFncErrorState HLCD_enuClearScreen(HLCD* pstructCpy_HLCDObj)
+{
+	tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+
+	if(pstructCpy_HLCDObj != NULL)
+    17cc:	00 97       	sbiw	r24, 0x00	; 0
+    17ce:	39 f0       	breq	.+14     	; 0x17de <HLCD_enuClearScreen+0x12>
+    17d0:	ac 01       	movw	r20, r24
+	{
+
+		//_delay_ms(1);
+		HLCD_enuWriteData(Command, CLEAR_DISPLAY, pstructCpy_HLCDObj);
+    17d2:	61 e0       	ldi	r22, 0x01	; 1
+    17d4:	80 e0       	ldi	r24, 0x00	; 0
+    17d6:	0e 94 6d 00 	call	0xda	; 0xda <HLCD_enuWriteData>
+	return enumLocal_errState;
+}
+
+tenumFncErrorState HLCD_enuClearScreen(HLCD* pstructCpy_HLCDObj)
+{
+	tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+    17da:	80 e0       	ldi	r24, 0x00	; 0
+    17dc:	08 95       	ret
+		HLCD_enuWriteData(Command, CLEAR_DISPLAY, pstructCpy_HLCDObj);
+		//_delay_ms(2);
+	}
+	else
+	{
+		enumLocal_errState = LSTY_NULL_POINTER;
+    17de:	82 e0       	ldi	r24, 0x02	; 2
+	}
+	return enumLocal_errState;
+}
+    17e0:	08 95       	ret
+
+Disassembly of section .text.HLCD_enuGoToXY:
+
+000014e6 <HLCD_enuGoToXY>:
+
+tenumFncErrorState HLCD_enuGoToXY(u8 u8Cpy_Row, u8 u8Cpy_Col, HLCD* pstructCpy_HLCDObj)
+{
+	tenumFncErrorState ReturnFunState = LSTY_EXECUTED_SUCCESSFULLY;
+	
+	if(((HLCD_u8FirstCol <= u8Cpy_Col) && (HLCD_u8LastCol >= u8Cpy_Col)) &&
+    14e6:	60 31       	cpi	r22, 0x10	; 16
+    14e8:	b0 f4       	brcc	.+44     	; 0x1516 <HLCD_enuGoToXY+0x30>
+    14ea:	82 30       	cpi	r24, 0x02	; 2
+    14ec:	b0 f4       	brcc	.+44     	; 0x151a <HLCD_enuGoToXY+0x34>
+	   ((HLCD_u8FirstRow <= u8Cpy_Row) && (HLCD_u8SecRow >= u8Cpy_Row)))
+	{
+		if(pstructCpy_HLCDObj != NULL)
+    14ee:	41 15       	cp	r20, r1
+    14f0:	51 05       	cpc	r21, r1
+    14f2:	a9 f0       	breq	.+42     	; 0x151e <HLCD_enuGoToXY+0x38>
+		{
+			switch (u8Cpy_Row)
+    14f4:	88 23       	and	r24, r24
+    14f6:	19 f0       	breq	.+6      	; 0x14fe <HLCD_enuGoToXY+0x18>
+    14f8:	81 30       	cpi	r24, 0x01	; 1
+    14fa:	39 f0       	breq	.+14     	; 0x150a <HLCD_enuGoToXY+0x24>
+    14fc:	12 c0       	rjmp	.+36     	; 0x1522 <HLCD_enuGoToXY+0x3c>
+			{
+				case HLCD_u8FirstRow:
+					HLCD_enuWriteData(Command, HLCD_u8FirstRowStart+u8Cpy_Col ,pstructCpy_HLCDObj);
+    14fe:	60 58       	subi	r22, 0x80	; 128
+    1500:	80 e0       	ldi	r24, 0x00	; 0
+    1502:	0e 94 6d 00 	call	0xda	; 0xda <HLCD_enuWriteData>
+	return enumLocal_errState;
+}
+
+tenumFncErrorState HLCD_enuGoToXY(u8 u8Cpy_Row, u8 u8Cpy_Col, HLCD* pstructCpy_HLCDObj)
+{
+	tenumFncErrorState ReturnFunState = LSTY_EXECUTED_SUCCESSFULLY;
+    1506:	80 e0       	ldi	r24, 0x00	; 0
+		{
+			switch (u8Cpy_Row)
+			{
+				case HLCD_u8FirstRow:
+					HLCD_enuWriteData(Command, HLCD_u8FirstRowStart+u8Cpy_Col ,pstructCpy_HLCDObj);
+					break;
+    1508:	08 95       	ret
+			
+				case HLCD_u8SecRow:
+					HLCD_enuWriteData(Command, HLCD_u8SecondRowStart+u8Cpy_Col ,pstructCpy_HLCDObj);
+    150a:	60 54       	subi	r22, 0x40	; 64
+    150c:	80 e0       	ldi	r24, 0x00	; 0
+    150e:	0e 94 6d 00 	call	0xda	; 0xda <HLCD_enuWriteData>
+	return enumLocal_errState;
+}
+
+tenumFncErrorState HLCD_enuGoToXY(u8 u8Cpy_Row, u8 u8Cpy_Col, HLCD* pstructCpy_HLCDObj)
+{
+	tenumFncErrorState ReturnFunState = LSTY_EXECUTED_SUCCESSFULLY;
+    1512:	80 e0       	ldi	r24, 0x00	; 0
+					HLCD_enuWriteData(Command, HLCD_u8FirstRowStart+u8Cpy_Col ,pstructCpy_HLCDObj);
+					break;
+			
+				case HLCD_u8SecRow:
+					HLCD_enuWriteData(Command, HLCD_u8SecondRowStart+u8Cpy_Col ,pstructCpy_HLCDObj);
+					break;
+    1514:	08 95       	ret
+		}
+
+	}
+	else
+	{
+		ReturnFunState = LSTY_OUT_OF_RANGE;
+    1516:	81 e0       	ldi	r24, 0x01	; 1
+    1518:	08 95       	ret
+    151a:	81 e0       	ldi	r24, 0x01	; 1
+    151c:	08 95       	ret
+					ReturnFunState = LSTY_OUT_OF_RANGE;
+			}
+		}
+		else
+		{
+			ReturnFunState = LSTY_NULL_POINTER;
+    151e:	82 e0       	ldi	r24, 0x02	; 2
+    1520:	08 95       	ret
+				case HLCD_u8SecRow:
+					HLCD_enuWriteData(Command, HLCD_u8SecondRowStart+u8Cpy_Col ,pstructCpy_HLCDObj);
+					break;
+			
+				default:
+					ReturnFunState = LSTY_OUT_OF_RANGE;
+    1522:	81 e0       	ldi	r24, 0x01	; 1
+	{
+		ReturnFunState = LSTY_OUT_OF_RANGE;
+	}
+	
+	return ReturnFunState;
+}
+    1524:	08 95       	ret
+
+Disassembly of section .text.Forward:
+
+00000914 <Forward>:
+		}			
+	}
+}
+
+void Forward()
+{
+ 914:	cf 93       	push	r28
+ 916:	df 93       	push	r29
+ 918:	cd b7       	in	r28, 0x3d	; 61
+ 91a:	de b7       	in	r29, 0x3e	; 62
+ 91c:	62 97       	sbiw	r28, 0x12	; 18
+ 91e:	0f b6       	in	r0, 0x3f	; 63
+ 920:	f8 94       	cli
+ 922:	de bf       	out	0x3e, r29	; 62
+ 924:	0f be       	out	0x3f, r0	; 63
+ 926:	cd bf       	out	0x3d, r28	; 61
+	while(FLAG == NO_OBJ_DETECTED){
+ 928:	61 c0       	rjmp	.+194    	; 0x9ec <Forward+0xd8>
+	//Set ultrasonic to the center
+	MPWM Servo = {MPWM_Num0, MPWM_FastPWM, MPWM_NonInverted, MTIMER_Free, Center};
+ 92a:	86 e0       	ldi	r24, 0x06	; 6
+ 92c:	e8 ea       	ldi	r30, 0xA8	; 168
+ 92e:	f0 e0       	ldi	r31, 0x00	; 0
+ 930:	de 01       	movw	r26, r28
+ 932:	18 96       	adiw	r26, 0x08	; 8
+ 934:	01 90       	ld	r0, Z+
+ 936:	0d 92       	st	X+, r0
+ 938:	8a 95       	dec	r24
+ 93a:	e1 f7       	brne	.-8      	; 0x934 <Forward+0x20>
+	MPWM_voidInit(&Servo);
+ 93c:	ce 01       	movw	r24, r28
+ 93e:	08 96       	adiw	r24, 0x08	; 8
+ 940:	0e 94 c2 02 	call	0x584	; 0x584 <MPWM_voidInit>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 944:	2f ef       	ldi	r18, 0xFF	; 255
+ 946:	81 ee       	ldi	r24, 0xE1	; 225
+ 948:	94 e0       	ldi	r25, 0x04	; 4
+ 94a:	21 50       	subi	r18, 0x01	; 1
+ 94c:	80 40       	sbci	r24, 0x00	; 0
+ 94e:	90 40       	sbci	r25, 0x00	; 0
+ 950:	e1 f7       	brne	.-8      	; 0x94a <Forward+0x36>
+ 952:	00 c0       	rjmp	.+0      	; 0x954 <Forward+0x40>
+ 954:	00 00       	nop
+	_delay_ms(200);									//short Delay for Servo motor to take position
+	
+	// Display Direction on LCD
+	HLCD_enuClearScreen(&HLCDArrayOfLCD [HLCD_NUM0]);				
+ 956:	81 e6       	ldi	r24, 0x61	; 97
+ 958:	90 e0       	ldi	r25, 0x00	; 0
+ 95a:	0e 94 e6 0b 	call	0x17cc	; 0x17cc <HLCD_enuClearScreen>
+	u8 arr[7] = "Forward";
+ 95e:	2a eb       	ldi	r18, 0xBA	; 186
+ 960:	30 e0       	ldi	r19, 0x00	; 0
+ 962:	40 e0       	ldi	r20, 0x00	; 0
+ 964:	87 e0       	ldi	r24, 0x07	; 7
+ 966:	f9 01       	movw	r30, r18
+ 968:	de 01       	movw	r26, r28
+ 96a:	11 96       	adiw	r26, 0x01	; 1
+ 96c:	74 2f       	mov	r23, r20
+ 96e:	0e 94 d9 0b 	call	0x17b2	; 0x17b2 <__movmemx_qi>
+	HLCD_enuDisplayString(arr, 7, &HLCDArrayOfLCD [HLCD_NUM0]);
+ 972:	41 e6       	ldi	r20, 0x61	; 97
+ 974:	50 e0       	ldi	r21, 0x00	; 0
+ 976:	67 e0       	ldi	r22, 0x07	; 7
+ 978:	ce 01       	movw	r24, r28
+ 97a:	01 96       	adiw	r24, 0x01	; 1
+ 97c:	0e 94 0c 0a 	call	0x1418	; 0x1418 <HLCD_enuDisplayString>
+	
+	//Start DC motors	
+	HDCMotor_voidStartMotor(&HDCMotor_ArrayOfMotors[HDCMotor_NUM0]);
+ 980:	8e e8       	ldi	r24, 0x8E	; 142
+ 982:	90 e0       	ldi	r25, 0x00	; 0
+ 984:	0e 94 4e 0b 	call	0x169c	; 0x169c <HDCMotor_voidStartMotor>
+	HDCMotor_voidStartMotor(&HDCMotor_ArrayOfMotors[HDCMotor_NUM1]);
+ 988:	8b e9       	ldi	r24, 0x9B	; 155
+ 98a:	90 e0       	ldi	r25, 0x00	; 0
+ 98c:	0e 94 4e 0b 	call	0x169c	; 0x169c <HDCMotor_voidStartMotor>
+	
+	//Sending Trigger to ultrasonic
+	MICU_voidInit();
+ 990:	0e 94 93 0a 	call	0x1526	; 0x1526 <MICU_voidInit>
+	SET_BIT(DDRC,0);
+ 994:	84 b3       	in	r24, 0x14	; 20
+ 996:	81 60       	ori	r24, 0x01	; 1
+ 998:	84 bb       	out	0x14, r24	; 20
+	CLR_BIT(DDRD,6);
+ 99a:	81 b3       	in	r24, 0x11	; 17
+ 99c:	8f 7b       	andi	r24, 0xBF	; 191
+ 99e:	81 bb       	out	0x11, r24	; 17
+	SET_BIT(PORTC,0);
+ 9a0:	85 b3       	in	r24, 0x15	; 21
+ 9a2:	81 60       	ori	r24, 0x01	; 1
+ 9a4:	85 bb       	out	0x15, r24	; 21
+ 9a6:	8f e1       	ldi	r24, 0x1F	; 31
+ 9a8:	9e e4       	ldi	r25, 0x4E	; 78
+ 9aa:	01 97       	sbiw	r24, 0x01	; 1
+ 9ac:	f1 f7       	brne	.-4      	; 0x9aa <Forward+0x96>
+ 9ae:	00 c0       	rjmp	.+0      	; 0x9b0 <Forward+0x9c>
+ 9b0:	00 00       	nop
+	_delay_ms(10);
+	CLR_BIT(PORTC,0);
+ 9b2:	85 b3       	in	r24, 0x15	; 21
+ 9b4:	8e 7f       	andi	r24, 0xFE	; 254
+ 9b6:	85 bb       	out	0x15, r24	; 21
+	
+	//displaying distance to LCD
+	MICU Dist;
+	MICU_voidFetchData(&Dist);									//getting pulse from ICU pin
+ 9b8:	ce 01       	movw	r24, r28
+ 9ba:	0e 96       	adiw	r24, 0x0e	; 14
+ 9bc:	0e 94 ea 0a 	call	0x15d4	; 0x15d4 <MICU_voidFetchData>
+	HLCD_enuIntegerToString(Dist.u16Obj_Ton, &HLCDArrayOfLCD[HLCD_NUM0]);
+ 9c0:	6e 85       	ldd	r22, Y+14	; 0x0e
+ 9c2:	7f 85       	ldd	r23, Y+15	; 0x0f
+ 9c4:	80 e0       	ldi	r24, 0x00	; 0
+ 9c6:	90 e0       	ldi	r25, 0x00	; 0
+ 9c8:	41 e6       	ldi	r20, 0x61	; 97
+ 9ca:	50 e0       	ldi	r21, 0x00	; 0
+ 9cc:	0e 94 4e 06 	call	0xc9c	; 0xc9c <HLCD_enuIntegerToString>
+	HLCD_enuGoToXY(HLCD_u8SecRow, HLCD_u8FirstCol, &HLCDArrayOfLCD[HLCD_NUM0]);
+ 9d0:	41 e6       	ldi	r20, 0x61	; 97
+ 9d2:	50 e0       	ldi	r21, 0x00	; 0
+ 9d4:	60 e0       	ldi	r22, 0x00	; 0
+ 9d6:	81 e0       	ldi	r24, 0x01	; 1
+ 9d8:	0e 94 73 0a 	call	0x14e6	; 0x14e6 <HLCD_enuGoToXY>
+	HLCD_enuIntegerToString(Dist.u16Obj_Toff, &HLCDArrayOfLCD[HLCD_NUM0]);
+ 9dc:	68 89       	ldd	r22, Y+16	; 0x10
+ 9de:	79 89       	ldd	r23, Y+17	; 0x11
+ 9e0:	80 e0       	ldi	r24, 0x00	; 0
+ 9e2:	90 e0       	ldi	r25, 0x00	; 0
+ 9e4:	41 e6       	ldi	r20, 0x61	; 97
+ 9e6:	50 e0       	ldi	r21, 0x00	; 0
+ 9e8:	0e 94 4e 06 	call	0xc9c	; 0xc9c <HLCD_enuIntegerToString>
+	}
+}
+
+void Forward()
+{
+	while(FLAG == NO_OBJ_DETECTED){
+ 9ec:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 9f0:	88 23       	and	r24, r24
+ 9f2:	09 f4       	brne	.+2      	; 0x9f6 <Forward+0xe2>
+ 9f4:	9a cf       	rjmp	.-204    	; 0x92a <Forward+0x16>
+	MICU_voidFetchData(&Dist);									//getting pulse from ICU pin
+	HLCD_enuIntegerToString(Dist.u16Obj_Ton, &HLCDArrayOfLCD[HLCD_NUM0]);
+	HLCD_enuGoToXY(HLCD_u8SecRow, HLCD_u8FirstCol, &HLCDArrayOfLCD[HLCD_NUM0]);
+	HLCD_enuIntegerToString(Dist.u16Obj_Toff, &HLCDArrayOfLCD[HLCD_NUM0]);
+	}
+}
+ 9f6:	62 96       	adiw	r28, 0x12	; 18
+ 9f8:	0f b6       	in	r0, 0x3f	; 63
+ 9fa:	f8 94       	cli
+ 9fc:	de bf       	out	0x3e, r29	; 62
+ 9fe:	0f be       	out	0x3f, r0	; 63
+ a00:	cd bf       	out	0x3d, r28	; 61
+ a02:	df 91       	pop	r29
+ a04:	cf 91       	pop	r28
+ a06:	08 95       	ret
+
+Disassembly of section .text.Stop:
+
+000012de <Stop>:
+
+void Stop()
+{
+    12de:	cf 93       	push	r28
+    12e0:	df 93       	push	r29
+    12e2:	00 d0       	rcall	.+0      	; 0x12e4 <Stop+0x6>
+    12e4:	00 d0       	rcall	.+0      	; 0x12e6 <Stop+0x8>
+    12e6:	cd b7       	in	r28, 0x3d	; 61
+    12e8:	de b7       	in	r29, 0x3e	; 62
+	//Stop DC Motors
+	HDCMotor_voidStopMotor(&HDCMotor_ArrayOfMotors[HDCMotor_NUM0]);	
+    12ea:	8e e8       	ldi	r24, 0x8E	; 142
+    12ec:	90 e0       	ldi	r25, 0x00	; 0
+    12ee:	0e 94 05 0c 	call	0x180a	; 0x180a <HDCMotor_voidStopMotor>
+	HDCMotor_voidStopMotor(&HDCMotor_ArrayOfMotors[HDCMotor_NUM1]);
+    12f2:	8b e9       	ldi	r24, 0x9B	; 155
+    12f4:	90 e0       	ldi	r25, 0x00	; 0
+    12f6:	0e 94 05 0c 	call	0x180a	; 0x180a <HDCMotor_voidStopMotor>
+	
+	//Displaying direction
+	HLCD_enuClearScreen(&HLCDArrayOfLCD [HLCD_NUM0]);
+    12fa:	81 e6       	ldi	r24, 0x61	; 97
+    12fc:	90 e0       	ldi	r25, 0x00	; 0
+    12fe:	0e 94 e6 0b 	call	0x17cc	; 0x17cc <HLCD_enuClearScreen>
+	u8 arr[4] = "Stop";
+    1302:	83 e5       	ldi	r24, 0x53	; 83
+    1304:	94 e7       	ldi	r25, 0x74	; 116
+    1306:	9a 83       	std	Y+2, r25	; 0x02
+    1308:	89 83       	std	Y+1, r24	; 0x01
+    130a:	8f e6       	ldi	r24, 0x6F	; 111
+    130c:	90 e7       	ldi	r25, 0x70	; 112
+    130e:	9c 83       	std	Y+4, r25	; 0x04
+    1310:	8b 83       	std	Y+3, r24	; 0x03
+	HLCD_enuDisplayString(arr, 4, &HLCDArrayOfLCD [HLCD_NUM0]);
+    1312:	41 e6       	ldi	r20, 0x61	; 97
+    1314:	50 e0       	ldi	r21, 0x00	; 0
+    1316:	64 e0       	ldi	r22, 0x04	; 4
+    1318:	ce 01       	movw	r24, r28
+    131a:	01 96       	adiw	r24, 0x01	; 1
+    131c:	0e 94 0c 0a 	call	0x1418	; 0x1418 <HLCD_enuDisplayString>
+}
+    1320:	0f 90       	pop	r0
+    1322:	0f 90       	pop	r0
+    1324:	0f 90       	pop	r0
+    1326:	0f 90       	pop	r0
+    1328:	df 91       	pop	r29
+    132a:	cf 91       	pop	r28
+    132c:	08 95       	ret
+
+Disassembly of section .text.Scan:
+
+00000d5c <Scan>:
+
+void Scan()
+{
+ d5c:	0f 93       	push	r16
+ d5e:	1f 93       	push	r17
+ d60:	cf 93       	push	r28
+ d62:	df 93       	push	r29
+ d64:	cd b7       	in	r28, 0x3d	; 61
+ d66:	de b7       	in	r29, 0x3e	; 62
+ d68:	63 97       	sbiw	r28, 0x13	; 19
+ d6a:	0f b6       	in	r0, 0x3f	; 63
+ d6c:	f8 94       	cli
+ d6e:	de bf       	out	0x3e, r29	; 62
+ d70:	0f be       	out	0x3f, r0	; 63
+ d72:	cd bf       	out	0x3d, r28	; 61
+	HLCD_enuClearScreen(&HLCDArrayOfLCD [HLCD_NUM0]);
+ d74:	81 e6       	ldi	r24, 0x61	; 97
+ d76:	90 e0       	ldi	r25, 0x00	; 0
+ d78:	0e 94 e6 0b 	call	0x17cc	; 0x17cc <HLCD_enuClearScreen>
+	u8 arr[7] = "Scanning";
+ d7c:	22 ec       	ldi	r18, 0xC2	; 194
+ d7e:	30 e0       	ldi	r19, 0x00	; 0
+ d80:	40 e0       	ldi	r20, 0x00	; 0
+ d82:	87 e0       	ldi	r24, 0x07	; 7
+ d84:	f9 01       	movw	r30, r18
+ d86:	de 01       	movw	r26, r28
+ d88:	11 96       	adiw	r26, 0x01	; 1
+ d8a:	74 2f       	mov	r23, r20
+ d8c:	0e 94 d9 0b 	call	0x17b2	; 0x17b2 <__movmemx_qi>
+	HLCD_enuDisplayString(arr, 8, &HLCDArrayOfLCD [HLCD_NUM0]);
+ d90:	41 e6       	ldi	r20, 0x61	; 97
+ d92:	50 e0       	ldi	r21, 0x00	; 0
+ d94:	68 e0       	ldi	r22, 0x08	; 8
+ d96:	ce 01       	movw	r24, r28
+ d98:	01 96       	adiw	r24, 0x01	; 1
+ d9a:	0e 94 0c 0a 	call	0x1418	; 0x1418 <HLCD_enuDisplayString>
+	
+	u16 Pos[] = {Left,Center,Right};							//Servo Motor Positions
+ d9e:	86 e0       	ldi	r24, 0x06	; 6
+ da0:	ee ea       	ldi	r30, 0xAE	; 174
+ da2:	f0 e0       	ldi	r31, 0x00	; 0
+ da4:	de 01       	movw	r26, r28
+ da6:	18 96       	adiw	r26, 0x08	; 8
+ da8:	01 90       	ld	r0, Z+
+ daa:	0d 92       	st	X+, r0
+ dac:	8a 95       	dec	r24
+ dae:	e1 f7       	brne	.-8      	; 0xda8 <Scan+0x4c>
+	for (u16 x=0 ; x<4 ; x++)
+ db0:	00 e0       	ldi	r16, 0x00	; 0
+ db2:	10 e0       	ldi	r17, 0x00	; 0
+ db4:	21 c0       	rjmp	.+66     	; 0xdf8 <Scan+0x9c>
+	{
+		MPWM Servo = {MPWM_Num0, MPWM_FastPWM, MPWM_NonInverted, MTIMER_Free, Pos[x]};
+ db6:	1e 86       	std	Y+14, r1	; 0x0e
+ db8:	1f 86       	std	Y+15, r1	; 0x0f
+ dba:	81 e0       	ldi	r24, 0x01	; 1
+ dbc:	88 8b       	std	Y+16, r24	; 0x10
+ dbe:	89 8b       	std	Y+17, r24	; 0x11
+ dc0:	f8 01       	movw	r30, r16
+ dc2:	ee 0f       	add	r30, r30
+ dc4:	ff 1f       	adc	r31, r31
+ dc6:	81 e0       	ldi	r24, 0x01	; 1
+ dc8:	90 e0       	ldi	r25, 0x00	; 0
+ dca:	8c 0f       	add	r24, r28
+ dcc:	9d 1f       	adc	r25, r29
+ dce:	e8 0f       	add	r30, r24
+ dd0:	f9 1f       	adc	r31, r25
+ dd2:	87 81       	ldd	r24, Z+7	; 0x07
+ dd4:	90 85       	ldd	r25, Z+8	; 0x08
+ dd6:	9b 8b       	std	Y+19, r25	; 0x13
+ dd8:	8a 8b       	std	Y+18, r24	; 0x12
+		MPWM_voidInit(&Servo);
+ dda:	ce 01       	movw	r24, r28
+ ddc:	0e 96       	adiw	r24, 0x0e	; 14
+ dde:	0e 94 c2 02 	call	0x584	; 0x584 <MPWM_voidInit>
+ de2:	9f ef       	ldi	r25, 0xFF	; 255
+ de4:	29 e6       	ldi	r18, 0x69	; 105
+ de6:	88 e1       	ldi	r24, 0x18	; 24
+ de8:	91 50       	subi	r25, 0x01	; 1
+ dea:	20 40       	sbci	r18, 0x00	; 0
+ dec:	80 40       	sbci	r24, 0x00	; 0
+ dee:	e1 f7       	brne	.-8      	; 0xde8 <Scan+0x8c>
+ df0:	00 c0       	rjmp	.+0      	; 0xdf2 <Scan+0x96>
+ df2:	00 00       	nop
+	HLCD_enuClearScreen(&HLCDArrayOfLCD [HLCD_NUM0]);
+	u8 arr[7] = "Scanning";
+	HLCD_enuDisplayString(arr, 8, &HLCDArrayOfLCD [HLCD_NUM0]);
+	
+	u16 Pos[] = {Left,Center,Right};							//Servo Motor Positions
+	for (u16 x=0 ; x<4 ; x++)
+ df4:	0f 5f       	subi	r16, 0xFF	; 255
+ df6:	1f 4f       	sbci	r17, 0xFF	; 255
+ df8:	04 30       	cpi	r16, 0x04	; 4
+ dfa:	11 05       	cpc	r17, r1
+ dfc:	e0 f2       	brcs	.-72     	; 0xdb6 <Scan+0x5a>
+	{
+		MPWM Servo = {MPWM_Num0, MPWM_FastPWM, MPWM_NonInverted, MTIMER_Free, Pos[x]};
+		MPWM_voidInit(&Servo);
+		_delay_ms(1000);
+	}
+}
+ dfe:	63 96       	adiw	r28, 0x13	; 19
+ e00:	0f b6       	in	r0, 0x3f	; 63
+ e02:	f8 94       	cli
+ e04:	de bf       	out	0x3e, r29	; 62
+ e06:	0f be       	out	0x3f, r0	; 63
+ e08:	cd bf       	out	0x3d, r28	; 61
+ e0a:	df 91       	pop	r29
+ e0c:	cf 91       	pop	r28
+ e0e:	1f 91       	pop	r17
+ e10:	0f 91       	pop	r16
+ e12:	08 95       	ret
+
+Disassembly of section .text.Steer:
+
+000016c6 <Steer>:
+
+void Steer()
+{
+    16c6:	cf 93       	push	r28
+    16c8:	df 93       	push	r29
+    16ca:	cd b7       	in	r28, 0x3d	; 61
+    16cc:	de b7       	in	r29, 0x3e	; 62
+    16ce:	2d 97       	sbiw	r28, 0x0d	; 13
+    16d0:	0f b6       	in	r0, 0x3f	; 63
+    16d2:	f8 94       	cli
+    16d4:	de bf       	out	0x3e, r29	; 62
+    16d6:	0f be       	out	0x3f, r0	; 63
+    16d8:	cd bf       	out	0x3d, r28	; 61
+		HLCD_enuDisplayString(arr, 14, &HLCDArrayOfLCD [HLCD_NUM0]);
+		HDCMotor_voidStartMotor(&HDCMotor_ArrayOfMotors[HDCMotor_NUM1]);
+		_delay_ms(300);
+		break;
+	}
+	FLAG = NO_OBJ_DETECTED;
+    16da:	10 92 60 00 	sts	0x0060, r1	; 0x800060 <__DATA_REGION_ORIGIN__>
+    16de:	2d 96       	adiw	r28, 0x0d	; 13
+    16e0:	0f b6       	in	r0, 0x3f	; 63
+    16e2:	f8 94       	cli
+    16e4:	de bf       	out	0x3e, r29	; 62
+    16e6:	0f be       	out	0x3f, r0	; 63
+    16e8:	cd bf       	out	0x3d, r28	; 61
+    16ea:	df 91       	pop	r29
+    16ec:	cf 91       	pop	r28
+    16ee:	08 95       	ret
+
+Disassembly of section .text.main:
+
+000015a0 <main>:
+
+int main(void)
+{	
+	u8 MaxDist[3];
+	
+	MDIO_enumDIOInit();				
+    15a0:	0e 94 49 0c 	call	0x1892	; 0x1892 <MDIO_enumDIOInit>
+	HDCMotor_voidInit();
+    15a4:	0e 94 a2 07 	call	0xf44	; 0xf44 <HDCMotor_voidInit>
+	
+    while(1)
+    {		
+		if(FLAG == NO_OBJ_DETECTED)
+    15a8:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+    15ac:	81 11       	cpse	r24, r1
+    15ae:	02 c0       	rjmp	.+4      	; 0x15b4 <main+0x14>
+		{
+			Forward();
+    15b0:	0e 94 8a 04 	call	0x914	; 0x914 <Forward>
+		}
+		if (FLAG == OBJ_DETECTED)
+    15b4:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+    15b8:	81 30       	cpi	r24, 0x01	; 1
+    15ba:	b1 f7       	brne	.-20     	; 0x15a8 <main+0x8>
+		{
+			Stop();
+    15bc:	0e 94 6f 09 	call	0x12de	; 0x12de <Stop>
+			while (FLAG == OBJ_DETECTED)
+    15c0:	04 c0       	rjmp	.+8      	; 0x15ca <main+0x2a>
+			{
+				Scan();
+    15c2:	0e 94 ae 06 	call	0xd5c	; 0xd5c <Scan>
+				Steer();
+    15c6:	0e 94 63 0b 	call	0x16c6	; 0x16c6 <Steer>
+			Forward();
+		}
+		if (FLAG == OBJ_DETECTED)
+		{
+			Stop();
+			while (FLAG == OBJ_DETECTED)
+    15ca:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+    15ce:	81 30       	cpi	r24, 0x01	; 1
+    15d0:	c1 f3       	breq	.-16     	; 0x15c2 <main+0x22>
+    15d2:	ea cf       	rjmp	.-44     	; 0x15a8 <main+0x8>
+
+Disassembly of section .text.MADC_voidGetCurrentActiveCh:
+
+000017f8 <MADC_voidGetCurrentActiveCh>:
+	MADC_enumGlobalCurrentChannel = *pstructCpy_ADCObj;
+}
+
+MADC MADC_voidGetCurrentActiveCh(void)
+{
+	return MADC_enumGlobalCurrentChannel;
+    17f8:	2a e0       	ldi	r18, 0x0A	; 10
+    17fa:	e4 eb       	ldi	r30, 0xB4	; 180
+    17fc:	f0 e0       	ldi	r31, 0x00	; 0
+    17fe:	dc 01       	movw	r26, r24
+    1800:	01 90       	ld	r0, Z+
+    1802:	0d 92       	st	X+, r0
+    1804:	2a 95       	dec	r18
+    1806:	e1 f7       	brne	.-8      	; 0x1800 <MADC_voidGetCurrentActiveCh+0x8>
+}
+    1808:	08 95       	ret
+
+Disassembly of section .text.__vector_16:
+
+00000800 <__vector_16>:
+
+static MADC MADC_enumGlobalCurrentChannel;
+
+static void MADC_voidSetCurrentActiveCh(MADC* pstructCpy_ADCObj)
+{
+	MADC_enumGlobalCurrentChannel = *pstructCpy_ADCObj;
+ 800:	1f 92       	push	r1
+ 802:	0f 92       	push	r0
+ 804:	0f b6       	in	r0, 0x3f	; 63
+ 806:	0f 92       	push	r0
+ 808:	11 24       	eor	r1, r1
+ 80a:	2f 93       	push	r18
+ 80c:	3f 93       	push	r19
+ 80e:	4f 93       	push	r20
+ 810:	5f 93       	push	r21
+ 812:	6f 93       	push	r22
+ 814:	7f 93       	push	r23
+ 816:	8f 93       	push	r24
+ 818:	9f 93       	push	r25
+ 81a:	af 93       	push	r26
+ 81c:	bf 93       	push	r27
+ 81e:	ef 93       	push	r30
+ 820:	ff 93       	push	r31
+ 822:	cf 93       	push	r28
+ 824:	df 93       	push	r29
+ 826:	cd b7       	in	r28, 0x3d	; 61
+ 828:	de b7       	in	r29, 0x3e	; 62
+ 82a:	2a 97       	sbiw	r28, 0x0a	; 10
+ 82c:	de bf       	out	0x3e, r29	; 62
+ 82e:	cd bf       	out	0x3d, r28	; 61
+ 830:	ce 01       	movw	r24, r28
+ 832:	01 96       	adiw	r24, 0x01	; 1
+ 834:	0e 94 fc 0b 	call	0x17f8	; 0x17f8 <MADC_voidGetCurrentActiveCh>
+ 838:	8a 81       	ldd	r24, Y+2	; 0x02
+ 83a:	81 11       	cpse	r24, r1
+ 83c:	05 c0       	rjmp	.+10     	; 0x848 <__vector_16+0x48>
+ 83e:	85 b1       	in	r24, 0x05	; 5
+ 840:	90 e0       	ldi	r25, 0x00	; 0
+ 842:	4f ef       	ldi	r20, 0xFF	; 255
+ 844:	50 e0       	ldi	r21, 0x00	; 0
+ 846:	0b c0       	rjmp	.+22     	; 0x85e <__vector_16+0x5e>
+ 848:	81 30       	cpi	r24, 0x01	; 1
+ 84a:	29 f4       	brne	.+10     	; 0x856 <__vector_16+0x56>
+ 84c:	84 b1       	in	r24, 0x04	; 4
+ 84e:	95 b1       	in	r25, 0x05	; 5
+ 850:	4f ef       	ldi	r20, 0xFF	; 255
+ 852:	53 e0       	ldi	r21, 0x03	; 3
+ 854:	04 c0       	rjmp	.+8      	; 0x85e <__vector_16+0x5e>
+ 856:	40 e0       	ldi	r20, 0x00	; 0
+ 858:	50 e0       	ldi	r21, 0x00	; 0
+ 85a:	80 e0       	ldi	r24, 0x00	; 0
+ 85c:	90 e0       	ldi	r25, 0x00	; 0
+ 85e:	2a 85       	ldd	r18, Y+10	; 0x0a
+ 860:	21 30       	cpi	r18, 0x01	; 1
+ 862:	31 f4       	brne	.+12     	; 0x870 <__stack+0x11>
+ 864:	e0 91 dc 00 	lds	r30, 0x00DC	; 0x8000dc <ADCINT_CallBack>
+ 868:	f0 91 dd 00 	lds	r31, 0x00DD	; 0x8000dd <ADCINT_CallBack+0x1>
+ 86c:	09 95       	icall
+ 86e:	39 c0       	rjmp	.+114    	; 0x8e2 <__stack+0x83>
+ 870:	21 11       	cpse	r18, r1
+ 872:	37 c0       	rjmp	.+110    	; 0x8e2 <__stack+0x83>
+ 874:	2b 81       	ldd	r18, Y+3	; 0x03
+ 876:	21 30       	cpi	r18, 0x01	; 1
+ 878:	21 f0       	breq	.+8      	; 0x882 <__stack+0x23>
+ 87a:	d8 f0       	brcs	.+54     	; 0x8b2 <__stack+0x53>
+ 87c:	22 30       	cpi	r18, 0x02	; 2
+ 87e:	69 f0       	breq	.+26     	; 0x89a <__stack+0x3b>
+ 880:	2b c0       	rjmp	.+86     	; 0x8d8 <__stack+0x79>
+ 882:	bc 01       	movw	r22, r24
+ 884:	66 0f       	add	r22, r22
+ 886:	77 1f       	adc	r23, r23
+ 888:	66 0f       	add	r22, r22
+ 88a:	77 1f       	adc	r23, r23
+ 88c:	86 0f       	add	r24, r22
+ 88e:	97 1f       	adc	r25, r23
+ 890:	ba 01       	movw	r22, r20
+ 892:	0e 94 b4 0b 	call	0x1768	; 0x1768 <__udivmodhi4>
+ 896:	cb 01       	movw	r24, r22
+ 898:	1f c0       	rjmp	.+62     	; 0x8d8 <__stack+0x79>
+ 89a:	98 2f       	mov	r25, r24
+ 89c:	84 e6       	ldi	r24, 0x64	; 100
+ 89e:	84 9f       	mul	r24, r20
+ 8a0:	b0 01       	movw	r22, r0
+ 8a2:	85 9f       	mul	r24, r21
+ 8a4:	70 0d       	add	r23, r0
+ 8a6:	11 24       	eor	r1, r1
+ 8a8:	80 e0       	ldi	r24, 0x00	; 0
+ 8aa:	0e 94 b4 0b 	call	0x1768	; 0x1768 <__udivmodhi4>
+ 8ae:	cb 01       	movw	r24, r22
+ 8b0:	13 c0       	rjmp	.+38     	; 0x8d8 <__stack+0x79>
+ 8b2:	6c 81       	ldd	r22, Y+4	; 0x04
+ 8b4:	7d 81       	ldd	r23, Y+5	; 0x05
+ 8b6:	86 9f       	mul	r24, r22
+ 8b8:	90 01       	movw	r18, r0
+ 8ba:	87 9f       	mul	r24, r23
+ 8bc:	30 0d       	add	r19, r0
+ 8be:	96 9f       	mul	r25, r22
+ 8c0:	30 0d       	add	r19, r0
+ 8c2:	11 24       	eor	r1, r1
+ 8c4:	84 e6       	ldi	r24, 0x64	; 100
+ 8c6:	84 9f       	mul	r24, r20
+ 8c8:	b0 01       	movw	r22, r0
+ 8ca:	85 9f       	mul	r24, r21
+ 8cc:	70 0d       	add	r23, r0
+ 8ce:	11 24       	eor	r1, r1
+ 8d0:	c9 01       	movw	r24, r18
+ 8d2:	0e 94 b4 0b 	call	0x1768	; 0x1768 <__udivmodhi4>
+ 8d6:	cb 01       	movw	r24, r22
+ 8d8:	e0 91 dc 00 	lds	r30, 0x00DC	; 0x8000dc <ADCINT_CallBack>
+ 8dc:	f0 91 dd 00 	lds	r31, 0x00DD	; 0x8000dd <ADCINT_CallBack+0x1>
+ 8e0:	09 95       	icall
+ 8e2:	2a 96       	adiw	r28, 0x0a	; 10
+ 8e4:	0f b6       	in	r0, 0x3f	; 63
+ 8e6:	f8 94       	cli
+ 8e8:	de bf       	out	0x3e, r29	; 62
+ 8ea:	0f be       	out	0x3f, r0	; 63
+ 8ec:	cd bf       	out	0x3d, r28	; 61
+ 8ee:	df 91       	pop	r29
+ 8f0:	cf 91       	pop	r28
+ 8f2:	ff 91       	pop	r31
+ 8f4:	ef 91       	pop	r30
+ 8f6:	bf 91       	pop	r27
+ 8f8:	af 91       	pop	r26
+ 8fa:	9f 91       	pop	r25
+ 8fc:	8f 91       	pop	r24
+ 8fe:	7f 91       	pop	r23
+ 900:	6f 91       	pop	r22
+ 902:	5f 91       	pop	r21
+ 904:	4f 91       	pop	r20
+ 906:	3f 91       	pop	r19
+ 908:	2f 91       	pop	r18
+ 90a:	0f 90       	pop	r0
+ 90c:	0f be       	out	0x3f, r0	; 63
+ 90e:	0f 90       	pop	r0
+ 910:	1f 90       	pop	r1
+ 912:	18 95       	reti
+
+Disassembly of section .text.MDIO_enumDIOInit:
+
+00001892 <MDIO_enumDIOInit>:
+#include "MDIO_interface.h"
+#include "MDIO_config.h"
+#include "MDIO_Registers.h"
+
+void MDIO_enumDIOInit(void)
+{
+    1892:	08 95       	ret
+
+Disassembly of section .text.MDIO_enumPinDirection:
+
+00000432 <MDIO_enumPinDirection>:
+	
+	return enumLocal_errState;	
+}
+
+tenumFncErrorState MDIO_enumPinDirection(MDIO_Pin* pstructCpy_pin)
+{
+ 432:	fc 01       	movw	r30, r24
+		tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+		
+		if(((pstructCpy_pin->enumPort >= MDIO_PORTA) && (pstructCpy_pin->enumPort <= MDIO_PORTD)) &&
+ 434:	91 81       	ldd	r25, Z+1	; 0x01
+ 436:	94 30       	cpi	r25, 0x04	; 4
+ 438:	08 f0       	brcs	.+2      	; 0x43c <MDIO_enumPinDirection+0xa>
+ 43a:	96 c0       	rjmp	.+300    	; 0x568 <MDIO_enumPinDirection+0x136>
+		   ((pstructCpy_pin->enumPin >= MDIO_PIN0) && (pstructCpy_pin->enumPin <= MDIO_PIN7)) &&
+ 43c:	80 81       	ld	r24, Z
+ 43e:	88 30       	cpi	r24, 0x08	; 8
+ 440:	08 f0       	brcs	.+2      	; 0x444 <MDIO_enumPinDirection+0x12>
+ 442:	94 c0       	rjmp	.+296    	; 0x56c <MDIO_enumPinDirection+0x13a>
+		   ((pstructCpy_pin->enumMode <= MDIO_Output) && (pstructCpy_pin->enumMode >= MDIO_Input)))
+		   {
+				switch(pstructCpy_pin->enumPort)
+ 444:	91 30       	cpi	r25, 0x01	; 1
+ 446:	51 f1       	breq	.+84     	; 0x49c <MDIO_enumPinDirection+0x6a>
+ 448:	38 f0       	brcs	.+14     	; 0x458 <MDIO_enumPinDirection+0x26>
+ 44a:	92 30       	cpi	r25, 0x02	; 2
+ 44c:	09 f4       	brne	.+2      	; 0x450 <MDIO_enumPinDirection+0x1e>
+ 44e:	48 c0       	rjmp	.+144    	; 0x4e0 <MDIO_enumPinDirection+0xae>
+ 450:	93 30       	cpi	r25, 0x03	; 3
+ 452:	09 f4       	brne	.+2      	; 0x456 <MDIO_enumPinDirection+0x24>
+ 454:	67 c0       	rjmp	.+206    	; 0x524 <MDIO_enumPinDirection+0xf2>
+ 456:	8c c0       	rjmp	.+280    	; 0x570 <MDIO_enumPinDirection+0x13e>
+				{
+					case MDIO_PORTA:
+						if(pstructCpy_pin->enumMode == MDIO_Output)
+ 458:	92 81       	ldd	r25, Z+2	; 0x02
+ 45a:	9f 3f       	cpi	r25, 0xFF	; 255
+ 45c:	71 f4       	brne	.+28     	; 0x47a <MDIO_enumPinDirection+0x48>
+							SET_BIT(MDIOA->DDR_R, pstructCpy_pin->enumPin);
+ 45e:	4a b3       	in	r20, 0x1a	; 26
+ 460:	21 e0       	ldi	r18, 0x01	; 1
+ 462:	30 e0       	ldi	r19, 0x00	; 0
+ 464:	b9 01       	movw	r22, r18
+ 466:	02 c0       	rjmp	.+4      	; 0x46c <MDIO_enumPinDirection+0x3a>
+ 468:	66 0f       	add	r22, r22
+ 46a:	77 1f       	adc	r23, r23
+ 46c:	8a 95       	dec	r24
+ 46e:	e2 f7       	brpl	.-8      	; 0x468 <MDIO_enumPinDirection+0x36>
+ 470:	cb 01       	movw	r24, r22
+ 472:	84 2b       	or	r24, r20
+ 474:	8a bb       	out	0x1a, r24	; 26
+	return enumLocal_errState;	
+}
+
+tenumFncErrorState MDIO_enumPinDirection(MDIO_Pin* pstructCpy_pin)
+{
+		tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+ 476:	80 e0       	ldi	r24, 0x00	; 0
+ 478:	08 95       	ret
+				switch(pstructCpy_pin->enumPort)
+				{
+					case MDIO_PORTA:
+						if(pstructCpy_pin->enumMode == MDIO_Output)
+							SET_BIT(MDIOA->DDR_R, pstructCpy_pin->enumPin);
+						else if(pstructCpy_pin->enumMode == MDIO_Input)
+ 47a:	91 11       	cpse	r25, r1
+ 47c:	7b c0       	rjmp	.+246    	; 0x574 <MDIO_enumPinDirection+0x142>
+							CLR_BIT(MDIOA->DDR_R, pstructCpy_pin->enumPin);
+ 47e:	4a b3       	in	r20, 0x1a	; 26
+ 480:	21 e0       	ldi	r18, 0x01	; 1
+ 482:	30 e0       	ldi	r19, 0x00	; 0
+ 484:	b9 01       	movw	r22, r18
+ 486:	02 c0       	rjmp	.+4      	; 0x48c <MDIO_enumPinDirection+0x5a>
+ 488:	66 0f       	add	r22, r22
+ 48a:	77 1f       	adc	r23, r23
+ 48c:	8a 95       	dec	r24
+ 48e:	e2 f7       	brpl	.-8      	; 0x488 <MDIO_enumPinDirection+0x56>
+ 490:	cb 01       	movw	r24, r22
+ 492:	80 95       	com	r24
+ 494:	84 23       	and	r24, r20
+ 496:	8a bb       	out	0x1a, r24	; 26
+	return enumLocal_errState;	
+}
+
+tenumFncErrorState MDIO_enumPinDirection(MDIO_Pin* pstructCpy_pin)
+{
+		tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+ 498:	80 e0       	ldi	r24, 0x00	; 0
+ 49a:	08 95       	ret
+						else if(pstructCpy_pin->enumMode == MDIO_Input)
+							CLR_BIT(MDIOA->DDR_R, pstructCpy_pin->enumPin);
+						break;
+				
+					case MDIO_PORTB:
+						if(pstructCpy_pin->enumMode == MDIO_Output)
+ 49c:	92 81       	ldd	r25, Z+2	; 0x02
+ 49e:	9f 3f       	cpi	r25, 0xFF	; 255
+ 4a0:	71 f4       	brne	.+28     	; 0x4be <MDIO_enumPinDirection+0x8c>
+							SET_BIT(MDIOB->DDR_R, pstructCpy_pin->enumPin);
+ 4a2:	47 b3       	in	r20, 0x17	; 23
+ 4a4:	21 e0       	ldi	r18, 0x01	; 1
+ 4a6:	30 e0       	ldi	r19, 0x00	; 0
+ 4a8:	b9 01       	movw	r22, r18
+ 4aa:	02 c0       	rjmp	.+4      	; 0x4b0 <MDIO_enumPinDirection+0x7e>
+ 4ac:	66 0f       	add	r22, r22
+ 4ae:	77 1f       	adc	r23, r23
+ 4b0:	8a 95       	dec	r24
+ 4b2:	e2 f7       	brpl	.-8      	; 0x4ac <MDIO_enumPinDirection+0x7a>
+ 4b4:	cb 01       	movw	r24, r22
+ 4b6:	84 2b       	or	r24, r20
+ 4b8:	87 bb       	out	0x17, r24	; 23
+	return enumLocal_errState;	
+}
+
+tenumFncErrorState MDIO_enumPinDirection(MDIO_Pin* pstructCpy_pin)
+{
+		tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+ 4ba:	80 e0       	ldi	r24, 0x00	; 0
+ 4bc:	08 95       	ret
+						break;
+				
+					case MDIO_PORTB:
+						if(pstructCpy_pin->enumMode == MDIO_Output)
+							SET_BIT(MDIOB->DDR_R, pstructCpy_pin->enumPin);
+						else if(pstructCpy_pin->enumMode == MDIO_Input)
+ 4be:	91 11       	cpse	r25, r1
+ 4c0:	5b c0       	rjmp	.+182    	; 0x578 <MDIO_enumPinDirection+0x146>
+							CLR_BIT(MDIOB->DDR_R, pstructCpy_pin->enumPin);
+ 4c2:	47 b3       	in	r20, 0x17	; 23
+ 4c4:	21 e0       	ldi	r18, 0x01	; 1
+ 4c6:	30 e0       	ldi	r19, 0x00	; 0
+ 4c8:	b9 01       	movw	r22, r18
+ 4ca:	02 c0       	rjmp	.+4      	; 0x4d0 <MDIO_enumPinDirection+0x9e>
+ 4cc:	66 0f       	add	r22, r22
+ 4ce:	77 1f       	adc	r23, r23
+ 4d0:	8a 95       	dec	r24
+ 4d2:	e2 f7       	brpl	.-8      	; 0x4cc <MDIO_enumPinDirection+0x9a>
+ 4d4:	cb 01       	movw	r24, r22
+ 4d6:	80 95       	com	r24
+ 4d8:	84 23       	and	r24, r20
+ 4da:	87 bb       	out	0x17, r24	; 23
+	return enumLocal_errState;	
+}
+
+tenumFncErrorState MDIO_enumPinDirection(MDIO_Pin* pstructCpy_pin)
+{
+		tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+ 4dc:	80 e0       	ldi	r24, 0x00	; 0
+ 4de:	08 95       	ret
+						else if(pstructCpy_pin->enumMode == MDIO_Input)
+							CLR_BIT(MDIOB->DDR_R, pstructCpy_pin->enumPin);
+						break;
+				
+				case MDIO_PORTC:
+						if(pstructCpy_pin->enumMode == MDIO_Output)
+ 4e0:	92 81       	ldd	r25, Z+2	; 0x02
+ 4e2:	9f 3f       	cpi	r25, 0xFF	; 255
+ 4e4:	71 f4       	brne	.+28     	; 0x502 <MDIO_enumPinDirection+0xd0>
+							SET_BIT(MDIOC->DDR_R, pstructCpy_pin->enumPin);
+ 4e6:	44 b3       	in	r20, 0x14	; 20
+ 4e8:	21 e0       	ldi	r18, 0x01	; 1
+ 4ea:	30 e0       	ldi	r19, 0x00	; 0
+ 4ec:	b9 01       	movw	r22, r18
+ 4ee:	02 c0       	rjmp	.+4      	; 0x4f4 <MDIO_enumPinDirection+0xc2>
+ 4f0:	66 0f       	add	r22, r22
+ 4f2:	77 1f       	adc	r23, r23
+ 4f4:	8a 95       	dec	r24
+ 4f6:	e2 f7       	brpl	.-8      	; 0x4f0 <MDIO_enumPinDirection+0xbe>
+ 4f8:	cb 01       	movw	r24, r22
+ 4fa:	84 2b       	or	r24, r20
+ 4fc:	84 bb       	out	0x14, r24	; 20
+	return enumLocal_errState;	
+}
+
+tenumFncErrorState MDIO_enumPinDirection(MDIO_Pin* pstructCpy_pin)
+{
+		tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+ 4fe:	80 e0       	ldi	r24, 0x00	; 0
+ 500:	08 95       	ret
+						break;
+				
+				case MDIO_PORTC:
+						if(pstructCpy_pin->enumMode == MDIO_Output)
+							SET_BIT(MDIOC->DDR_R, pstructCpy_pin->enumPin);
+						else if(pstructCpy_pin->enumMode == MDIO_Input)
+ 502:	91 11       	cpse	r25, r1
+ 504:	3b c0       	rjmp	.+118    	; 0x57c <MDIO_enumPinDirection+0x14a>
+							CLR_BIT(MDIOC->DDR_R, pstructCpy_pin->enumPin);
+ 506:	44 b3       	in	r20, 0x14	; 20
+ 508:	21 e0       	ldi	r18, 0x01	; 1
+ 50a:	30 e0       	ldi	r19, 0x00	; 0
+ 50c:	b9 01       	movw	r22, r18
+ 50e:	02 c0       	rjmp	.+4      	; 0x514 <MDIO_enumPinDirection+0xe2>
+ 510:	66 0f       	add	r22, r22
+ 512:	77 1f       	adc	r23, r23
+ 514:	8a 95       	dec	r24
+ 516:	e2 f7       	brpl	.-8      	; 0x510 <MDIO_enumPinDirection+0xde>
+ 518:	cb 01       	movw	r24, r22
+ 51a:	80 95       	com	r24
+ 51c:	84 23       	and	r24, r20
+ 51e:	84 bb       	out	0x14, r24	; 20
+	return enumLocal_errState;	
+}
+
+tenumFncErrorState MDIO_enumPinDirection(MDIO_Pin* pstructCpy_pin)
+{
+		tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+ 520:	80 e0       	ldi	r24, 0x00	; 0
+ 522:	08 95       	ret
+						else if(pstructCpy_pin->enumMode == MDIO_Input)
+							CLR_BIT(MDIOC->DDR_R, pstructCpy_pin->enumPin);
+						break;
+				
+				case MDIO_PORTD:
+						if(pstructCpy_pin->enumMode == MDIO_Output)
+ 524:	92 81       	ldd	r25, Z+2	; 0x02
+ 526:	9f 3f       	cpi	r25, 0xFF	; 255
+ 528:	71 f4       	brne	.+28     	; 0x546 <MDIO_enumPinDirection+0x114>
+							SET_BIT(MDIOD->DDR_R, pstructCpy_pin->enumPin);
+ 52a:	41 b3       	in	r20, 0x11	; 17
+ 52c:	21 e0       	ldi	r18, 0x01	; 1
+ 52e:	30 e0       	ldi	r19, 0x00	; 0
+ 530:	b9 01       	movw	r22, r18
+ 532:	02 c0       	rjmp	.+4      	; 0x538 <MDIO_enumPinDirection+0x106>
+ 534:	66 0f       	add	r22, r22
+ 536:	77 1f       	adc	r23, r23
+ 538:	8a 95       	dec	r24
+ 53a:	e2 f7       	brpl	.-8      	; 0x534 <MDIO_enumPinDirection+0x102>
+ 53c:	cb 01       	movw	r24, r22
+ 53e:	84 2b       	or	r24, r20
+ 540:	81 bb       	out	0x11, r24	; 17
+	return enumLocal_errState;	
+}
+
+tenumFncErrorState MDIO_enumPinDirection(MDIO_Pin* pstructCpy_pin)
+{
+		tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+ 542:	80 e0       	ldi	r24, 0x00	; 0
+ 544:	08 95       	ret
+						break;
+				
+				case MDIO_PORTD:
+						if(pstructCpy_pin->enumMode == MDIO_Output)
+							SET_BIT(MDIOD->DDR_R, pstructCpy_pin->enumPin);
+						else if(pstructCpy_pin->enumMode == MDIO_Input)
+ 546:	91 11       	cpse	r25, r1
+ 548:	1b c0       	rjmp	.+54     	; 0x580 <MDIO_enumPinDirection+0x14e>
+							CLR_BIT(MDIOD->DDR_R, pstructCpy_pin->enumPin);
+ 54a:	41 b3       	in	r20, 0x11	; 17
+ 54c:	21 e0       	ldi	r18, 0x01	; 1
+ 54e:	30 e0       	ldi	r19, 0x00	; 0
+ 550:	b9 01       	movw	r22, r18
+ 552:	02 c0       	rjmp	.+4      	; 0x558 <MDIO_enumPinDirection+0x126>
+ 554:	66 0f       	add	r22, r22
+ 556:	77 1f       	adc	r23, r23
+ 558:	8a 95       	dec	r24
+ 55a:	e2 f7       	brpl	.-8      	; 0x554 <MDIO_enumPinDirection+0x122>
+ 55c:	cb 01       	movw	r24, r22
+ 55e:	80 95       	com	r24
+ 560:	84 23       	and	r24, r20
+ 562:	81 bb       	out	0x11, r24	; 17
+	return enumLocal_errState;	
+}
+
+tenumFncErrorState MDIO_enumPinDirection(MDIO_Pin* pstructCpy_pin)
+{
+		tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+ 564:	80 e0       	ldi	r24, 0x00	; 0
+ 566:	08 95       	ret
+						break;
+				}
+		   }
+		 else
+		{
+			enumLocal_errState = LSTY_OUT_OF_RANGE;
+ 568:	81 e0       	ldi	r24, 0x01	; 1
+ 56a:	08 95       	ret
+ 56c:	81 e0       	ldi	r24, 0x01	; 1
+ 56e:	08 95       	ret
+	return enumLocal_errState;	
+}
+
+tenumFncErrorState MDIO_enumPinDirection(MDIO_Pin* pstructCpy_pin)
+{
+		tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+ 570:	80 e0       	ldi	r24, 0x00	; 0
+ 572:	08 95       	ret
+ 574:	80 e0       	ldi	r24, 0x00	; 0
+ 576:	08 95       	ret
+ 578:	80 e0       	ldi	r24, 0x00	; 0
+ 57a:	08 95       	ret
+ 57c:	80 e0       	ldi	r24, 0x00	; 0
+ 57e:	08 95       	ret
+ 580:	80 e0       	ldi	r24, 0x00	; 0
+			enumLocal_errState = LSTY_OUT_OF_RANGE;
+		}
+
+		
+		return enumLocal_errState;
+}
+ 582:	08 95       	ret
+
+Disassembly of section .text.MDIO_enumPinValue:
+
+000006ce <MDIO_enumPinValue>:
+
+tenumFncErrorState MDIO_enumPinValue(MDIO_Pin* pstructCpy_pin)
+{
+ 6ce:	fc 01       	movw	r30, r24
+		tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+		
+		if(((pstructCpy_pin->enumPort >= MDIO_PORTA) && (pstructCpy_pin->enumPort <= MDIO_PORTD)) &&
+ 6d0:	91 81       	ldd	r25, Z+1	; 0x01
+ 6d2:	94 30       	cpi	r25, 0x04	; 4
+ 6d4:	08 f0       	brcs	.+2      	; 0x6d8 <MDIO_enumPinValue+0xa>
+ 6d6:	8e c0       	rjmp	.+284    	; 0x7f4 <MDIO_enumPinValue+0x126>
+		   ((pstructCpy_pin->enumPin >= MDIO_PIN0) && (pstructCpy_pin->enumPin <= MDIO_PIN7)) &&
+ 6d8:	80 81       	ld	r24, Z
+ 6da:	88 30       	cpi	r24, 0x08	; 8
+ 6dc:	08 f0       	brcs	.+2      	; 0x6e0 <MDIO_enumPinValue+0x12>
+ 6de:	8c c0       	rjmp	.+280    	; 0x7f8 <MDIO_enumPinValue+0x12a>
+		   ((pstructCpy_pin->enumOutputLevel <= MDIO_High) && (pstructCpy_pin->enumOutputLevel >= MDIO_Low)))
+		   {
+				switch(pstructCpy_pin->enumPort)
+ 6e0:	91 30       	cpi	r25, 0x01	; 1
+ 6e2:	41 f1       	breq	.+80     	; 0x734 <MDIO_enumPinValue+0x66>
+ 6e4:	38 f0       	brcs	.+14     	; 0x6f4 <MDIO_enumPinValue+0x26>
+ 6e6:	92 30       	cpi	r25, 0x02	; 2
+ 6e8:	09 f4       	brne	.+2      	; 0x6ec <MDIO_enumPinValue+0x1e>
+ 6ea:	44 c0       	rjmp	.+136    	; 0x774 <MDIO_enumPinValue+0xa6>
+ 6ec:	93 30       	cpi	r25, 0x03	; 3
+ 6ee:	09 f4       	brne	.+2      	; 0x6f2 <MDIO_enumPinValue+0x24>
+ 6f0:	61 c0       	rjmp	.+194    	; 0x7b4 <MDIO_enumPinValue+0xe6>
+ 6f2:	84 c0       	rjmp	.+264    	; 0x7fc <MDIO_enumPinValue+0x12e>
+				{
+					case MDIO_PORTA:
+						if(pstructCpy_pin->enumOutputLevel == MDIO_Low)
+ 6f4:	93 81       	ldd	r25, Z+3	; 0x03
+ 6f6:	91 11       	cpse	r25, r1
+ 6f8:	0f c0       	rjmp	.+30     	; 0x718 <MDIO_enumPinValue+0x4a>
+							CLR_BIT(MDIOA->PORT_R, pstructCpy_pin->enumPin);
+ 6fa:	4b b3       	in	r20, 0x1b	; 27
+ 6fc:	21 e0       	ldi	r18, 0x01	; 1
+ 6fe:	30 e0       	ldi	r19, 0x00	; 0
+ 700:	b9 01       	movw	r22, r18
+ 702:	02 c0       	rjmp	.+4      	; 0x708 <MDIO_enumPinValue+0x3a>
+ 704:	66 0f       	add	r22, r22
+ 706:	77 1f       	adc	r23, r23
+ 708:	8a 95       	dec	r24
+ 70a:	e2 f7       	brpl	.-8      	; 0x704 <MDIO_enumPinValue+0x36>
+ 70c:	cb 01       	movw	r24, r22
+ 70e:	80 95       	com	r24
+ 710:	84 23       	and	r24, r20
+ 712:	8b bb       	out	0x1b, r24	; 27
+		return enumLocal_errState;
+}
+
+tenumFncErrorState MDIO_enumPinValue(MDIO_Pin* pstructCpy_pin)
+{
+		tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+ 714:	80 e0       	ldi	r24, 0x00	; 0
+ 716:	08 95       	ret
+				{
+					case MDIO_PORTA:
+						if(pstructCpy_pin->enumOutputLevel == MDIO_Low)
+							CLR_BIT(MDIOA->PORT_R, pstructCpy_pin->enumPin);
+						else 
+							SET_BIT(MDIOA->PORT_R, pstructCpy_pin->enumPin);
+ 718:	4b b3       	in	r20, 0x1b	; 27
+ 71a:	21 e0       	ldi	r18, 0x01	; 1
+ 71c:	30 e0       	ldi	r19, 0x00	; 0
+ 71e:	b9 01       	movw	r22, r18
+ 720:	02 c0       	rjmp	.+4      	; 0x726 <MDIO_enumPinValue+0x58>
+ 722:	66 0f       	add	r22, r22
+ 724:	77 1f       	adc	r23, r23
+ 726:	8a 95       	dec	r24
+ 728:	e2 f7       	brpl	.-8      	; 0x722 <MDIO_enumPinValue+0x54>
+ 72a:	cb 01       	movw	r24, r22
+ 72c:	84 2b       	or	r24, r20
+ 72e:	8b bb       	out	0x1b, r24	; 27
+		return enumLocal_errState;
+}
+
+tenumFncErrorState MDIO_enumPinValue(MDIO_Pin* pstructCpy_pin)
+{
+		tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+ 730:	80 e0       	ldi	r24, 0x00	; 0
+ 732:	08 95       	ret
+						else 
+							SET_BIT(MDIOA->PORT_R, pstructCpy_pin->enumPin);
+						break;
+				
+					case MDIO_PORTB:
+						if(pstructCpy_pin->enumOutputLevel == MDIO_Low)
+ 734:	93 81       	ldd	r25, Z+3	; 0x03
+ 736:	91 11       	cpse	r25, r1
+ 738:	0f c0       	rjmp	.+30     	; 0x758 <MDIO_enumPinValue+0x8a>
+							CLR_BIT(MDIOB->PORT_R, pstructCpy_pin->enumPin);
+ 73a:	48 b3       	in	r20, 0x18	; 24
+ 73c:	21 e0       	ldi	r18, 0x01	; 1
+ 73e:	30 e0       	ldi	r19, 0x00	; 0
+ 740:	b9 01       	movw	r22, r18
+ 742:	02 c0       	rjmp	.+4      	; 0x748 <MDIO_enumPinValue+0x7a>
+ 744:	66 0f       	add	r22, r22
+ 746:	77 1f       	adc	r23, r23
+ 748:	8a 95       	dec	r24
+ 74a:	e2 f7       	brpl	.-8      	; 0x744 <MDIO_enumPinValue+0x76>
+ 74c:	cb 01       	movw	r24, r22
+ 74e:	80 95       	com	r24
+ 750:	84 23       	and	r24, r20
+ 752:	88 bb       	out	0x18, r24	; 24
+		return enumLocal_errState;
+}
+
+tenumFncErrorState MDIO_enumPinValue(MDIO_Pin* pstructCpy_pin)
+{
+		tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+ 754:	80 e0       	ldi	r24, 0x00	; 0
+ 756:	08 95       	ret
+				
+					case MDIO_PORTB:
+						if(pstructCpy_pin->enumOutputLevel == MDIO_Low)
+							CLR_BIT(MDIOB->PORT_R, pstructCpy_pin->enumPin);
+						else 
+							SET_BIT(MDIOB->PORT_R, pstructCpy_pin->enumPin);
+ 758:	48 b3       	in	r20, 0x18	; 24
+ 75a:	21 e0       	ldi	r18, 0x01	; 1
+ 75c:	30 e0       	ldi	r19, 0x00	; 0
+ 75e:	b9 01       	movw	r22, r18
+ 760:	02 c0       	rjmp	.+4      	; 0x766 <MDIO_enumPinValue+0x98>
+ 762:	66 0f       	add	r22, r22
+ 764:	77 1f       	adc	r23, r23
+ 766:	8a 95       	dec	r24
+ 768:	e2 f7       	brpl	.-8      	; 0x762 <MDIO_enumPinValue+0x94>
+ 76a:	cb 01       	movw	r24, r22
+ 76c:	84 2b       	or	r24, r20
+ 76e:	88 bb       	out	0x18, r24	; 24
+		return enumLocal_errState;
+}
+
+tenumFncErrorState MDIO_enumPinValue(MDIO_Pin* pstructCpy_pin)
+{
+		tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+ 770:	80 e0       	ldi	r24, 0x00	; 0
+ 772:	08 95       	ret
+						else 
+							SET_BIT(MDIOB->PORT_R, pstructCpy_pin->enumPin);
+						break;
+				
+				case MDIO_PORTC:
+						if(pstructCpy_pin->enumOutputLevel == MDIO_Low)
+ 774:	93 81       	ldd	r25, Z+3	; 0x03
+ 776:	91 11       	cpse	r25, r1
+ 778:	0f c0       	rjmp	.+30     	; 0x798 <MDIO_enumPinValue+0xca>
+							CLR_BIT(MDIOC->PORT_R, pstructCpy_pin->enumPin);
+ 77a:	45 b3       	in	r20, 0x15	; 21
+ 77c:	21 e0       	ldi	r18, 0x01	; 1
+ 77e:	30 e0       	ldi	r19, 0x00	; 0
+ 780:	b9 01       	movw	r22, r18
+ 782:	02 c0       	rjmp	.+4      	; 0x788 <MDIO_enumPinValue+0xba>
+ 784:	66 0f       	add	r22, r22
+ 786:	77 1f       	adc	r23, r23
+ 788:	8a 95       	dec	r24
+ 78a:	e2 f7       	brpl	.-8      	; 0x784 <MDIO_enumPinValue+0xb6>
+ 78c:	cb 01       	movw	r24, r22
+ 78e:	80 95       	com	r24
+ 790:	84 23       	and	r24, r20
+ 792:	85 bb       	out	0x15, r24	; 21
+		return enumLocal_errState;
+}
+
+tenumFncErrorState MDIO_enumPinValue(MDIO_Pin* pstructCpy_pin)
+{
+		tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+ 794:	80 e0       	ldi	r24, 0x00	; 0
+ 796:	08 95       	ret
+				
+				case MDIO_PORTC:
+						if(pstructCpy_pin->enumOutputLevel == MDIO_Low)
+							CLR_BIT(MDIOC->PORT_R, pstructCpy_pin->enumPin);
+						else 
+							SET_BIT(MDIOC->PORT_R, pstructCpy_pin->enumPin);
+ 798:	45 b3       	in	r20, 0x15	; 21
+ 79a:	21 e0       	ldi	r18, 0x01	; 1
+ 79c:	30 e0       	ldi	r19, 0x00	; 0
+ 79e:	b9 01       	movw	r22, r18
+ 7a0:	02 c0       	rjmp	.+4      	; 0x7a6 <MDIO_enumPinValue+0xd8>
+ 7a2:	66 0f       	add	r22, r22
+ 7a4:	77 1f       	adc	r23, r23
+ 7a6:	8a 95       	dec	r24
+ 7a8:	e2 f7       	brpl	.-8      	; 0x7a2 <MDIO_enumPinValue+0xd4>
+ 7aa:	cb 01       	movw	r24, r22
+ 7ac:	84 2b       	or	r24, r20
+ 7ae:	85 bb       	out	0x15, r24	; 21
+		return enumLocal_errState;
+}
+
+tenumFncErrorState MDIO_enumPinValue(MDIO_Pin* pstructCpy_pin)
+{
+		tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+ 7b0:	80 e0       	ldi	r24, 0x00	; 0
+ 7b2:	08 95       	ret
+						else 
+							SET_BIT(MDIOC->PORT_R, pstructCpy_pin->enumPin);
+						break;
+				
+				case MDIO_PORTD:
+						if(pstructCpy_pin->enumOutputLevel == MDIO_Low)
+ 7b4:	93 81       	ldd	r25, Z+3	; 0x03
+ 7b6:	91 11       	cpse	r25, r1
+ 7b8:	0f c0       	rjmp	.+30     	; 0x7d8 <MDIO_enumPinValue+0x10a>
+							CLR_BIT(MDIOD->PORT_R, pstructCpy_pin->enumPin);
+ 7ba:	42 b3       	in	r20, 0x12	; 18
+ 7bc:	21 e0       	ldi	r18, 0x01	; 1
+ 7be:	30 e0       	ldi	r19, 0x00	; 0
+ 7c0:	b9 01       	movw	r22, r18
+ 7c2:	02 c0       	rjmp	.+4      	; 0x7c8 <MDIO_enumPinValue+0xfa>
+ 7c4:	66 0f       	add	r22, r22
+ 7c6:	77 1f       	adc	r23, r23
+ 7c8:	8a 95       	dec	r24
+ 7ca:	e2 f7       	brpl	.-8      	; 0x7c4 <MDIO_enumPinValue+0xf6>
+ 7cc:	cb 01       	movw	r24, r22
+ 7ce:	80 95       	com	r24
+ 7d0:	84 23       	and	r24, r20
+ 7d2:	82 bb       	out	0x12, r24	; 18
+		return enumLocal_errState;
+}
+
+tenumFncErrorState MDIO_enumPinValue(MDIO_Pin* pstructCpy_pin)
+{
+		tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+ 7d4:	80 e0       	ldi	r24, 0x00	; 0
+ 7d6:	08 95       	ret
+				
+				case MDIO_PORTD:
+						if(pstructCpy_pin->enumOutputLevel == MDIO_Low)
+							CLR_BIT(MDIOD->PORT_R, pstructCpy_pin->enumPin);
+						else 
+							SET_BIT(MDIOD->PORT_R, pstructCpy_pin->enumPin);
+ 7d8:	42 b3       	in	r20, 0x12	; 18
+ 7da:	21 e0       	ldi	r18, 0x01	; 1
+ 7dc:	30 e0       	ldi	r19, 0x00	; 0
+ 7de:	b9 01       	movw	r22, r18
+ 7e0:	02 c0       	rjmp	.+4      	; 0x7e6 <MDIO_enumPinValue+0x118>
+ 7e2:	66 0f       	add	r22, r22
+ 7e4:	77 1f       	adc	r23, r23
+ 7e6:	8a 95       	dec	r24
+ 7e8:	e2 f7       	brpl	.-8      	; 0x7e2 <MDIO_enumPinValue+0x114>
+ 7ea:	cb 01       	movw	r24, r22
+ 7ec:	84 2b       	or	r24, r20
+ 7ee:	82 bb       	out	0x12, r24	; 18
+		return enumLocal_errState;
+}
+
+tenumFncErrorState MDIO_enumPinValue(MDIO_Pin* pstructCpy_pin)
+{
+		tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+ 7f0:	80 e0       	ldi	r24, 0x00	; 0
+ 7f2:	08 95       	ret
+						break;
+				}
+		   }
+		 else
+		{
+			enumLocal_errState = LSTY_OUT_OF_RANGE;
+ 7f4:	81 e0       	ldi	r24, 0x01	; 1
+ 7f6:	08 95       	ret
+ 7f8:	81 e0       	ldi	r24, 0x01	; 1
+ 7fa:	08 95       	ret
+		return enumLocal_errState;
+}
+
+tenumFncErrorState MDIO_enumPinValue(MDIO_Pin* pstructCpy_pin)
+{
+		tenumFncErrorState enumLocal_errState = LSTY_EXECUTED_SUCCESSFULLY;
+ 7fc:	80 e0       	ldi	r24, 0x00	; 0
+		{
+			enumLocal_errState = LSTY_OUT_OF_RANGE;
+		}
+		
+		return enumLocal_errState;
+}
+ 7fe:	08 95       	ret
+
+Disassembly of section .text.MINT_enuSetINTLevel:
+
+00000a08 <MINT_enuSetINTLevel>:
+			enuReturnFncState = LSTY_OUT_OF_RANGE;
+			break;
+	}
+	
+	return enuReturnFncState;
+}
+ a08:	00 97       	sbiw	r24, 0x00	; 0
+ a0a:	09 f4       	brne	.+2      	; 0xa0e <MINT_enuSetINTLevel+0x6>
+ a0c:	6c c0       	rjmp	.+216    	; 0xae6 <MINT_enuSetINTLevel+0xde>
+ a0e:	fc 01       	movw	r30, r24
+ a10:	20 81       	ld	r18, Z
+ a12:	21 11       	cpse	r18, r1
+ a14:	29 c0       	rjmp	.+82     	; 0xa68 <MINT_enuSetINTLevel+0x60>
+ a16:	81 81       	ldd	r24, Z+1	; 0x01
+ a18:	81 30       	cpi	r24, 0x01	; 1
+ a1a:	71 f0       	breq	.+28     	; 0xa38 <MINT_enuSetINTLevel+0x30>
+ a1c:	28 f0       	brcs	.+10     	; 0xa28 <MINT_enuSetINTLevel+0x20>
+ a1e:	82 30       	cpi	r24, 0x02	; 2
+ a20:	99 f0       	breq	.+38     	; 0xa48 <MINT_enuSetINTLevel+0x40>
+ a22:	83 30       	cpi	r24, 0x03	; 3
+ a24:	c9 f0       	breq	.+50     	; 0xa58 <MINT_enuSetINTLevel+0x50>
+ a26:	61 c0       	rjmp	.+194    	; 0xaea <MINT_enuSetINTLevel+0xe2>
+ a28:	85 b7       	in	r24, 0x35	; 53
+ a2a:	8e 7f       	andi	r24, 0xFE	; 254
+ a2c:	85 bf       	out	0x35, r24	; 53
+ a2e:	85 b7       	in	r24, 0x35	; 53
+ a30:	8d 7f       	andi	r24, 0xFD	; 253
+ a32:	85 bf       	out	0x35, r24	; 53
+ a34:	80 e0       	ldi	r24, 0x00	; 0
+ a36:	08 95       	ret
+ a38:	85 b7       	in	r24, 0x35	; 53
+ a3a:	81 60       	ori	r24, 0x01	; 1
+ a3c:	85 bf       	out	0x35, r24	; 53
+ a3e:	85 b7       	in	r24, 0x35	; 53
+ a40:	8d 7f       	andi	r24, 0xFD	; 253
+ a42:	85 bf       	out	0x35, r24	; 53
+ a44:	80 e0       	ldi	r24, 0x00	; 0
+ a46:	08 95       	ret
+ a48:	85 b7       	in	r24, 0x35	; 53
+ a4a:	8e 7f       	andi	r24, 0xFE	; 254
+ a4c:	85 bf       	out	0x35, r24	; 53
+ a4e:	85 b7       	in	r24, 0x35	; 53
+ a50:	82 60       	ori	r24, 0x02	; 2
+ a52:	85 bf       	out	0x35, r24	; 53
+ a54:	80 e0       	ldi	r24, 0x00	; 0
+ a56:	08 95       	ret
+ a58:	85 b7       	in	r24, 0x35	; 53
+ a5a:	81 60       	ori	r24, 0x01	; 1
+ a5c:	85 bf       	out	0x35, r24	; 53
+ a5e:	85 b7       	in	r24, 0x35	; 53
+ a60:	82 60       	ori	r24, 0x02	; 2
+ a62:	85 bf       	out	0x35, r24	; 53
+ a64:	80 e0       	ldi	r24, 0x00	; 0
+ a66:	08 95       	ret
+ a68:	21 30       	cpi	r18, 0x01	; 1
+ a6a:	51 f5       	brne	.+84     	; 0xac0 <MINT_enuSetINTLevel+0xb8>
+ a6c:	fc 01       	movw	r30, r24
+ a6e:	81 81       	ldd	r24, Z+1	; 0x01
+ a70:	81 30       	cpi	r24, 0x01	; 1
+ a72:	71 f0       	breq	.+28     	; 0xa90 <MINT_enuSetINTLevel+0x88>
+ a74:	28 f0       	brcs	.+10     	; 0xa80 <MINT_enuSetINTLevel+0x78>
+ a76:	82 30       	cpi	r24, 0x02	; 2
+ a78:	99 f0       	breq	.+38     	; 0xaa0 <MINT_enuSetINTLevel+0x98>
+ a7a:	83 30       	cpi	r24, 0x03	; 3
+ a7c:	c9 f0       	breq	.+50     	; 0xab0 <MINT_enuSetINTLevel+0xa8>
+ a7e:	37 c0       	rjmp	.+110    	; 0xaee <MINT_enuSetINTLevel+0xe6>
+ a80:	85 b7       	in	r24, 0x35	; 53
+ a82:	8b 7f       	andi	r24, 0xFB	; 251
+ a84:	85 bf       	out	0x35, r24	; 53
+ a86:	85 b7       	in	r24, 0x35	; 53
+ a88:	87 7f       	andi	r24, 0xF7	; 247
+ a8a:	85 bf       	out	0x35, r24	; 53
+ a8c:	80 e0       	ldi	r24, 0x00	; 0
+ a8e:	08 95       	ret
+ a90:	85 b7       	in	r24, 0x35	; 53
+ a92:	84 60       	ori	r24, 0x04	; 4
+ a94:	85 bf       	out	0x35, r24	; 53
+ a96:	85 b7       	in	r24, 0x35	; 53
+ a98:	87 7f       	andi	r24, 0xF7	; 247
+ a9a:	85 bf       	out	0x35, r24	; 53
+ a9c:	80 e0       	ldi	r24, 0x00	; 0
+ a9e:	08 95       	ret
+ aa0:	85 b7       	in	r24, 0x35	; 53
+ aa2:	8b 7f       	andi	r24, 0xFB	; 251
+ aa4:	85 bf       	out	0x35, r24	; 53
+ aa6:	85 b7       	in	r24, 0x35	; 53
+ aa8:	88 60       	ori	r24, 0x08	; 8
+ aaa:	85 bf       	out	0x35, r24	; 53
+ aac:	80 e0       	ldi	r24, 0x00	; 0
+ aae:	08 95       	ret
+ ab0:	85 b7       	in	r24, 0x35	; 53
+ ab2:	84 60       	ori	r24, 0x04	; 4
+ ab4:	85 bf       	out	0x35, r24	; 53
+ ab6:	85 b7       	in	r24, 0x35	; 53
+ ab8:	88 60       	ori	r24, 0x08	; 8
+ aba:	85 bf       	out	0x35, r24	; 53
+ abc:	80 e0       	ldi	r24, 0x00	; 0
+ abe:	08 95       	ret
+ ac0:	22 30       	cpi	r18, 0x02	; 2
+ ac2:	b9 f4       	brne	.+46     	; 0xaf2 <MINT_enuSetINTLevel+0xea>
+ ac4:	fc 01       	movw	r30, r24
+ ac6:	81 81       	ldd	r24, Z+1	; 0x01
+ ac8:	82 30       	cpi	r24, 0x02	; 2
+ aca:	19 f0       	breq	.+6      	; 0xad2 <MINT_enuSetINTLevel+0xca>
+ acc:	83 30       	cpi	r24, 0x03	; 3
+ ace:	31 f0       	breq	.+12     	; 0xadc <MINT_enuSetINTLevel+0xd4>
+ ad0:	12 c0       	rjmp	.+36     	; 0xaf6 <MINT_enuSetINTLevel+0xee>
+ ad2:	84 b7       	in	r24, 0x34	; 52
+ ad4:	8f 7b       	andi	r24, 0xBF	; 191
+ ad6:	84 bf       	out	0x34, r24	; 52
+ ad8:	80 e0       	ldi	r24, 0x00	; 0
+ ada:	08 95       	ret
+ adc:	84 b7       	in	r24, 0x34	; 52
+ ade:	80 64       	ori	r24, 0x40	; 64
+ ae0:	84 bf       	out	0x34, r24	; 52
+ ae2:	80 e0       	ldi	r24, 0x00	; 0
+ ae4:	08 95       	ret
+ ae6:	82 e0       	ldi	r24, 0x02	; 2
+ ae8:	08 95       	ret
+ aea:	81 e0       	ldi	r24, 0x01	; 1
+ aec:	08 95       	ret
+ aee:	81 e0       	ldi	r24, 0x01	; 1
+ af0:	08 95       	ret
+ af2:	81 e0       	ldi	r24, 0x01	; 1
+ af4:	08 95       	ret
+ af6:	81 e0       	ldi	r24, 0x01	; 1
+ af8:	08 95       	ret
+
+Disassembly of section .text.MINT_enuEnableINTHandler:
+
+00001608 <MINT_enuEnableINTHandler>:
+
+tenumFncErrorState MINT_enuEnableINTHandler(MINT* pstructCpy_INTObj)
+{
+	tenumFncErrorState enuReturnFncState = LSTY_EXECUTED_SUCCESSFULLY;
+
+	switch(pstructCpy_INTObj->enumObj_Num)
+    1608:	fc 01       	movw	r30, r24
+    160a:	80 81       	ld	r24, Z
+    160c:	81 30       	cpi	r24, 0x01	; 1
+    160e:	49 f0       	breq	.+18     	; 0x1622 <MINT_enuEnableINTHandler+0x1a>
+    1610:	18 f0       	brcs	.+6      	; 0x1618 <MINT_enuEnableINTHandler+0x10>
+    1612:	82 30       	cpi	r24, 0x02	; 2
+    1614:	59 f0       	breq	.+22     	; 0x162c <MINT_enuEnableINTHandler+0x24>
+    1616:	0f c0       	rjmp	.+30     	; 0x1636 <MINT_enuEnableINTHandler+0x2e>
+	{
+		case MINT_EXINT0 : SET_BIT(GICR,INT0); break; // Enable External Interrupt 0
+    1618:	8b b7       	in	r24, 0x3b	; 59
+    161a:	80 64       	ori	r24, 0x40	; 64
+    161c:	8b bf       	out	0x3b, r24	; 59
+	return enuReturnFncState;
+}
+
+tenumFncErrorState MINT_enuEnableINTHandler(MINT* pstructCpy_INTObj)
+{
+	tenumFncErrorState enuReturnFncState = LSTY_EXECUTED_SUCCESSFULLY;
+    161e:	80 e0       	ldi	r24, 0x00	; 0
+
+	switch(pstructCpy_INTObj->enumObj_Num)
+	{
+		case MINT_EXINT0 : SET_BIT(GICR,INT0); break; // Enable External Interrupt 0
+    1620:	08 95       	ret
+		case MINT_EXINT1 : SET_BIT(GICR,INT1); break; // Enable External Interrupt 1
+    1622:	8b b7       	in	r24, 0x3b	; 59
+    1624:	80 68       	ori	r24, 0x80	; 128
+    1626:	8b bf       	out	0x3b, r24	; 59
+	return enuReturnFncState;
+}
+
+tenumFncErrorState MINT_enuEnableINTHandler(MINT* pstructCpy_INTObj)
+{
+	tenumFncErrorState enuReturnFncState = LSTY_EXECUTED_SUCCESSFULLY;
+    1628:	80 e0       	ldi	r24, 0x00	; 0
+
+	switch(pstructCpy_INTObj->enumObj_Num)
+	{
+		case MINT_EXINT0 : SET_BIT(GICR,INT0); break; // Enable External Interrupt 0
+		case MINT_EXINT1 : SET_BIT(GICR,INT1); break; // Enable External Interrupt 1
+    162a:	08 95       	ret
+		case MINT_EXINT2 : SET_BIT(GICR,INT2); break; // Enable External Interrupt 2
+    162c:	8b b7       	in	r24, 0x3b	; 59
+    162e:	80 62       	ori	r24, 0x20	; 32
+    1630:	8b bf       	out	0x3b, r24	; 59
+	return enuReturnFncState;
+}
+
+tenumFncErrorState MINT_enuEnableINTHandler(MINT* pstructCpy_INTObj)
+{
+	tenumFncErrorState enuReturnFncState = LSTY_EXECUTED_SUCCESSFULLY;
+    1632:	80 e0       	ldi	r24, 0x00	; 0
+
+	switch(pstructCpy_INTObj->enumObj_Num)
+	{
+		case MINT_EXINT0 : SET_BIT(GICR,INT0); break; // Enable External Interrupt 0
+		case MINT_EXINT1 : SET_BIT(GICR,INT1); break; // Enable External Interrupt 1
+		case MINT_EXINT2 : SET_BIT(GICR,INT2); break; // Enable External Interrupt 2
+    1634:	08 95       	ret
+		default : enuReturnFncState = LSTY_OUT_OF_RANGE; break;
+    1636:	81 e0       	ldi	r24, 0x01	; 1
+	}
+	return enuReturnFncState;
+}
+    1638:	08 95       	ret
+
+Disassembly of section .text.MINT_enuDisableINTHandler:
+
+0000163a <MINT_enuDisableINTHandler>:
+
+tenumFncErrorState MINT_enuDisableINTHandler(MINT* pstructCpy_INTObj)
+{
+	tenumFncErrorState enuReturnFncState = LSTY_EXECUTED_SUCCESSFULLY;
+
+	switch(pstructCpy_INTObj->enumObj_Num)
+    163a:	fc 01       	movw	r30, r24
+    163c:	80 81       	ld	r24, Z
+    163e:	81 30       	cpi	r24, 0x01	; 1
+    1640:	49 f0       	breq	.+18     	; 0x1654 <MINT_enuDisableINTHandler+0x1a>
+    1642:	18 f0       	brcs	.+6      	; 0x164a <MINT_enuDisableINTHandler+0x10>
+    1644:	82 30       	cpi	r24, 0x02	; 2
+    1646:	59 f0       	breq	.+22     	; 0x165e <MINT_enuDisableINTHandler+0x24>
+    1648:	0f c0       	rjmp	.+30     	; 0x1668 <MINT_enuDisableINTHandler+0x2e>
+	{
+		case MINT_EXINT0 : CLR_BIT(GICR,INT0); break; // Disable External Interrupt 0
+    164a:	8b b7       	in	r24, 0x3b	; 59
+    164c:	8f 7b       	andi	r24, 0xBF	; 191
+    164e:	8b bf       	out	0x3b, r24	; 59
+	return enuReturnFncState;
+}
+
+tenumFncErrorState MINT_enuDisableINTHandler(MINT* pstructCpy_INTObj)
+{
+	tenumFncErrorState enuReturnFncState = LSTY_EXECUTED_SUCCESSFULLY;
+    1650:	80 e0       	ldi	r24, 0x00	; 0
+
+	switch(pstructCpy_INTObj->enumObj_Num)
+	{
+		case MINT_EXINT0 : CLR_BIT(GICR,INT0); break; // Disable External Interrupt 0
+    1652:	08 95       	ret
+		case MINT_EXINT1 : CLR_BIT(GICR,INT1); break; // Disable External Interrupt 1
+    1654:	8b b7       	in	r24, 0x3b	; 59
+    1656:	8f 77       	andi	r24, 0x7F	; 127
+    1658:	8b bf       	out	0x3b, r24	; 59
+	return enuReturnFncState;
+}
+
+tenumFncErrorState MINT_enuDisableINTHandler(MINT* pstructCpy_INTObj)
+{
+	tenumFncErrorState enuReturnFncState = LSTY_EXECUTED_SUCCESSFULLY;
+    165a:	80 e0       	ldi	r24, 0x00	; 0
+
+	switch(pstructCpy_INTObj->enumObj_Num)
+	{
+		case MINT_EXINT0 : CLR_BIT(GICR,INT0); break; // Disable External Interrupt 0
+		case MINT_EXINT1 : CLR_BIT(GICR,INT1); break; // Disable External Interrupt 1
+    165c:	08 95       	ret
+		case MINT_EXINT2 : CLR_BIT(GICR,INT2); break; // Disable External Interrupt 2
+    165e:	8b b7       	in	r24, 0x3b	; 59
+    1660:	8f 7d       	andi	r24, 0xDF	; 223
+    1662:	8b bf       	out	0x3b, r24	; 59
+	return enuReturnFncState;
+}
+
+tenumFncErrorState MINT_enuDisableINTHandler(MINT* pstructCpy_INTObj)
+{
+	tenumFncErrorState enuReturnFncState = LSTY_EXECUTED_SUCCESSFULLY;
+    1664:	80 e0       	ldi	r24, 0x00	; 0
+
+	switch(pstructCpy_INTObj->enumObj_Num)
+	{
+		case MINT_EXINT0 : CLR_BIT(GICR,INT0); break; // Disable External Interrupt 0
+		case MINT_EXINT1 : CLR_BIT(GICR,INT1); break; // Disable External Interrupt 1
+		case MINT_EXINT2 : CLR_BIT(GICR,INT2); break; // Disable External Interrupt 2
+    1666:	08 95       	ret
+		default : enuReturnFncState = LSTY_OUT_OF_RANGE; break;
+    1668:	81 e0       	ldi	r24, 0x01	; 1
+	}
+	return enuReturnFncState;
+}
+    166a:	08 95       	ret
+
+Disassembly of section .text.MINT_enuInit:
+
+00001566 <MINT_enuInit>:
+			enuReturnFncState = LSTY_OUT_OF_RANGE;
+			break;
+	}
+	
+	return enuReturnFncState;
+}
+    1566:	cf 93       	push	r28
+    1568:	df 93       	push	r29
+    156a:	00 97       	sbiw	r24, 0x00	; 0
+    156c:	a9 f0       	breq	.+42     	; 0x1598 <MINT_enuInit+0x32>
+    156e:	ec 01       	movw	r28, r24
+    1570:	8a 81       	ldd	r24, Y+2	; 0x02
+    1572:	81 11       	cpse	r24, r1
+    1574:	04 c0       	rjmp	.+8      	; 0x157e <MINT_enuInit+0x18>
+    1576:	ce 01       	movw	r24, r28
+    1578:	0e 94 04 0b 	call	0x1608	; 0x1608 <MINT_enuEnableINTHandler>
+    157c:	05 c0       	rjmp	.+10     	; 0x1588 <MINT_enuInit+0x22>
+    157e:	81 30       	cpi	r24, 0x01	; 1
+    1580:	19 f4       	brne	.+6      	; 0x1588 <MINT_enuInit+0x22>
+    1582:	ce 01       	movw	r24, r28
+    1584:	0e 94 1d 0b 	call	0x163a	; 0x163a <MINT_enuDisableINTHandler>
+    1588:	ce 01       	movw	r24, r28
+    158a:	0e 94 04 05 	call	0xa08	; 0xa08 <MINT_enuSetINTLevel>
+    158e:	8f b7       	in	r24, 0x3f	; 63
+    1590:	80 68       	ori	r24, 0x80	; 128
+    1592:	8f bf       	out	0x3f, r24	; 63
+    1594:	80 e0       	ldi	r24, 0x00	; 0
+    1596:	01 c0       	rjmp	.+2      	; 0x159a <MINT_enuInit+0x34>
+    1598:	82 e0       	ldi	r24, 0x02	; 2
+    159a:	df 91       	pop	r29
+    159c:	cf 91       	pop	r28
+    159e:	08 95       	ret
+
+Disassembly of section .text.MINT_voidSetCallBack:
+
+0000166c <MINT_voidSetCallBack>:
+	return enuReturnFncState;
+}
+
+/* This function is being called in main.c to hold an address of another function that have the ISR written by user */
+void MINT_voidSetCallBack(void (*ptrFuncCpy) (void), MINT* pstructCpy_INTObj)
+{
+    166c:	9c 01       	movw	r18, r24
+    /* Since the function is being passed to CB function is local we use the global varible "pointer to function" 
+        to assign to it the address of the ISR function passed to CallBack function */
+    switch(pstructCpy_INTObj->enumObj_Num)
+    166e:	fb 01       	movw	r30, r22
+    1670:	90 81       	ld	r25, Z
+    1672:	91 30       	cpi	r25, 0x01	; 1
+    1674:	49 f0       	breq	.+18     	; 0x1688 <MINT_voidSetCallBack+0x1c>
+    1676:	18 f0       	brcs	.+6      	; 0x167e <MINT_voidSetCallBack+0x12>
+    1678:	92 30       	cpi	r25, 0x02	; 2
+    167a:	59 f0       	breq	.+22     	; 0x1692 <MINT_voidSetCallBack+0x26>
+    167c:	08 95       	ret
+	{
+		case MINT_EXINT0:
+			ExINT_CallBack[0] = ptrFuncCpy;
+    167e:	30 93 bf 00 	sts	0x00BF, r19	; 0x8000bf <ExINT_CallBack+0x1>
+    1682:	20 93 be 00 	sts	0x00BE, r18	; 0x8000be <ExINT_CallBack>
+			break;
+    1686:	08 95       	ret
+			
+		case MINT_EXINT1:
+			ExINT_CallBack[1] = ptrFuncCpy;
+    1688:	30 93 c1 00 	sts	0x00C1, r19	; 0x8000c1 <ExINT_CallBack+0x3>
+    168c:	20 93 c0 00 	sts	0x00C0, r18	; 0x8000c0 <ExINT_CallBack+0x2>
+			break;
+    1690:	08 95       	ret
+			
+		case MINT_EXINT2:
+			ExINT_CallBack[2] = ptrFuncCpy;
+    1692:	30 93 c3 00 	sts	0x00C3, r19	; 0x8000c3 <ExINT_CallBack+0x5>
+    1696:	20 93 c2 00 	sts	0x00C2, r18	; 0x8000c2 <ExINT_CallBack+0x4>
+    169a:	08 95       	ret
+
+Disassembly of section .text.__vector_1:
+
+0000132e <__vector_1>:
+			enuReturnFncState = LSTY_OUT_OF_RANGE;
+			break;
+	}
+	
+	return enuReturnFncState;
+}
+    132e:	1f 92       	push	r1
+    1330:	0f 92       	push	r0
+    1332:	0f b6       	in	r0, 0x3f	; 63
+    1334:	0f 92       	push	r0
+    1336:	11 24       	eor	r1, r1
+    1338:	2f 93       	push	r18
+    133a:	3f 93       	push	r19
+    133c:	4f 93       	push	r20
+    133e:	5f 93       	push	r21
+    1340:	6f 93       	push	r22
+    1342:	7f 93       	push	r23
+    1344:	8f 93       	push	r24
+    1346:	9f 93       	push	r25
+    1348:	af 93       	push	r26
+    134a:	bf 93       	push	r27
+    134c:	ef 93       	push	r30
+    134e:	ff 93       	push	r31
+    1350:	e0 91 be 00 	lds	r30, 0x00BE	; 0x8000be <ExINT_CallBack>
+    1354:	f0 91 bf 00 	lds	r31, 0x00BF	; 0x8000bf <ExINT_CallBack+0x1>
+    1358:	09 95       	icall
+    135a:	ff 91       	pop	r31
+    135c:	ef 91       	pop	r30
+    135e:	bf 91       	pop	r27
+    1360:	af 91       	pop	r26
+    1362:	9f 91       	pop	r25
+    1364:	8f 91       	pop	r24
+    1366:	7f 91       	pop	r23
+    1368:	6f 91       	pop	r22
+    136a:	5f 91       	pop	r21
+    136c:	4f 91       	pop	r20
+    136e:	3f 91       	pop	r19
+    1370:	2f 91       	pop	r18
+    1372:	0f 90       	pop	r0
+    1374:	0f be       	out	0x3f, r0	; 63
+    1376:	0f 90       	pop	r0
+    1378:	1f 90       	pop	r1
+    137a:	18 95       	reti
+
+Disassembly of section .text.__vector_2:
+
+0000137c <__vector_2>:
+    137c:	1f 92       	push	r1
+    137e:	0f 92       	push	r0
+    1380:	0f b6       	in	r0, 0x3f	; 63
+    1382:	0f 92       	push	r0
+    1384:	11 24       	eor	r1, r1
+    1386:	2f 93       	push	r18
+    1388:	3f 93       	push	r19
+    138a:	4f 93       	push	r20
+    138c:	5f 93       	push	r21
+    138e:	6f 93       	push	r22
+    1390:	7f 93       	push	r23
+    1392:	8f 93       	push	r24
+    1394:	9f 93       	push	r25
+    1396:	af 93       	push	r26
+    1398:	bf 93       	push	r27
+    139a:	ef 93       	push	r30
+    139c:	ff 93       	push	r31
+    139e:	e0 91 c0 00 	lds	r30, 0x00C0	; 0x8000c0 <ExINT_CallBack+0x2>
+    13a2:	f0 91 c1 00 	lds	r31, 0x00C1	; 0x8000c1 <ExINT_CallBack+0x3>
+    13a6:	09 95       	icall
+    13a8:	ff 91       	pop	r31
+    13aa:	ef 91       	pop	r30
+    13ac:	bf 91       	pop	r27
+    13ae:	af 91       	pop	r26
+    13b0:	9f 91       	pop	r25
+    13b2:	8f 91       	pop	r24
+    13b4:	7f 91       	pop	r23
+    13b6:	6f 91       	pop	r22
+    13b8:	5f 91       	pop	r21
+    13ba:	4f 91       	pop	r20
+    13bc:	3f 91       	pop	r19
+    13be:	2f 91       	pop	r18
+    13c0:	0f 90       	pop	r0
+    13c2:	0f be       	out	0x3f, r0	; 63
+    13c4:	0f 90       	pop	r0
+    13c6:	1f 90       	pop	r1
+    13c8:	18 95       	reti
+
+Disassembly of section .text.__vector_3:
+
+000013ca <__vector_3>:
+    13ca:	1f 92       	push	r1
+    13cc:	0f 92       	push	r0
+    13ce:	0f b6       	in	r0, 0x3f	; 63
+    13d0:	0f 92       	push	r0
+    13d2:	11 24       	eor	r1, r1
+    13d4:	2f 93       	push	r18
+    13d6:	3f 93       	push	r19
+    13d8:	4f 93       	push	r20
+    13da:	5f 93       	push	r21
+    13dc:	6f 93       	push	r22
+    13de:	7f 93       	push	r23
+    13e0:	8f 93       	push	r24
+    13e2:	9f 93       	push	r25
+    13e4:	af 93       	push	r26
+    13e6:	bf 93       	push	r27
+    13e8:	ef 93       	push	r30
+    13ea:	ff 93       	push	r31
+    13ec:	e0 91 c2 00 	lds	r30, 0x00C2	; 0x8000c2 <ExINT_CallBack+0x4>
+    13f0:	f0 91 c3 00 	lds	r31, 0x00C3	; 0x8000c3 <ExINT_CallBack+0x5>
+    13f4:	09 95       	icall
+    13f6:	ff 91       	pop	r31
+    13f8:	ef 91       	pop	r30
+    13fa:	bf 91       	pop	r27
+    13fc:	af 91       	pop	r26
+    13fe:	9f 91       	pop	r25
+    1400:	8f 91       	pop	r24
+    1402:	7f 91       	pop	r23
+    1404:	6f 91       	pop	r22
+    1406:	5f 91       	pop	r21
+    1408:	4f 91       	pop	r20
+    140a:	3f 91       	pop	r19
+    140c:	2f 91       	pop	r18
+    140e:	0f 90       	pop	r0
+    1410:	0f be       	out	0x3f, r0	; 63
+    1412:	0f 90       	pop	r0
+    1414:	1f 90       	pop	r1
+    1416:	18 95       	reti
+
+Disassembly of section .text.func:
+
+00000e14 <func>:
+	pstructCpy_ICUObj->u8Obj_DutyCycle = ((MICU_Obj.u16Obj_Ton * 100)/(MICU_Obj.u16Obj_Ton + MICU_Obj.u16Obj_Toff));
+}
+
+static void func(void)
+{
+	temp = MTimerCounter_f32GetTimerValue(&timer);
+ e14:	89 ec       	ldi	r24, 0xC9	; 201
+ e16:	90 e0       	ldi	r25, 0x00	; 0
+ e18:	0e 94 6f 01 	call	0x2de	; 0x2de <MTimerCounter_f32GetTimerValue>
+ e1c:	0e 94 21 08 	call	0x1042	; 0x1042 <__fixunssfsi>
+ e20:	70 93 df 00 	sts	0x00DF, r23	; 0x8000df <temp+0x1>
+ e24:	60 93 de 00 	sts	0x00DE, r22	; 0x8000de <temp>
+	if(x == 0)
+ e28:	80 91 ee 00 	lds	r24, 0x00EE	; 0x8000ee <x>
+ e2c:	81 11       	cpse	r24, r1
+ e2e:	11 c0       	rjmp	.+34     	; 0xe52 <func+0x3e>
+	{
+		x++;
+ e30:	80 91 ee 00 	lds	r24, 0x00EE	; 0x8000ee <x>
+ e34:	8f 5f       	subi	r24, 0xFF	; 255
+ e36:	80 93 ee 00 	sts	0x00EE, r24	; 0x8000ee <x>
+		inter.enumObj_Level = MINT_FALLING;
+ e3a:	82 e0       	ldi	r24, 0x02	; 2
+ e3c:	80 93 da 00 	sts	0x00DA, r24	; 0x8000da <inter+0x1>
+		MINT_enuSetINTLevel(&inter);
+ e40:	89 ed       	ldi	r24, 0xD9	; 217
+ e42:	90 e0       	ldi	r25, 0x00	; 0
+ e44:	0e 94 04 05 	call	0xa08	; 0xa08 <MINT_enuSetINTLevel>
+		MTimerCounter_voidStartTimer(&timer);
+ e48:	89 ec       	ldi	r24, 0xC9	; 201
+ e4a:	90 e0       	ldi	r25, 0x00	; 0
+ e4c:	0e 94 57 07 	call	0xeae	; 0xeae <MTimerCounter_voidStartTimer>
+ e50:	08 95       	ret
+	}
+	else if(x == 1)
+ e52:	80 91 ee 00 	lds	r24, 0x00EE	; 0x8000ee <x>
+ e56:	81 30       	cpi	r24, 0x01	; 1
+ e58:	c9 f4       	brne	.+50     	; 0xe8c <func+0x78>
+	{
+		x++;
+ e5a:	80 91 ee 00 	lds	r24, 0x00EE	; 0x8000ee <x>
+ e5e:	8f 5f       	subi	r24, 0xFF	; 255
+ e60:	80 93 ee 00 	sts	0x00EE, r24	; 0x8000ee <x>
+		MICU_Obj.u16Obj_Ton = temp;
+ e64:	80 91 de 00 	lds	r24, 0x00DE	; 0x8000de <temp>
+ e68:	90 91 df 00 	lds	r25, 0x00DF	; 0x8000df <temp+0x1>
+ e6c:	90 93 c5 00 	sts	0x00C5, r25	; 0x8000c5 <MICU_Obj+0x1>
+ e70:	80 93 c4 00 	sts	0x00C4, r24	; 0x8000c4 <MICU_Obj>
+		inter.enumObj_Level = MINT_RISING;
+ e74:	83 e0       	ldi	r24, 0x03	; 3
+ e76:	80 93 da 00 	sts	0x00DA, r24	; 0x8000da <inter+0x1>
+		MINT_enuSetINTLevel(&inter);
+ e7a:	89 ed       	ldi	r24, 0xD9	; 217
+ e7c:	90 e0       	ldi	r25, 0x00	; 0
+ e7e:	0e 94 04 05 	call	0xa08	; 0xa08 <MINT_enuSetINTLevel>
+		MTimerCounter_voidStartTimer(&timer);
+ e82:	89 ec       	ldi	r24, 0xC9	; 201
+ e84:	90 e0       	ldi	r25, 0x00	; 0
+ e86:	0e 94 57 07 	call	0xeae	; 0xeae <MTimerCounter_voidStartTimer>
+ e8a:	08 95       	ret
+	}
+	else if(x == 2)
+ e8c:	80 91 ee 00 	lds	r24, 0x00EE	; 0x8000ee <x>
+ e90:	82 30       	cpi	r24, 0x02	; 2
+ e92:	61 f4       	brne	.+24     	; 0xeac <func+0x98>
+	{
+		MICU_Obj.u16Obj_Toff = temp;
+ e94:	80 91 de 00 	lds	r24, 0x00DE	; 0x8000de <temp>
+ e98:	90 91 df 00 	lds	r25, 0x00DF	; 0x8000df <temp+0x1>
+ e9c:	90 93 c7 00 	sts	0x00C7, r25	; 0x8000c7 <MICU_Obj+0x3>
+ ea0:	80 93 c6 00 	sts	0x00C6, r24	; 0x8000c6 <MICU_Obj+0x2>
+		MINT_enuDisableINTHandler(&inter);
+ ea4:	89 ed       	ldi	r24, 0xD9	; 217
+ ea6:	90 e0       	ldi	r25, 0x00	; 0
+ ea8:	0e 94 1d 0b 	call	0x163a	; 0x163a <MINT_enuDisableINTHandler>
+ eac:	08 95       	ret
+
+Disassembly of section .text.MICU_voidInit:
+
+00001526 <MICU_voidInit>:
+
+static void func(void);
+
+void MICU_voidInit(void)
+{
+	x     = 0;
+    1526:	10 92 ee 00 	sts	0x00EE, r1	; 0x8000ee <x>
+	temp  = 0;
+    152a:	10 92 df 00 	sts	0x00DF, r1	; 0x8000df <temp+0x1>
+    152e:	10 92 de 00 	sts	0x00DE, r1	; 0x8000de <temp>
+	
+	timer.enumObj_Num   = MTimerCounter_Num0;
+    1532:	e9 ec       	ldi	r30, 0xC9	; 201
+    1534:	f0 e0       	ldi	r31, 0x00	; 0
+    1536:	10 82       	st	Z, r1
+	timer.enumObj_State = MTIMER_Free;
+    1538:	81 e0       	ldi	r24, 0x01	; 1
+    153a:	81 83       	std	Z+1, r24	; 0x01
+	timer.enumObj_TimeFormat = MTimerCounter_Us;
+    153c:	82 83       	std	Z+2, r24	; 0x02
+	
+	inter.enumObj_Num   = MINT_EXINT0;
+    153e:	e9 ed       	ldi	r30, 0xD9	; 217
+    1540:	f0 e0       	ldi	r31, 0x00	; 0
+    1542:	10 82       	st	Z, r1
+	inter.enumObj_Level = MINT_RISING;
+    1544:	83 e0       	ldi	r24, 0x03	; 3
+    1546:	81 83       	std	Z+1, r24	; 0x01
+	inter.enumObj_Mode  = MINT_INT;	
+    1548:	12 82       	std	Z+2, r1	; 0x02
+	
+	MINT_voidSetCallBack(func, &inter);
+    154a:	bf 01       	movw	r22, r30
+    154c:	8a e0       	ldi	r24, 0x0A	; 10
+    154e:	97 e0       	ldi	r25, 0x07	; 7
+    1550:	0e 94 36 0b 	call	0x166c	; 0x166c <MINT_voidSetCallBack>
+	MTimerCounter_voidStartTimer(&timer);
+    1554:	89 ec       	ldi	r24, 0xC9	; 201
+    1556:	90 e0       	ldi	r25, 0x00	; 0
+    1558:	0e 94 57 07 	call	0xeae	; 0xeae <MTimerCounter_voidStartTimer>
+	MINT_enuInit(&inter);
+    155c:	89 ed       	ldi	r24, 0xD9	; 217
+    155e:	90 e0       	ldi	r25, 0x00	; 0
+    1560:	0e 94 b3 0a 	call	0x1566	; 0x1566 <MINT_enuInit>
+    1564:	08 95       	ret
+
+Disassembly of section .text.MICU_voidFetchData:
+
+000015d4 <MICU_voidFetchData>:
+}
+
+void MICU_voidFetchData(MICU* pstructCpy_ICUObj)
+{
+    15d4:	fc 01       	movw	r30, r24
+	pstructCpy_ICUObj->u16Obj_Ton  = MICU_Obj.u16Obj_Ton;
+    15d6:	a4 ec       	ldi	r26, 0xC4	; 196
+    15d8:	b0 e0       	ldi	r27, 0x00	; 0
+    15da:	6d 91       	ld	r22, X+
+    15dc:	7c 91       	ld	r23, X
+    15de:	11 97       	sbiw	r26, 0x01	; 1
+    15e0:	71 83       	std	Z+1, r23	; 0x01
+    15e2:	60 83       	st	Z, r22
+	pstructCpy_ICUObj->u16Obj_Toff = MICU_Obj.u16Obj_Toff;
+    15e4:	12 96       	adiw	r26, 0x02	; 2
+    15e6:	2d 91       	ld	r18, X+
+    15e8:	3c 91       	ld	r19, X
+    15ea:	13 97       	sbiw	r26, 0x03	; 3
+    15ec:	33 83       	std	Z+3, r19	; 0x03
+    15ee:	22 83       	std	Z+2, r18	; 0x02
+	pstructCpy_ICUObj->u8Obj_DutyCycle = ((MICU_Obj.u16Obj_Ton * 100)/(MICU_Obj.u16Obj_Ton + MICU_Obj.u16Obj_Toff));
+    15f0:	44 e6       	ldi	r20, 0x64	; 100
+    15f2:	46 9f       	mul	r20, r22
+    15f4:	c0 01       	movw	r24, r0
+    15f6:	47 9f       	mul	r20, r23
+    15f8:	90 0d       	add	r25, r0
+    15fa:	11 24       	eor	r1, r1
+    15fc:	62 0f       	add	r22, r18
+    15fe:	73 1f       	adc	r23, r19
+    1600:	0e 94 b4 0b 	call	0x1768	; 0x1768 <__udivmodhi4>
+    1604:	64 83       	std	Z+4, r22	; 0x04
+    1606:	08 95       	ret
+
+Disassembly of section .text.MPWM_voidInit:
+
+00000584 <MPWM_voidInit>:
+#include "MPWM_interface.h"
+
+#include "../../MDIO/MDIO_interface.h"
+
+void MPWM_voidInit(MPWM* pstructCpy_PWMObj)
+{
+ 584:	cf 93       	push	r28
+ 586:	df 93       	push	r29
+ 588:	00 d0       	rcall	.+0      	; 0x58a <MPWM_voidInit+0x6>
+ 58a:	00 d0       	rcall	.+0      	; 0x58c <MPWM_voidInit+0x8>
+ 58c:	cd b7       	in	r28, 0x3d	; 61
+ 58e:	de b7       	in	r29, 0x3e	; 62
+	MDIO_Pin OCn;
+	
+	if((pstructCpy_PWMObj != NULL) &&
+ 590:	00 97       	sbiw	r24, 0x00	; 0
+ 592:	09 f4       	brne	.+2      	; 0x596 <MPWM_voidInit+0x12>
+ 594:	95 c0       	rjmp	.+298    	; 0x6c0 <MPWM_voidInit+0x13c>
+	(pstructCpy_PWMObj->enumObj_State == MTIMER_Free))
+ 596:	fc 01       	movw	r30, r24
+ 598:	23 81       	ldd	r18, Z+3	; 0x03
+
+void MPWM_voidInit(MPWM* pstructCpy_PWMObj)
+{
+	MDIO_Pin OCn;
+	
+	if((pstructCpy_PWMObj != NULL) &&
+ 59a:	21 30       	cpi	r18, 0x01	; 1
+ 59c:	09 f0       	breq	.+2      	; 0x5a0 <MPWM_voidInit+0x1c>
+ 59e:	90 c0       	rjmp	.+288    	; 0x6c0 <MPWM_voidInit+0x13c>
+	(pstructCpy_PWMObj->enumObj_State == MTIMER_Free))
+	{
+		pstructCpy_PWMObj->enumObj_State = MTIMER_Busy;
+ 5a0:	13 82       	std	Z+3, r1	; 0x03
+		switch(pstructCpy_PWMObj->enumObj_Num)
+ 5a2:	80 81       	ld	r24, Z
+ 5a4:	81 30       	cpi	r24, 0x01	; 1
+ 5a6:	81 f1       	breq	.+96     	; 0x608 <MPWM_voidInit+0x84>
+ 5a8:	20 f0       	brcs	.+8      	; 0x5b2 <MPWM_voidInit+0x2e>
+ 5aa:	82 30       	cpi	r24, 0x02	; 2
+ 5ac:	09 f4       	brne	.+2      	; 0x5b0 <MPWM_voidInit+0x2c>
+ 5ae:	5e c0       	rjmp	.+188    	; 0x66c <MPWM_voidInit+0xe8>
+ 5b0:	87 c0       	rjmp	.+270    	; 0x6c0 <MPWM_voidInit+0x13c>
+		{
+			case MPWM_Num0:
+				if(pstructCpy_PWMObj->enumObj_PWMMode == MPWM_FastPWM)
+ 5b2:	81 81       	ldd	r24, Z+1	; 0x01
+ 5b4:	81 11       	cpse	r24, r1
+ 5b6:	0b c0       	rjmp	.+22     	; 0x5ce <MPWM_voidInit+0x4a>
+				{
+					if(pstructCpy_PWMObj->enumObj_OPFormat == MPWM_Inverted)
+ 5b8:	82 81       	ldd	r24, Z+2	; 0x02
+ 5ba:	81 11       	cpse	r24, r1
+ 5bc:	03 c0       	rjmp	.+6      	; 0x5c4 <MPWM_voidInit+0x40>
+					{
+						TCCR0 = 0x7C;//timer with prescaler 256
+ 5be:	8c e7       	ldi	r24, 0x7C	; 124
+ 5c0:	83 bf       	out	0x33, r24	; 51
+ 5c2:	11 c0       	rjmp	.+34     	; 0x5e6 <MPWM_voidInit+0x62>
+					}
+					else if(pstructCpy_PWMObj->enumObj_OPFormat == MPWM_NonInverted)
+ 5c4:	81 30       	cpi	r24, 0x01	; 1
+ 5c6:	79 f4       	brne	.+30     	; 0x5e6 <MPWM_voidInit+0x62>
+					{
+						TCCR0 = 0x6C;//timer with prescaler 256
+ 5c8:	8c e6       	ldi	r24, 0x6C	; 108
+ 5ca:	83 bf       	out	0x33, r24	; 51
+ 5cc:	0c c0       	rjmp	.+24     	; 0x5e6 <MPWM_voidInit+0x62>
+					}
+				}
+				else if(pstructCpy_PWMObj->enumObj_PWMMode == MPWM_PhaseCorrect)
+ 5ce:	81 30       	cpi	r24, 0x01	; 1
+ 5d0:	51 f4       	brne	.+20     	; 0x5e6 <MPWM_voidInit+0x62>
+				{
+					if(pstructCpy_PWMObj->enumObj_OPFormat == MPWM_Inverted)
+ 5d2:	82 81       	ldd	r24, Z+2	; 0x02
+ 5d4:	81 11       	cpse	r24, r1
+ 5d6:	03 c0       	rjmp	.+6      	; 0x5de <MPWM_voidInit+0x5a>
+					{
+						TCCR0 = 0x74;//timer with prescaler 256					
+ 5d8:	84 e7       	ldi	r24, 0x74	; 116
+ 5da:	83 bf       	out	0x33, r24	; 51
+ 5dc:	04 c0       	rjmp	.+8      	; 0x5e6 <MPWM_voidInit+0x62>
+					}
+					else if(pstructCpy_PWMObj->enumObj_OPFormat == MPWM_NonInverted)
+ 5de:	81 30       	cpi	r24, 0x01	; 1
+ 5e0:	11 f4       	brne	.+4      	; 0x5e6 <MPWM_voidInit+0x62>
+					{
+						TCCR0 = 0x64;//timer with prescaler 256					
+ 5e2:	84 e6       	ldi	r24, 0x64	; 100
+ 5e4:	83 bf       	out	0x33, r24	; 51
+					}
+				}
+				
+				OCR0 = pstructCpy_PWMObj->u16Obj_InitialDutyCycleValue;
+ 5e6:	84 81       	ldd	r24, Z+4	; 0x04
+ 5e8:	8c bf       	out	0x3c, r24	; 60
+				TCNT0 = 0x00;//reset timer/counter register
+ 5ea:	12 be       	out	0x32, r1	; 50
+				CLR_BIT(TIMSK,0);// disable overflow interrupt for timer0 (polling)
+ 5ec:	89 b7       	in	r24, 0x39	; 57
+ 5ee:	8e 7f       	andi	r24, 0xFE	; 254
+ 5f0:	89 bf       	out	0x39, r24	; 57
+				
+				OCn.enumPin  = MDIO_PIN3;//OC0 output
+ 5f2:	83 e0       	ldi	r24, 0x03	; 3
+ 5f4:	89 83       	std	Y+1, r24	; 0x01
+				OCn.enumPort = MDIO_PORTB;
+ 5f6:	81 e0       	ldi	r24, 0x01	; 1
+ 5f8:	8a 83       	std	Y+2, r24	; 0x02
+				OCn.enumMode = MDIO_Output;
+ 5fa:	8f ef       	ldi	r24, 0xFF	; 255
+ 5fc:	8b 83       	std	Y+3, r24	; 0x03
+				MDIO_enumPinDirection(&OCn);
+ 5fe:	ce 01       	movw	r24, r28
+ 600:	01 96       	adiw	r24, 0x01	; 1
+ 602:	0e 94 19 02 	call	0x432	; 0x432 <MDIO_enumPinDirection>
+				break;
+ 606:	5c c0       	rjmp	.+184    	; 0x6c0 <MPWM_voidInit+0x13c>
+			
+			case MPWM_Num1:
+				if(pstructCpy_PWMObj->enumObj_PWMMode == MPWM_FastPWM)
+ 608:	81 81       	ldd	r24, Z+1	; 0x01
+ 60a:	81 11       	cpse	r24, r1
+ 60c:	0d c0       	rjmp	.+26     	; 0x628 <MPWM_voidInit+0xa4>
+				{
+					if(pstructCpy_PWMObj->enumObj_OPFormat == MPWM_Inverted)
+ 60e:	82 81       	ldd	r24, Z+2	; 0x02
+ 610:	81 11       	cpse	r24, r1
+ 612:	03 c0       	rjmp	.+6      	; 0x61a <MPWM_voidInit+0x96>
+					{
+						TCCR1A = 0xC3;
+ 614:	83 ec       	ldi	r24, 0xC3	; 195
+ 616:	8f bd       	out	0x2f, r24	; 47
+ 618:	04 c0       	rjmp	.+8      	; 0x622 <MPWM_voidInit+0x9e>
+					}
+					else if(pstructCpy_PWMObj->enumObj_OPFormat == MPWM_NonInverted)
+ 61a:	81 30       	cpi	r24, 0x01	; 1
+ 61c:	11 f4       	brne	.+4      	; 0x622 <MPWM_voidInit+0x9e>
+					{
+						TCCR1A = 0x83;
+ 61e:	83 e8       	ldi	r24, 0x83	; 131
+ 620:	8f bd       	out	0x2f, r24	; 47
+					}
+					TCCR1B = 0x1C;
+ 622:	8c e1       	ldi	r24, 0x1C	; 28
+ 624:	8e bd       	out	0x2e, r24	; 46
+ 626:	0e c0       	rjmp	.+28     	; 0x644 <MPWM_voidInit+0xc0>
+				}
+				else if(pstructCpy_PWMObj->enumObj_PWMMode == MPWM_PhaseCorrect)
+ 628:	81 30       	cpi	r24, 0x01	; 1
+ 62a:	61 f4       	brne	.+24     	; 0x644 <MPWM_voidInit+0xc0>
+				{
+					if(pstructCpy_PWMObj->enumObj_OPFormat == MPWM_Inverted)
+ 62c:	82 81       	ldd	r24, Z+2	; 0x02
+ 62e:	81 11       	cpse	r24, r1
+ 630:	03 c0       	rjmp	.+6      	; 0x638 <MPWM_voidInit+0xb4>
+					{
+						TCCR0 = 0xC3;
+ 632:	83 ec       	ldi	r24, 0xC3	; 195
+ 634:	83 bf       	out	0x33, r24	; 51
+ 636:	04 c0       	rjmp	.+8      	; 0x640 <MPWM_voidInit+0xbc>
+					}
+					else if(pstructCpy_PWMObj->enumObj_OPFormat == MPWM_NonInverted)
+ 638:	81 30       	cpi	r24, 0x01	; 1
+ 63a:	11 f4       	brne	.+4      	; 0x640 <MPWM_voidInit+0xbc>
+					{
+						TCCR0 = 0x83;
+ 63c:	83 e8       	ldi	r24, 0x83	; 131
+ 63e:	83 bf       	out	0x33, r24	; 51
+					}
+					TCCR1B = 0x14;//timer with prescaler 256
+ 640:	84 e1       	ldi	r24, 0x14	; 20
+ 642:	8e bd       	out	0x2e, r24	; 46
+				}
+				
+				OCR1AH = (u8)pstructCpy_PWMObj->u16Obj_InitialDutyCycleValue;
+ 644:	84 81       	ldd	r24, Z+4	; 0x04
+ 646:	8b bd       	out	0x2b, r24	; 43
+				OCR1AL = (u8)(pstructCpy_PWMObj->u16Obj_InitialDutyCycleValue >> 8);
+ 648:	85 81       	ldd	r24, Z+5	; 0x05
+ 64a:	8a bd       	out	0x2a, r24	; 42
+				
+				TCNT1H = 0x00;//To do a 16-bit write, the high byte must be written before the low byte.
+ 64c:	1d bc       	out	0x2d, r1	; 45
+				TCNT1L = 0x00;//reset timer/counter register
+ 64e:	1c bc       	out	0x2c, r1	; 44
+				CLR_BIT(TIMSK,2);// disable overflow interrupt for timer1 (polling)
+ 650:	89 b7       	in	r24, 0x39	; 57
+ 652:	8b 7f       	andi	r24, 0xFB	; 251
+ 654:	89 bf       	out	0x39, r24	; 57
+				
+				OCn.enumPin  = MDIO_PIN5;//OC1A output
+ 656:	85 e0       	ldi	r24, 0x05	; 5
+ 658:	89 83       	std	Y+1, r24	; 0x01
+				OCn.enumPort = MDIO_PORTD;
+ 65a:	83 e0       	ldi	r24, 0x03	; 3
+ 65c:	8a 83       	std	Y+2, r24	; 0x02
+				OCn.enumMode = MDIO_Output;
+ 65e:	8f ef       	ldi	r24, 0xFF	; 255
+ 660:	8b 83       	std	Y+3, r24	; 0x03
+				MDIO_enumPinDirection(&OCn);
+ 662:	ce 01       	movw	r24, r28
+ 664:	01 96       	adiw	r24, 0x01	; 1
+ 666:	0e 94 19 02 	call	0x432	; 0x432 <MDIO_enumPinDirection>
+				break;
+ 66a:	2a c0       	rjmp	.+84     	; 0x6c0 <MPWM_voidInit+0x13c>
+			
+			case MPWM_Num2:
+				if(pstructCpy_PWMObj->enumObj_PWMMode == MPWM_FastPWM)
+ 66c:	81 81       	ldd	r24, Z+1	; 0x01
+ 66e:	81 11       	cpse	r24, r1
+ 670:	0b c0       	rjmp	.+22     	; 0x688 <MPWM_voidInit+0x104>
+				{
+					if(pstructCpy_PWMObj->enumObj_OPFormat == MPWM_Inverted)
+ 672:	82 81       	ldd	r24, Z+2	; 0x02
+ 674:	81 11       	cpse	r24, r1
+ 676:	03 c0       	rjmp	.+6      	; 0x67e <MPWM_voidInit+0xfa>
+					{
+						TCCR2 = 0x7E;//timer with prescaler 256
+ 678:	8e e7       	ldi	r24, 0x7E	; 126
+ 67a:	85 bd       	out	0x25, r24	; 37
+ 67c:	11 c0       	rjmp	.+34     	; 0x6a0 <MPWM_voidInit+0x11c>
+					}
+					else if(pstructCpy_PWMObj->enumObj_OPFormat == MPWM_NonInverted)
+ 67e:	81 30       	cpi	r24, 0x01	; 1
+ 680:	79 f4       	brne	.+30     	; 0x6a0 <MPWM_voidInit+0x11c>
+					{
+						TCCR2 = 0x6E;//timer with prescaler 256
+ 682:	8e e6       	ldi	r24, 0x6E	; 110
+ 684:	85 bd       	out	0x25, r24	; 37
+ 686:	0c c0       	rjmp	.+24     	; 0x6a0 <MPWM_voidInit+0x11c>
+					}
+				}
+				else if(pstructCpy_PWMObj->enumObj_PWMMode == MPWM_PhaseCorrect)
+ 688:	81 30       	cpi	r24, 0x01	; 1
+ 68a:	51 f4       	brne	.+20     	; 0x6a0 <MPWM_voidInit+0x11c>
+				{
+					if(pstructCpy_PWMObj->enumObj_OPFormat == MPWM_Inverted)
+ 68c:	82 81       	ldd	r24, Z+2	; 0x02
+ 68e:	81 11       	cpse	r24, r1
+ 690:	03 c0       	rjmp	.+6      	; 0x698 <MPWM_voidInit+0x114>
+					{
+						TCCR2 = 0x76;//timer with prescaler 256
+ 692:	86 e7       	ldi	r24, 0x76	; 118
+ 694:	85 bd       	out	0x25, r24	; 37
+ 696:	04 c0       	rjmp	.+8      	; 0x6a0 <MPWM_voidInit+0x11c>
+					}
+					else if(pstructCpy_PWMObj->enumObj_OPFormat == MPWM_NonInverted)
+ 698:	81 30       	cpi	r24, 0x01	; 1
+ 69a:	11 f4       	brne	.+4      	; 0x6a0 <MPWM_voidInit+0x11c>
+					{
+						TCCR2 = 0x66;//timer with prescaler 256
+ 69c:	86 e6       	ldi	r24, 0x66	; 102
+ 69e:	85 bd       	out	0x25, r24	; 37
+					}
+				}
+				OCR2 = pstructCpy_PWMObj->u16Obj_InitialDutyCycleValue;
+ 6a0:	84 81       	ldd	r24, Z+4	; 0x04
+ 6a2:	83 bd       	out	0x23, r24	; 35
+				TCNT2 = 0x00;//reset timer/counter register
+ 6a4:	14 bc       	out	0x24, r1	; 36
+				CLR_BIT(TIMSK,6);// disable overflow interrupt for timer2 (polling)
+ 6a6:	89 b7       	in	r24, 0x39	; 57
+ 6a8:	8f 7b       	andi	r24, 0xBF	; 191
+ 6aa:	89 bf       	out	0x39, r24	; 57
+				
+				OCn.enumPin  = MDIO_PIN7;//OC2 output
+ 6ac:	87 e0       	ldi	r24, 0x07	; 7
+ 6ae:	89 83       	std	Y+1, r24	; 0x01
+				OCn.enumPort = MDIO_PORTD;
+ 6b0:	83 e0       	ldi	r24, 0x03	; 3
+ 6b2:	8a 83       	std	Y+2, r24	; 0x02
+				OCn.enumMode = MDIO_Output;
+ 6b4:	8f ef       	ldi	r24, 0xFF	; 255
+ 6b6:	8b 83       	std	Y+3, r24	; 0x03
+				MDIO_enumPinDirection(&OCn);
+ 6b8:	ce 01       	movw	r24, r28
+ 6ba:	01 96       	adiw	r24, 0x01	; 1
+ 6bc:	0e 94 19 02 	call	0x432	; 0x432 <MDIO_enumPinDirection>
+			
+			default:
+				break;
+		}
+	}
+}
+ 6c0:	0f 90       	pop	r0
+ 6c2:	0f 90       	pop	r0
+ 6c4:	0f 90       	pop	r0
+ 6c6:	0f 90       	pop	r0
+ 6c8:	df 91       	pop	r29
+ 6ca:	cf 91       	pop	r28
+ 6cc:	08 95       	ret
+
+Disassembly of section .text.MTimerCounter_voidIncTim0OVFCounter:
+
+000016f0 <MTimerCounter_voidIncTim0OVFCounter>:
+
+/*******************************************************************************/
+
+static void MTimerCounter_voidIncTim0OVFCounter(void)
+{
+	MTimerCounter_u32Tim0OVFCounter++;
+    16f0:	80 91 d5 00 	lds	r24, 0x00D5	; 0x8000d5 <MTimerCounter_u32Tim0OVFCounter>
+    16f4:	90 91 d6 00 	lds	r25, 0x00D6	; 0x8000d6 <MTimerCounter_u32Tim0OVFCounter+0x1>
+    16f8:	a0 91 d7 00 	lds	r26, 0x00D7	; 0x8000d7 <MTimerCounter_u32Tim0OVFCounter+0x2>
+    16fc:	b0 91 d8 00 	lds	r27, 0x00D8	; 0x8000d8 <MTimerCounter_u32Tim0OVFCounter+0x3>
+    1700:	01 96       	adiw	r24, 0x01	; 1
+    1702:	a1 1d       	adc	r26, r1
+    1704:	b1 1d       	adc	r27, r1
+    1706:	80 93 d5 00 	sts	0x00D5, r24	; 0x8000d5 <MTimerCounter_u32Tim0OVFCounter>
+    170a:	90 93 d6 00 	sts	0x00D6, r25	; 0x8000d6 <MTimerCounter_u32Tim0OVFCounter+0x1>
+    170e:	a0 93 d7 00 	sts	0x00D7, r26	; 0x8000d7 <MTimerCounter_u32Tim0OVFCounter+0x2>
+    1712:	b0 93 d8 00 	sts	0x00D8, r27	; 0x8000d8 <MTimerCounter_u32Tim0OVFCounter+0x3>
+    1716:	08 95       	ret
+
+Disassembly of section .text.MTimerCounter_voidIncTim1OVFCounter:
+
+00001718 <MTimerCounter_voidIncTim1OVFCounter>:
+}
+
+static void MTimerCounter_voidIncTim1OVFCounter(void)
+{
+	MTimerCounter_u32Tim1OVFCounter++;
+    1718:	80 91 d1 00 	lds	r24, 0x00D1	; 0x8000d1 <MTimerCounter_u32Tim1OVFCounter>
+    171c:	90 91 d2 00 	lds	r25, 0x00D2	; 0x8000d2 <MTimerCounter_u32Tim1OVFCounter+0x1>
+    1720:	a0 91 d3 00 	lds	r26, 0x00D3	; 0x8000d3 <MTimerCounter_u32Tim1OVFCounter+0x2>
+    1724:	b0 91 d4 00 	lds	r27, 0x00D4	; 0x8000d4 <MTimerCounter_u32Tim1OVFCounter+0x3>
+    1728:	01 96       	adiw	r24, 0x01	; 1
+    172a:	a1 1d       	adc	r26, r1
+    172c:	b1 1d       	adc	r27, r1
+    172e:	80 93 d1 00 	sts	0x00D1, r24	; 0x8000d1 <MTimerCounter_u32Tim1OVFCounter>
+    1732:	90 93 d2 00 	sts	0x00D2, r25	; 0x8000d2 <MTimerCounter_u32Tim1OVFCounter+0x1>
+    1736:	a0 93 d3 00 	sts	0x00D3, r26	; 0x8000d3 <MTimerCounter_u32Tim1OVFCounter+0x2>
+    173a:	b0 93 d4 00 	sts	0x00D4, r27	; 0x8000d4 <MTimerCounter_u32Tim1OVFCounter+0x3>
+    173e:	08 95       	ret
+
+Disassembly of section .text.MTimerCounter_voidIncTim2OVFCounter:
+
+00001740 <MTimerCounter_voidIncTim2OVFCounter>:
+}
+
+static void MTimerCounter_voidIncTim2OVFCounter(void)
+{
+	MTimerCounter_u32Tim2OVFCounter++;
+    1740:	80 91 cd 00 	lds	r24, 0x00CD	; 0x8000cd <MTimerCounter_u32Tim2OVFCounter>
+    1744:	90 91 ce 00 	lds	r25, 0x00CE	; 0x8000ce <MTimerCounter_u32Tim2OVFCounter+0x1>
+    1748:	a0 91 cf 00 	lds	r26, 0x00CF	; 0x8000cf <MTimerCounter_u32Tim2OVFCounter+0x2>
+    174c:	b0 91 d0 00 	lds	r27, 0x00D0	; 0x8000d0 <MTimerCounter_u32Tim2OVFCounter+0x3>
+    1750:	01 96       	adiw	r24, 0x01	; 1
+    1752:	a1 1d       	adc	r26, r1
+    1754:	b1 1d       	adc	r27, r1
+    1756:	80 93 cd 00 	sts	0x00CD, r24	; 0x8000cd <MTimerCounter_u32Tim2OVFCounter>
+    175a:	90 93 ce 00 	sts	0x00CE, r25	; 0x8000ce <MTimerCounter_u32Tim2OVFCounter+0x1>
+    175e:	a0 93 cf 00 	sts	0x00CF, r26	; 0x8000cf <MTimerCounter_u32Tim2OVFCounter+0x2>
+    1762:	b0 93 d0 00 	sts	0x00D0, r27	; 0x8000d0 <MTimerCounter_u32Tim2OVFCounter+0x3>
+    1766:	08 95       	ret
+
+Disassembly of section .text.MTimerCounter_voidStartTimer:
+
+00000eae <MTimerCounter_voidStartTimer>:
+
+/******************************************************************/
+
+void MTimerCounter_voidStartTimer(MTimerCounter* pstructCpy_TimerObj)
+{
+	if((pstructCpy_TimerObj != NULL) &&
+ eae:	00 97       	sbiw	r24, 0x00	; 0
+ eb0:	09 f4       	brne	.+2      	; 0xeb4 <MTimerCounter_voidStartTimer+0x6>
+ eb2:	47 c0       	rjmp	.+142    	; 0xf42 <MTimerCounter_voidStartTimer+0x94>
+	   (pstructCpy_TimerObj->enumObj_State == MTIMER_Free))
+ eb4:	fc 01       	movw	r30, r24
+ eb6:	21 81       	ldd	r18, Z+1	; 0x01
+
+/******************************************************************/
+
+void MTimerCounter_voidStartTimer(MTimerCounter* pstructCpy_TimerObj)
+{
+	if((pstructCpy_TimerObj != NULL) &&
+ eb8:	21 30       	cpi	r18, 0x01	; 1
+ eba:	09 f0       	breq	.+2      	; 0xebe <MTimerCounter_voidStartTimer+0x10>
+ ebc:	42 c0       	rjmp	.+132    	; 0xf42 <MTimerCounter_voidStartTimer+0x94>
+	   (pstructCpy_TimerObj->enumObj_State == MTIMER_Free))
+	{
+		pstructCpy_TimerObj->enumObj_State = MTIMER_Busy;
+ ebe:	11 82       	std	Z+1, r1	; 0x01
+		switch(pstructCpy_TimerObj->enumObj_Num)
+ ec0:	80 81       	ld	r24, Z
+ ec2:	81 30       	cpi	r24, 0x01	; 1
+ ec4:	b9 f0       	breq	.+46     	; 0xef4 <MTimerCounter_voidStartTimer+0x46>
+ ec6:	18 f0       	brcs	.+6      	; 0xece <MTimerCounter_voidStartTimer+0x20>
+ ec8:	82 30       	cpi	r24, 0x02	; 2
+ eca:	49 f1       	breq	.+82     	; 0xf1e <MTimerCounter_voidStartTimer+0x70>
+ ecc:	08 95       	ret
+		{
+			case MTimerCounter_Num0:
+				MTimerCounter_u32Tim0OVFCounter = 0;
+ ece:	10 92 d5 00 	sts	0x00D5, r1	; 0x8000d5 <MTimerCounter_u32Tim0OVFCounter>
+ ed2:	10 92 d6 00 	sts	0x00D6, r1	; 0x8000d6 <MTimerCounter_u32Tim0OVFCounter+0x1>
+ ed6:	10 92 d7 00 	sts	0x00D7, r1	; 0x8000d7 <MTimerCounter_u32Tim0OVFCounter+0x2>
+ eda:	10 92 d8 00 	sts	0x00D8, r1	; 0x8000d8 <MTimerCounter_u32Tim0OVFCounter+0x3>
+				MTIMER_voidTIM0OVFSetCallBack(MTimerCounter_voidIncTim0OVFCounter);
+ ede:	88 e7       	ldi	r24, 0x78	; 120
+ ee0:	9b e0       	ldi	r25, 0x0B	; 11
+ ee2:	0e 94 2f 0c 	call	0x185e	; 0x185e <MTIMER_voidTIM0OVFSetCallBack>
+				TCCR0 = 0x05;//timer with prescaler 1024
+ ee6:	85 e0       	ldi	r24, 0x05	; 5
+ ee8:	83 bf       	out	0x33, r24	; 51
+				TCNT0 = 0x00;//reset timer/counter register
+ eea:	12 be       	out	0x32, r1	; 50
+				SET_BIT(TIMSK,0);// enable overflow interrupt for timer0 (polling)
+ eec:	89 b7       	in	r24, 0x39	; 57
+ eee:	81 60       	ori	r24, 0x01	; 1
+ ef0:	89 bf       	out	0x39, r24	; 57
+				break;
+ ef2:	08 95       	ret
+			
+			case MTimerCounter_Num1:
+				MTimerCounter_u32Tim1OVFCounter = 0;
+ ef4:	10 92 d1 00 	sts	0x00D1, r1	; 0x8000d1 <MTimerCounter_u32Tim1OVFCounter>
+ ef8:	10 92 d2 00 	sts	0x00D2, r1	; 0x8000d2 <MTimerCounter_u32Tim1OVFCounter+0x1>
+ efc:	10 92 d3 00 	sts	0x00D3, r1	; 0x8000d3 <MTimerCounter_u32Tim1OVFCounter+0x2>
+ f00:	10 92 d4 00 	sts	0x00D4, r1	; 0x8000d4 <MTimerCounter_u32Tim1OVFCounter+0x3>
+				MTIMER_voidTIM1OVFSetCallBack(MTimerCounter_voidIncTim1OVFCounter);
+ f04:	8c e8       	ldi	r24, 0x8C	; 140
+ f06:	9b e0       	ldi	r25, 0x0B	; 11
+ f08:	0e 94 34 0c 	call	0x1868	; 0x1868 <MTIMER_voidTIM1OVFSetCallBack>
+				TCCR1B = 0x05;//timer with prescaler 1024
+ f0c:	85 e0       	ldi	r24, 0x05	; 5
+ f0e:	8e bd       	out	0x2e, r24	; 46
+				TCCR1A = 0x00;
+ f10:	1f bc       	out	0x2f, r1	; 47
+				TCNT1H = 0x00;//To do a 16-bit write, the high byte must be written before the low byte.
+ f12:	1d bc       	out	0x2d, r1	; 45
+				TCNT1L = 0x00;//reset timer/counter register
+ f14:	1c bc       	out	0x2c, r1	; 44
+				SET_BIT(TIMSK,2);// enable overflow interrupt for timer1 (polling)
+ f16:	89 b7       	in	r24, 0x39	; 57
+ f18:	84 60       	ori	r24, 0x04	; 4
+ f1a:	89 bf       	out	0x39, r24	; 57
+				break;
+ f1c:	08 95       	ret
+			
+			case MTimerCounter_Num2:
+				MTimerCounter_u32Tim2OVFCounter = 0;
+ f1e:	10 92 cd 00 	sts	0x00CD, r1	; 0x8000cd <MTimerCounter_u32Tim2OVFCounter>
+ f22:	10 92 ce 00 	sts	0x00CE, r1	; 0x8000ce <MTimerCounter_u32Tim2OVFCounter+0x1>
+ f26:	10 92 cf 00 	sts	0x00CF, r1	; 0x8000cf <MTimerCounter_u32Tim2OVFCounter+0x2>
+ f2a:	10 92 d0 00 	sts	0x00D0, r1	; 0x8000d0 <MTimerCounter_u32Tim2OVFCounter+0x3>
+				MTIMER_voidTIM2OVFSetCallBack(MTimerCounter_voidIncTim2OVFCounter);
+ f2e:	80 ea       	ldi	r24, 0xA0	; 160
+ f30:	9b e0       	ldi	r25, 0x0B	; 11
+ f32:	0e 94 39 0c 	call	0x1872	; 0x1872 <MTIMER_voidTIM2OVFSetCallBack>
+				TCCR2 = 0x07;//timer with prescaler 1024
+ f36:	87 e0       	ldi	r24, 0x07	; 7
+ f38:	85 bd       	out	0x25, r24	; 37
+				TCNT2 = 0x00;//reset timer/counter register
+ f3a:	14 bc       	out	0x24, r1	; 36
+				SET_BIT(TIMSK,6);// enable overflow interrupt for timer2 (polling)
+ f3c:	89 b7       	in	r24, 0x39	; 57
+ f3e:	80 64       	ori	r24, 0x40	; 64
+ f40:	89 bf       	out	0x39, r24	; 57
+ f42:	08 95       	ret
+
+Disassembly of section .text.MTimerCounter_f32GetTimerValue:
+
+000002de <MTimerCounter_f32GetTimerValue>:
+			}
+				
+			u32Local_OVFLoops--;
+		}
+	}
+}
+ 2de:	cf 92       	push	r12
+ 2e0:	df 92       	push	r13
+ 2e2:	ef 92       	push	r14
+ 2e4:	ff 92       	push	r15
+ 2e6:	0f 93       	push	r16
+ 2e8:	1f 93       	push	r17
+ 2ea:	cf 93       	push	r28
+ 2ec:	df 93       	push	r29
+ 2ee:	ec 01       	movw	r28, r24
+ 2f0:	89 2b       	or	r24, r25
+ 2f2:	09 f4       	brne	.+2      	; 0x2f6 <MTimerCounter_f32GetTimerValue+0x18>
+ 2f4:	54 c0       	rjmp	.+168    	; 0x39e <MTimerCounter_f32GetTimerValue+0xc0>
+ 2f6:	89 81       	ldd	r24, Y+1	; 0x01
+ 2f8:	81 11       	cpse	r24, r1
+ 2fa:	57 c0       	rjmp	.+174    	; 0x3aa <MTimerCounter_f32GetTimerValue+0xcc>
+ 2fc:	88 81       	ld	r24, Y
+ 2fe:	81 30       	cpi	r24, 0x01	; 1
+ 300:	d9 f0       	breq	.+54     	; 0x338 <MTimerCounter_f32GetTimerValue+0x5a>
+ 302:	18 f0       	brcs	.+6      	; 0x30a <MTimerCounter_f32GetTimerValue+0x2c>
+ 304:	82 30       	cpi	r24, 0x02	; 2
+ 306:	a1 f1       	breq	.+104    	; 0x370 <MTimerCounter_f32GetTimerValue+0x92>
+ 308:	56 c0       	rjmp	.+172    	; 0x3b6 <MTimerCounter_f32GetTimerValue+0xd8>
+ 30a:	13 be       	out	0x33, r1	; 51
+ 30c:	62 b7       	in	r22, 0x32	; 50
+ 30e:	06 2f       	mov	r16, r22
+ 310:	10 e0       	ldi	r17, 0x00	; 0
+ 312:	60 91 d5 00 	lds	r22, 0x00D5	; 0x8000d5 <MTimerCounter_u32Tim0OVFCounter>
+ 316:	70 91 d6 00 	lds	r23, 0x00D6	; 0x8000d6 <MTimerCounter_u32Tim0OVFCounter+0x1>
+ 31a:	80 91 d7 00 	lds	r24, 0x00D7	; 0x8000d7 <MTimerCounter_u32Tim0OVFCounter+0x2>
+ 31e:	90 91 d8 00 	lds	r25, 0x00D8	; 0x8000d8 <MTimerCounter_u32Tim0OVFCounter+0x3>
+ 322:	0e 94 e4 07 	call	0xfc8	; 0xfc8 <__floatunsisf>
+ 326:	2f e6       	ldi	r18, 0x6F	; 111
+ 328:	32 e1       	ldi	r19, 0x12	; 18
+ 32a:	43 e8       	ldi	r20, 0x83	; 131
+ 32c:	51 e4       	ldi	r21, 0x41	; 65
+ 32e:	0e 94 3e 0c 	call	0x187c	; 0x187c <__mulsf3>
+ 332:	6b 01       	movw	r12, r22
+ 334:	7c 01       	movw	r14, r24
+ 336:	44 c0       	rjmp	.+136    	; 0x3c0 <MTimerCounter_f32GetTimerValue+0xe2>
+ 338:	1e bc       	out	0x2e, r1	; 46
+ 33a:	1f bc       	out	0x2f, r1	; 47
+ 33c:	8c b5       	in	r24, 0x2c	; 44
+ 33e:	6d b5       	in	r22, 0x2d	; 45
+ 340:	70 e0       	ldi	r23, 0x00	; 0
+ 342:	76 2f       	mov	r23, r22
+ 344:	66 27       	eor	r22, r22
+ 346:	8b 01       	movw	r16, r22
+ 348:	08 2b       	or	r16, r24
+ 34a:	60 91 d1 00 	lds	r22, 0x00D1	; 0x8000d1 <MTimerCounter_u32Tim1OVFCounter>
+ 34e:	70 91 d2 00 	lds	r23, 0x00D2	; 0x8000d2 <MTimerCounter_u32Tim1OVFCounter+0x1>
+ 352:	80 91 d3 00 	lds	r24, 0x00D3	; 0x8000d3 <MTimerCounter_u32Tim1OVFCounter+0x2>
+ 356:	90 91 d4 00 	lds	r25, 0x00D4	; 0x8000d4 <MTimerCounter_u32Tim1OVFCounter+0x3>
+ 35a:	0e 94 e4 07 	call	0xfc8	; 0xfc8 <__floatunsisf>
+ 35e:	2f e6       	ldi	r18, 0x6F	; 111
+ 360:	32 e1       	ldi	r19, 0x12	; 18
+ 362:	43 e8       	ldi	r20, 0x83	; 131
+ 364:	55 e4       	ldi	r21, 0x45	; 69
+ 366:	0e 94 3e 0c 	call	0x187c	; 0x187c <__mulsf3>
+ 36a:	6b 01       	movw	r12, r22
+ 36c:	7c 01       	movw	r14, r24
+ 36e:	28 c0       	rjmp	.+80     	; 0x3c0 <MTimerCounter_f32GetTimerValue+0xe2>
+ 370:	15 bc       	out	0x25, r1	; 37
+ 372:	64 b5       	in	r22, 0x24	; 36
+ 374:	06 2f       	mov	r16, r22
+ 376:	10 e0       	ldi	r17, 0x00	; 0
+ 378:	60 91 cd 00 	lds	r22, 0x00CD	; 0x8000cd <MTimerCounter_u32Tim2OVFCounter>
+ 37c:	70 91 ce 00 	lds	r23, 0x00CE	; 0x8000ce <MTimerCounter_u32Tim2OVFCounter+0x1>
+ 380:	80 91 cf 00 	lds	r24, 0x00CF	; 0x8000cf <MTimerCounter_u32Tim2OVFCounter+0x2>
+ 384:	90 91 d0 00 	lds	r25, 0x00D0	; 0x8000d0 <MTimerCounter_u32Tim2OVFCounter+0x3>
+ 388:	0e 94 e4 07 	call	0xfc8	; 0xfc8 <__floatunsisf>
+ 38c:	2f e6       	ldi	r18, 0x6F	; 111
+ 38e:	32 e1       	ldi	r19, 0x12	; 18
+ 390:	43 e8       	ldi	r20, 0x83	; 131
+ 392:	51 e4       	ldi	r21, 0x41	; 65
+ 394:	0e 94 3e 0c 	call	0x187c	; 0x187c <__mulsf3>
+ 398:	6b 01       	movw	r12, r22
+ 39a:	7c 01       	movw	r14, r24
+ 39c:	11 c0       	rjmp	.+34     	; 0x3c0 <MTimerCounter_f32GetTimerValue+0xe2>
+ 39e:	c1 2c       	mov	r12, r1
+ 3a0:	d1 2c       	mov	r13, r1
+ 3a2:	76 01       	movw	r14, r12
+ 3a4:	00 e0       	ldi	r16, 0x00	; 0
+ 3a6:	10 e0       	ldi	r17, 0x00	; 0
+ 3a8:	0b c0       	rjmp	.+22     	; 0x3c0 <MTimerCounter_f32GetTimerValue+0xe2>
+ 3aa:	c1 2c       	mov	r12, r1
+ 3ac:	d1 2c       	mov	r13, r1
+ 3ae:	76 01       	movw	r14, r12
+ 3b0:	00 e0       	ldi	r16, 0x00	; 0
+ 3b2:	10 e0       	ldi	r17, 0x00	; 0
+ 3b4:	05 c0       	rjmp	.+10     	; 0x3c0 <MTimerCounter_f32GetTimerValue+0xe2>
+ 3b6:	c1 2c       	mov	r12, r1
+ 3b8:	d1 2c       	mov	r13, r1
+ 3ba:	76 01       	movw	r14, r12
+ 3bc:	00 e0       	ldi	r16, 0x00	; 0
+ 3be:	10 e0       	ldi	r17, 0x00	; 0
+ 3c0:	8a 81       	ldd	r24, Y+2	; 0x02
+ 3c2:	81 11       	cpse	r24, r1
+ 3c4:	12 c0       	rjmp	.+36     	; 0x3ea <MTimerCounter_f32GetTimerValue+0x10c>
+ 3c6:	b8 01       	movw	r22, r16
+ 3c8:	80 e0       	ldi	r24, 0x00	; 0
+ 3ca:	90 e0       	ldi	r25, 0x00	; 0
+ 3cc:	0e 94 e4 07 	call	0xfc8	; 0xfc8 <__floatunsisf>
+ 3d0:	2f e6       	ldi	r18, 0x6F	; 111
+ 3d2:	32 e1       	ldi	r19, 0x12	; 18
+ 3d4:	43 e8       	ldi	r20, 0x83	; 131
+ 3d6:	5f e3       	ldi	r21, 0x3F	; 63
+ 3d8:	0e 94 3e 0c 	call	0x187c	; 0x187c <__mulsf3>
+ 3dc:	20 e0       	ldi	r18, 0x00	; 0
+ 3de:	30 e0       	ldi	r19, 0x00	; 0
+ 3e0:	40 e8       	ldi	r20, 0x80	; 128
+ 3e2:	5d e3       	ldi	r21, 0x3D	; 61
+ 3e4:	0e 94 3e 0c 	call	0x187c	; 0x187c <__mulsf3>
+ 3e8:	15 c0       	rjmp	.+42     	; 0x414 <__EEPROM_REGION_LENGTH__+0x14>
+ 3ea:	81 30       	cpi	r24, 0x01	; 1
+ 3ec:	81 f4       	brne	.+32     	; 0x40e <__EEPROM_REGION_LENGTH__+0xe>
+ 3ee:	b8 01       	movw	r22, r16
+ 3f0:	76 2f       	mov	r23, r22
+ 3f2:	66 27       	eor	r22, r22
+ 3f4:	77 0f       	add	r23, r23
+ 3f6:	77 0f       	add	r23, r23
+ 3f8:	72 95       	swap	r23
+ 3fa:	62 95       	swap	r22
+ 3fc:	6f 70       	andi	r22, 0x0F	; 15
+ 3fe:	67 27       	eor	r22, r23
+ 400:	7f 70       	andi	r23, 0x0F	; 15
+ 402:	67 27       	eor	r22, r23
+ 404:	80 e0       	ldi	r24, 0x00	; 0
+ 406:	90 e0       	ldi	r25, 0x00	; 0
+ 408:	0e 94 e4 07 	call	0xfc8	; 0xfc8 <__floatunsisf>
+ 40c:	03 c0       	rjmp	.+6      	; 0x414 <__EEPROM_REGION_LENGTH__+0x14>
+ 40e:	60 e0       	ldi	r22, 0x00	; 0
+ 410:	70 e0       	ldi	r23, 0x00	; 0
+ 412:	cb 01       	movw	r24, r22
+ 414:	a7 01       	movw	r20, r14
+ 416:	96 01       	movw	r18, r12
+ 418:	0e 94 0e 0c 	call	0x181c	; 0x181c <__addsf3>
+ 41c:	21 e0       	ldi	r18, 0x01	; 1
+ 41e:	29 83       	std	Y+1, r18	; 0x01
+ 420:	df 91       	pop	r29
+ 422:	cf 91       	pop	r28
+ 424:	1f 91       	pop	r17
+ 426:	0f 91       	pop	r16
+ 428:	ff 90       	pop	r15
+ 42a:	ef 90       	pop	r14
+ 42c:	df 90       	pop	r13
+ 42e:	cf 90       	pop	r12
+ 430:	08 95       	ret
+
+Disassembly of section .text.__vector_11:
+
+000010a0 <__vector_11>:
+{
+	G_TIMER1_COMPB=function_ptr ;
+}
+
+void MTIMER_voidTIM1CAPTSetCallBack(void(*function_ptr) (void))
+{
+    10a0:	1f 92       	push	r1
+    10a2:	0f 92       	push	r0
+    10a4:	0f b6       	in	r0, 0x3f	; 63
+    10a6:	0f 92       	push	r0
+    10a8:	11 24       	eor	r1, r1
+    10aa:	2f 93       	push	r18
+    10ac:	3f 93       	push	r19
+    10ae:	4f 93       	push	r20
+    10b0:	5f 93       	push	r21
+    10b2:	6f 93       	push	r22
+    10b4:	7f 93       	push	r23
+    10b6:	8f 93       	push	r24
+    10b8:	9f 93       	push	r25
+    10ba:	af 93       	push	r26
+    10bc:	bf 93       	push	r27
+    10be:	ef 93       	push	r30
+    10c0:	ff 93       	push	r31
+    10c2:	e0 91 ec 00 	lds	r30, 0x00EC	; 0x8000ec <G_TIMER0_OVF>
+    10c6:	f0 91 ed 00 	lds	r31, 0x00ED	; 0x8000ed <G_TIMER0_OVF+0x1>
+    10ca:	30 97       	sbiw	r30, 0x00	; 0
+    10cc:	09 f0       	breq	.+2      	; 0x10d0 <__vector_11+0x30>
+    10ce:	09 95       	icall
+    10d0:	ff 91       	pop	r31
+    10d2:	ef 91       	pop	r30
+    10d4:	bf 91       	pop	r27
+    10d6:	af 91       	pop	r26
+    10d8:	9f 91       	pop	r25
+    10da:	8f 91       	pop	r24
+    10dc:	7f 91       	pop	r23
+    10de:	6f 91       	pop	r22
+    10e0:	5f 91       	pop	r21
+    10e2:	4f 91       	pop	r20
+    10e4:	3f 91       	pop	r19
+    10e6:	2f 91       	pop	r18
+    10e8:	0f 90       	pop	r0
+    10ea:	0f be       	out	0x3f, r0	; 63
+    10ec:	0f 90       	pop	r0
+    10ee:	1f 90       	pop	r1
+    10f0:	18 95       	reti
+
+Disassembly of section .text.__vector_10:
+
+000010f2 <__vector_10>:
+    10f2:	1f 92       	push	r1
+    10f4:	0f 92       	push	r0
+    10f6:	0f b6       	in	r0, 0x3f	; 63
+    10f8:	0f 92       	push	r0
+    10fa:	11 24       	eor	r1, r1
+    10fc:	2f 93       	push	r18
+    10fe:	3f 93       	push	r19
+    1100:	4f 93       	push	r20
+    1102:	5f 93       	push	r21
+    1104:	6f 93       	push	r22
+    1106:	7f 93       	push	r23
+    1108:	8f 93       	push	r24
+    110a:	9f 93       	push	r25
+    110c:	af 93       	push	r26
+    110e:	bf 93       	push	r27
+    1110:	ef 93       	push	r30
+    1112:	ff 93       	push	r31
+    1114:	e0 91 ea 00 	lds	r30, 0x00EA	; 0x8000ea <G_TIMER0_COMP>
+    1118:	f0 91 eb 00 	lds	r31, 0x00EB	; 0x8000eb <G_TIMER0_COMP+0x1>
+    111c:	30 97       	sbiw	r30, 0x00	; 0
+    111e:	09 f0       	breq	.+2      	; 0x1122 <__vector_10+0x30>
+    1120:	09 95       	icall
+    1122:	ff 91       	pop	r31
+    1124:	ef 91       	pop	r30
+    1126:	bf 91       	pop	r27
+    1128:	af 91       	pop	r26
+    112a:	9f 91       	pop	r25
+    112c:	8f 91       	pop	r24
+    112e:	7f 91       	pop	r23
+    1130:	6f 91       	pop	r22
+    1132:	5f 91       	pop	r21
+    1134:	4f 91       	pop	r20
+    1136:	3f 91       	pop	r19
+    1138:	2f 91       	pop	r18
+    113a:	0f 90       	pop	r0
+    113c:	0f be       	out	0x3f, r0	; 63
+    113e:	0f 90       	pop	r0
+    1140:	1f 90       	pop	r1
+    1142:	18 95       	reti
+
+Disassembly of section .text.__vector_9:
+
+00001144 <__vector_9>:
+    1144:	1f 92       	push	r1
+    1146:	0f 92       	push	r0
+    1148:	0f b6       	in	r0, 0x3f	; 63
+    114a:	0f 92       	push	r0
+    114c:	11 24       	eor	r1, r1
+    114e:	2f 93       	push	r18
+    1150:	3f 93       	push	r19
+    1152:	4f 93       	push	r20
+    1154:	5f 93       	push	r21
+    1156:	6f 93       	push	r22
+    1158:	7f 93       	push	r23
+    115a:	8f 93       	push	r24
+    115c:	9f 93       	push	r25
+    115e:	af 93       	push	r26
+    1160:	bf 93       	push	r27
+    1162:	ef 93       	push	r30
+    1164:	ff 93       	push	r31
+    1166:	e0 91 e8 00 	lds	r30, 0x00E8	; 0x8000e8 <G_TIMER1_OVF>
+    116a:	f0 91 e9 00 	lds	r31, 0x00E9	; 0x8000e9 <G_TIMER1_OVF+0x1>
+    116e:	30 97       	sbiw	r30, 0x00	; 0
+    1170:	09 f0       	breq	.+2      	; 0x1174 <__vector_9+0x30>
+    1172:	09 95       	icall
+    1174:	ff 91       	pop	r31
+    1176:	ef 91       	pop	r30
+    1178:	bf 91       	pop	r27
+    117a:	af 91       	pop	r26
+    117c:	9f 91       	pop	r25
+    117e:	8f 91       	pop	r24
+    1180:	7f 91       	pop	r23
+    1182:	6f 91       	pop	r22
+    1184:	5f 91       	pop	r21
+    1186:	4f 91       	pop	r20
+    1188:	3f 91       	pop	r19
+    118a:	2f 91       	pop	r18
+    118c:	0f 90       	pop	r0
+    118e:	0f be       	out	0x3f, r0	; 63
+    1190:	0f 90       	pop	r0
+    1192:	1f 90       	pop	r1
+    1194:	18 95       	reti
+
+Disassembly of section .text.__vector_7:
+
+00001196 <__vector_7>:
+    1196:	1f 92       	push	r1
+    1198:	0f 92       	push	r0
+    119a:	0f b6       	in	r0, 0x3f	; 63
+    119c:	0f 92       	push	r0
+    119e:	11 24       	eor	r1, r1
+    11a0:	2f 93       	push	r18
+    11a2:	3f 93       	push	r19
+    11a4:	4f 93       	push	r20
+    11a6:	5f 93       	push	r21
+    11a8:	6f 93       	push	r22
+    11aa:	7f 93       	push	r23
+    11ac:	8f 93       	push	r24
+    11ae:	9f 93       	push	r25
+    11b0:	af 93       	push	r26
+    11b2:	bf 93       	push	r27
+    11b4:	ef 93       	push	r30
+    11b6:	ff 93       	push	r31
+    11b8:	e0 91 e6 00 	lds	r30, 0x00E6	; 0x8000e6 <G_TIMER1_COMPA>
+    11bc:	f0 91 e7 00 	lds	r31, 0x00E7	; 0x8000e7 <G_TIMER1_COMPA+0x1>
+    11c0:	30 97       	sbiw	r30, 0x00	; 0
+    11c2:	09 f0       	breq	.+2      	; 0x11c6 <__vector_7+0x30>
+    11c4:	09 95       	icall
+    11c6:	ff 91       	pop	r31
+    11c8:	ef 91       	pop	r30
+    11ca:	bf 91       	pop	r27
+    11cc:	af 91       	pop	r26
+    11ce:	9f 91       	pop	r25
+    11d0:	8f 91       	pop	r24
+    11d2:	7f 91       	pop	r23
+    11d4:	6f 91       	pop	r22
+    11d6:	5f 91       	pop	r21
+    11d8:	4f 91       	pop	r20
+    11da:	3f 91       	pop	r19
+    11dc:	2f 91       	pop	r18
+    11de:	0f 90       	pop	r0
+    11e0:	0f be       	out	0x3f, r0	; 63
+    11e2:	0f 90       	pop	r0
+    11e4:	1f 90       	pop	r1
+    11e6:	18 95       	reti
+
+Disassembly of section .text.__vector_8:
+
+000011e8 <__vector_8>:
+    11e8:	1f 92       	push	r1
+    11ea:	0f 92       	push	r0
+    11ec:	0f b6       	in	r0, 0x3f	; 63
+    11ee:	0f 92       	push	r0
+    11f0:	11 24       	eor	r1, r1
+    11f2:	2f 93       	push	r18
+    11f4:	3f 93       	push	r19
+    11f6:	4f 93       	push	r20
+    11f8:	5f 93       	push	r21
+    11fa:	6f 93       	push	r22
+    11fc:	7f 93       	push	r23
+    11fe:	8f 93       	push	r24
+    1200:	9f 93       	push	r25
+    1202:	af 93       	push	r26
+    1204:	bf 93       	push	r27
+    1206:	ef 93       	push	r30
+    1208:	ff 93       	push	r31
+    120a:	e0 91 e4 00 	lds	r30, 0x00E4	; 0x8000e4 <G_TIMER1_COMPB>
+    120e:	f0 91 e5 00 	lds	r31, 0x00E5	; 0x8000e5 <G_TIMER1_COMPB+0x1>
+    1212:	30 97       	sbiw	r30, 0x00	; 0
+    1214:	09 f0       	breq	.+2      	; 0x1218 <__vector_8+0x30>
+    1216:	09 95       	icall
+    1218:	ff 91       	pop	r31
+    121a:	ef 91       	pop	r30
+    121c:	bf 91       	pop	r27
+    121e:	af 91       	pop	r26
+    1220:	9f 91       	pop	r25
+    1222:	8f 91       	pop	r24
+    1224:	7f 91       	pop	r23
+    1226:	6f 91       	pop	r22
+    1228:	5f 91       	pop	r21
+    122a:	4f 91       	pop	r20
+    122c:	3f 91       	pop	r19
+    122e:	2f 91       	pop	r18
+    1230:	0f 90       	pop	r0
+    1232:	0f be       	out	0x3f, r0	; 63
+    1234:	0f 90       	pop	r0
+    1236:	1f 90       	pop	r1
+    1238:	18 95       	reti
+
+Disassembly of section .text.__vector_5:
+
+0000123a <__vector_5>:
+    123a:	1f 92       	push	r1
+    123c:	0f 92       	push	r0
+    123e:	0f b6       	in	r0, 0x3f	; 63
+    1240:	0f 92       	push	r0
+    1242:	11 24       	eor	r1, r1
+    1244:	2f 93       	push	r18
+    1246:	3f 93       	push	r19
+    1248:	4f 93       	push	r20
+    124a:	5f 93       	push	r21
+    124c:	6f 93       	push	r22
+    124e:	7f 93       	push	r23
+    1250:	8f 93       	push	r24
+    1252:	9f 93       	push	r25
+    1254:	af 93       	push	r26
+    1256:	bf 93       	push	r27
+    1258:	ef 93       	push	r30
+    125a:	ff 93       	push	r31
+    125c:	e0 91 e2 00 	lds	r30, 0x00E2	; 0x8000e2 <G_TIMER2_OVF>
+    1260:	f0 91 e3 00 	lds	r31, 0x00E3	; 0x8000e3 <G_TIMER2_OVF+0x1>
+    1264:	30 97       	sbiw	r30, 0x00	; 0
+    1266:	09 f0       	breq	.+2      	; 0x126a <__vector_5+0x30>
+    1268:	09 95       	icall
+    126a:	ff 91       	pop	r31
+    126c:	ef 91       	pop	r30
+    126e:	bf 91       	pop	r27
+    1270:	af 91       	pop	r26
+    1272:	9f 91       	pop	r25
+    1274:	8f 91       	pop	r24
+    1276:	7f 91       	pop	r23
+    1278:	6f 91       	pop	r22
+    127a:	5f 91       	pop	r21
+    127c:	4f 91       	pop	r20
+    127e:	3f 91       	pop	r19
+    1280:	2f 91       	pop	r18
+    1282:	0f 90       	pop	r0
+    1284:	0f be       	out	0x3f, r0	; 63
+    1286:	0f 90       	pop	r0
+    1288:	1f 90       	pop	r1
+    128a:	18 95       	reti
+
+Disassembly of section .text.__vector_4:
+
+0000128c <__vector_4>:
+    128c:	1f 92       	push	r1
+    128e:	0f 92       	push	r0
+    1290:	0f b6       	in	r0, 0x3f	; 63
+    1292:	0f 92       	push	r0
+    1294:	11 24       	eor	r1, r1
+    1296:	2f 93       	push	r18
+    1298:	3f 93       	push	r19
+    129a:	4f 93       	push	r20
+    129c:	5f 93       	push	r21
+    129e:	6f 93       	push	r22
+    12a0:	7f 93       	push	r23
+    12a2:	8f 93       	push	r24
+    12a4:	9f 93       	push	r25
+    12a6:	af 93       	push	r26
+    12a8:	bf 93       	push	r27
+    12aa:	ef 93       	push	r30
+    12ac:	ff 93       	push	r31
+    12ae:	e0 91 e0 00 	lds	r30, 0x00E0	; 0x8000e0 <G_TIMER2_COMP>
+    12b2:	f0 91 e1 00 	lds	r31, 0x00E1	; 0x8000e1 <G_TIMER2_COMP+0x1>
+    12b6:	30 97       	sbiw	r30, 0x00	; 0
+    12b8:	09 f0       	breq	.+2      	; 0x12bc <__vector_4+0x30>
+    12ba:	09 95       	icall
+    12bc:	ff 91       	pop	r31
+    12be:	ef 91       	pop	r30
+    12c0:	bf 91       	pop	r27
+    12c2:	af 91       	pop	r26
+    12c4:	9f 91       	pop	r25
+    12c6:	8f 91       	pop	r24
+    12c8:	7f 91       	pop	r23
+    12ca:	6f 91       	pop	r22
+    12cc:	5f 91       	pop	r21
+    12ce:	4f 91       	pop	r20
+    12d0:	3f 91       	pop	r19
+    12d2:	2f 91       	pop	r18
+    12d4:	0f 90       	pop	r0
+    12d6:	0f be       	out	0x3f, r0	; 63
+    12d8:	0f 90       	pop	r0
+    12da:	1f 90       	pop	r1
+    12dc:	18 95       	reti
+
+Disassembly of section .text.MTIMER_voidTIM0OVFSetCallBack:
+
+0000185e <MTIMER_voidTIM0OVFSetCallBack>:
+    185e:	90 93 ed 00 	sts	0x00ED, r25	; 0x8000ed <G_TIMER0_OVF+0x1>
+    1862:	80 93 ec 00 	sts	0x00EC, r24	; 0x8000ec <G_TIMER0_OVF>
+    1866:	08 95       	ret
+
+Disassembly of section .text.MTIMER_voidTIM1OVFSetCallBack:
+
+00001868 <MTIMER_voidTIM1OVFSetCallBack>:
+    1868:	90 93 e9 00 	sts	0x00E9, r25	; 0x8000e9 <G_TIMER1_OVF+0x1>
+    186c:	80 93 e8 00 	sts	0x00E8, r24	; 0x8000e8 <G_TIMER1_OVF>
+    1870:	08 95       	ret
+
+Disassembly of section .text.MTIMER_voidTIM2OVFSetCallBack:
+
+00001872 <MTIMER_voidTIM2OVFSetCallBack>:
+}
+
+/**********************************TIMER2***************************************/
+void MTIMER_voidTIM2OVFSetCallBack(void(*function_ptr) (void))
+{
+	G_TIMER2_OVF=function_ptr ;
+    1872:	90 93 e3 00 	sts	0x00E3, r25	; 0x8000e3 <G_TIMER2_OVF+0x1>
+    1876:	80 93 e2 00 	sts	0x00E2, r24	; 0x8000e2 <G_TIMER2_OVF>
+    187a:	08 95       	ret
+
+Disassembly of section .text:
+
+0000181a <__subsf3>:
+    181a:	50 58       	subi	r21, 0x80	; 128
+
+0000181c <__addsf3>:
+    181c:	bb 27       	eor	r27, r27
+    181e:	aa 27       	eor	r26, r26
+    1820:	0e 94 e7 05 	call	0xbce	; 0xbce <__addsf3x>
+    1824:	0c 94 c8 0b 	jmp	0x1790	; 0x1790 <__fp_round>
+
+Disassembly of section .text:
+
+00000bce <__addsf3x>:
+ bce:	11 c0       	rjmp	.+34     	; 0xbf2 <__addsf3x+0x24>
+ bd0:	0e 94 14 0c 	call	0x1828	; 0x1828 <__fp_pscA>
+ bd4:	38 f0       	brcs	.+14     	; 0xbe4 <__addsf3x+0x16>
+ bd6:	0e 94 1b 0c 	call	0x1836	; 0x1836 <__fp_pscB>
+ bda:	20 f0       	brcs	.+8      	; 0xbe4 <__addsf3x+0x16>
+ bdc:	39 f4       	brne	.+14     	; 0xbec <__addsf3x+0x1e>
+ bde:	9f 3f       	cpi	r25, 0xFF	; 255
+ be0:	19 f4       	brne	.+6      	; 0xbe8 <__addsf3x+0x1a>
+ be2:	26 f4       	brtc	.+8      	; 0xbec <__addsf3x+0x1e>
+ be4:	0c 94 42 0c 	jmp	0x1884	; 0x1884 <__fp_nan>
+ be8:	0e f4       	brtc	.+2      	; 0xbec <__addsf3x+0x1e>
+ bea:	e0 95       	com	r30
+ bec:	e7 fb       	bst	r30, 7
+ bee:	0c 94 29 0c 	jmp	0x1852	; 0x1852 <__fp_inf>
+ bf2:	e9 2f       	mov	r30, r25
+ bf4:	0e 94 2f 0a 	call	0x145e	; 0x145e <__fp_split3>
+ bf8:	58 f3       	brcs	.-42     	; 0xbd0 <__addsf3x+0x2>
+ bfa:	ba 17       	cp	r27, r26
+ bfc:	62 07       	cpc	r22, r18
+ bfe:	73 07       	cpc	r23, r19
+ c00:	84 07       	cpc	r24, r20
+ c02:	95 07       	cpc	r25, r21
+ c04:	20 f0       	brcs	.+8      	; 0xc0e <__addsf3x+0x40>
+ c06:	79 f4       	brne	.+30     	; 0xc26 <__addsf3x+0x58>
+ c08:	a6 f5       	brtc	.+104    	; 0xc72 <__addsf3x+0xa4>
+ c0a:	0c 94 22 0c 	jmp	0x1844	; 0x1844 <__fp_zero>
+ c0e:	0e f4       	brtc	.+2      	; 0xc12 <__addsf3x+0x44>
+ c10:	e0 95       	com	r30
+ c12:	0b 2e       	mov	r0, r27
+ c14:	ba 2f       	mov	r27, r26
+ c16:	a0 2d       	mov	r26, r0
+ c18:	0b 01       	movw	r0, r22
+ c1a:	b9 01       	movw	r22, r18
+ c1c:	90 01       	movw	r18, r0
+ c1e:	0c 01       	movw	r0, r24
+ c20:	ca 01       	movw	r24, r20
+ c22:	a0 01       	movw	r20, r0
+ c24:	11 24       	eor	r1, r1
+ c26:	ff 27       	eor	r31, r31
+ c28:	59 1b       	sub	r21, r25
+ c2a:	99 f0       	breq	.+38     	; 0xc52 <__addsf3x+0x84>
+ c2c:	59 3f       	cpi	r21, 0xF9	; 249
+ c2e:	50 f4       	brcc	.+20     	; 0xc44 <__addsf3x+0x76>
+ c30:	50 3e       	cpi	r21, 0xE0	; 224
+ c32:	68 f1       	brcs	.+90     	; 0xc8e <__addsf3x+0xc0>
+ c34:	1a 16       	cp	r1, r26
+ c36:	f0 40       	sbci	r31, 0x00	; 0
+ c38:	a2 2f       	mov	r26, r18
+ c3a:	23 2f       	mov	r18, r19
+ c3c:	34 2f       	mov	r19, r20
+ c3e:	44 27       	eor	r20, r20
+ c40:	58 5f       	subi	r21, 0xF8	; 248
+ c42:	f3 cf       	rjmp	.-26     	; 0xc2a <__addsf3x+0x5c>
+ c44:	46 95       	lsr	r20
+ c46:	37 95       	ror	r19
+ c48:	27 95       	ror	r18
+ c4a:	a7 95       	ror	r26
+ c4c:	f0 40       	sbci	r31, 0x00	; 0
+ c4e:	53 95       	inc	r21
+ c50:	c9 f7       	brne	.-14     	; 0xc44 <__addsf3x+0x76>
+ c52:	7e f4       	brtc	.+30     	; 0xc72 <__addsf3x+0xa4>
+ c54:	1f 16       	cp	r1, r31
+ c56:	ba 0b       	sbc	r27, r26
+ c58:	62 0b       	sbc	r22, r18
+ c5a:	73 0b       	sbc	r23, r19
+ c5c:	84 0b       	sbc	r24, r20
+ c5e:	ba f0       	brmi	.+46     	; 0xc8e <__addsf3x+0xc0>
+ c60:	91 50       	subi	r25, 0x01	; 1
+ c62:	a1 f0       	breq	.+40     	; 0xc8c <__addsf3x+0xbe>
+ c64:	ff 0f       	add	r31, r31
+ c66:	bb 1f       	adc	r27, r27
+ c68:	66 1f       	adc	r22, r22
+ c6a:	77 1f       	adc	r23, r23
+ c6c:	88 1f       	adc	r24, r24
+ c6e:	c2 f7       	brpl	.-16     	; 0xc60 <__addsf3x+0x92>
+ c70:	0e c0       	rjmp	.+28     	; 0xc8e <__addsf3x+0xc0>
+ c72:	ba 0f       	add	r27, r26
+ c74:	62 1f       	adc	r22, r18
+ c76:	73 1f       	adc	r23, r19
+ c78:	84 1f       	adc	r24, r20
+ c7a:	48 f4       	brcc	.+18     	; 0xc8e <__addsf3x+0xc0>
+ c7c:	87 95       	ror	r24
+ c7e:	77 95       	ror	r23
+ c80:	67 95       	ror	r22
+ c82:	b7 95       	ror	r27
+ c84:	f7 95       	ror	r31
+ c86:	9e 3f       	cpi	r25, 0xFE	; 254
+ c88:	08 f0       	brcs	.+2      	; 0xc8c <__addsf3x+0xbe>
+ c8a:	b0 cf       	rjmp	.-160    	; 0xbec <__addsf3x+0x1e>
+ c8c:	93 95       	inc	r25
+ c8e:	88 0f       	add	r24, r24
+ c90:	08 f0       	brcs	.+2      	; 0xc94 <__addsf3x+0xc6>
+ c92:	99 27       	eor	r25, r25
+ c94:	ee 0f       	add	r30, r30
+ c96:	97 95       	ror	r25
+ c98:	87 95       	ror	r24
+ c9a:	08 95       	ret
+
+Disassembly of section .text:
+
+00001042 <__fixunssfsi>:
+    1042:	0e 94 37 0a 	call	0x146e	; 0x146e <__fp_splitA>
+    1046:	88 f0       	brcs	.+34     	; 0x106a <__fixunssfsi+0x28>
+    1048:	9f 57       	subi	r25, 0x7F	; 127
+    104a:	98 f0       	brcs	.+38     	; 0x1072 <__fixunssfsi+0x30>
+    104c:	b9 2f       	mov	r27, r25
+    104e:	99 27       	eor	r25, r25
+    1050:	b7 51       	subi	r27, 0x17	; 23
+    1052:	b0 f0       	brcs	.+44     	; 0x1080 <__fixunssfsi+0x3e>
+    1054:	e1 f0       	breq	.+56     	; 0x108e <__fixunssfsi+0x4c>
+    1056:	66 0f       	add	r22, r22
+    1058:	77 1f       	adc	r23, r23
+    105a:	88 1f       	adc	r24, r24
+    105c:	99 1f       	adc	r25, r25
+    105e:	1a f0       	brmi	.+6      	; 0x1066 <__fixunssfsi+0x24>
+    1060:	ba 95       	dec	r27
+    1062:	c9 f7       	brne	.-14     	; 0x1056 <__fixunssfsi+0x14>
+    1064:	14 c0       	rjmp	.+40     	; 0x108e <__fixunssfsi+0x4c>
+    1066:	b1 30       	cpi	r27, 0x01	; 1
+    1068:	91 f0       	breq	.+36     	; 0x108e <__fixunssfsi+0x4c>
+    106a:	0e 94 22 0c 	call	0x1844	; 0x1844 <__fp_zero>
+    106e:	b1 e0       	ldi	r27, 0x01	; 1
+    1070:	08 95       	ret
+    1072:	0c 94 22 0c 	jmp	0x1844	; 0x1844 <__fp_zero>
+    1076:	67 2f       	mov	r22, r23
+    1078:	78 2f       	mov	r23, r24
+    107a:	88 27       	eor	r24, r24
+    107c:	b8 5f       	subi	r27, 0xF8	; 248
+    107e:	39 f0       	breq	.+14     	; 0x108e <__fixunssfsi+0x4c>
+    1080:	b9 3f       	cpi	r27, 0xF9	; 249
+    1082:	cc f3       	brlt	.-14     	; 0x1076 <__fixunssfsi+0x34>
+    1084:	86 95       	lsr	r24
+    1086:	77 95       	ror	r23
+    1088:	67 95       	ror	r22
+    108a:	b3 95       	inc	r27
+    108c:	d9 f7       	brne	.-10     	; 0x1084 <__fixunssfsi+0x42>
+    108e:	3e f4       	brtc	.+14     	; 0x109e <__fixunssfsi+0x5c>
+    1090:	90 95       	com	r25
+    1092:	80 95       	com	r24
+    1094:	70 95       	com	r23
+    1096:	61 95       	neg	r22
+    1098:	7f 4f       	sbci	r23, 0xFF	; 255
+    109a:	8f 4f       	sbci	r24, 0xFF	; 255
+    109c:	9f 4f       	sbci	r25, 0xFF	; 255
+    109e:	08 95       	ret
+
+Disassembly of section .text:
+
+00000fc8 <__floatunsisf>:
+     fc8:	e8 94       	clt
+     fca:	09 c0       	rjmp	.+18     	; 0xfde <__floatsisf+0x12>
+
+00000fcc <__floatsisf>:
+     fcc:	97 fb       	bst	r25, 7
+     fce:	3e f4       	brtc	.+14     	; 0xfde <__floatsisf+0x12>
+     fd0:	90 95       	com	r25
+     fd2:	80 95       	com	r24
+     fd4:	70 95       	com	r23
+     fd6:	61 95       	neg	r22
+     fd8:	7f 4f       	sbci	r23, 0xFF	; 255
+     fda:	8f 4f       	sbci	r24, 0xFF	; 255
+     fdc:	9f 4f       	sbci	r25, 0xFF	; 255
+     fde:	99 23       	and	r25, r25
+     fe0:	a9 f0       	breq	.+42     	; 0x100c <__floatsisf+0x40>
+     fe2:	f9 2f       	mov	r31, r25
+     fe4:	96 e9       	ldi	r25, 0x96	; 150
+     fe6:	bb 27       	eor	r27, r27
+     fe8:	93 95       	inc	r25
+     fea:	f6 95       	lsr	r31
+     fec:	87 95       	ror	r24
+     fee:	77 95       	ror	r23
+     ff0:	67 95       	ror	r22
+     ff2:	b7 95       	ror	r27
+     ff4:	f1 11       	cpse	r31, r1
+     ff6:	f8 cf       	rjmp	.-16     	; 0xfe8 <__floatsisf+0x1c>
+     ff8:	fa f4       	brpl	.+62     	; 0x1038 <__floatsisf+0x6c>
+     ffa:	bb 0f       	add	r27, r27
+     ffc:	11 f4       	brne	.+4      	; 0x1002 <__floatsisf+0x36>
+     ffe:	60 ff       	sbrs	r22, 0
+    1000:	1b c0       	rjmp	.+54     	; 0x1038 <__floatsisf+0x6c>
+    1002:	6f 5f       	subi	r22, 0xFF	; 255
+    1004:	7f 4f       	sbci	r23, 0xFF	; 255
+    1006:	8f 4f       	sbci	r24, 0xFF	; 255
+    1008:	9f 4f       	sbci	r25, 0xFF	; 255
+    100a:	16 c0       	rjmp	.+44     	; 0x1038 <__floatsisf+0x6c>
+    100c:	88 23       	and	r24, r24
+    100e:	11 f0       	breq	.+4      	; 0x1014 <__floatsisf+0x48>
+    1010:	96 e9       	ldi	r25, 0x96	; 150
+    1012:	11 c0       	rjmp	.+34     	; 0x1036 <__floatsisf+0x6a>
+    1014:	77 23       	and	r23, r23
+    1016:	21 f0       	breq	.+8      	; 0x1020 <__floatsisf+0x54>
+    1018:	9e e8       	ldi	r25, 0x8E	; 142
+    101a:	87 2f       	mov	r24, r23
+    101c:	76 2f       	mov	r23, r22
+    101e:	05 c0       	rjmp	.+10     	; 0x102a <__floatsisf+0x5e>
+    1020:	66 23       	and	r22, r22
+    1022:	71 f0       	breq	.+28     	; 0x1040 <__floatsisf+0x74>
+    1024:	96 e8       	ldi	r25, 0x86	; 134
+    1026:	86 2f       	mov	r24, r22
+    1028:	70 e0       	ldi	r23, 0x00	; 0
+    102a:	60 e0       	ldi	r22, 0x00	; 0
+    102c:	2a f0       	brmi	.+10     	; 0x1038 <__floatsisf+0x6c>
+    102e:	9a 95       	dec	r25
+    1030:	66 0f       	add	r22, r22
+    1032:	77 1f       	adc	r23, r23
+    1034:	88 1f       	adc	r24, r24
+    1036:	da f7       	brpl	.-10     	; 0x102e <__floatsisf+0x62>
+    1038:	88 0f       	add	r24, r24
+    103a:	96 95       	lsr	r25
+    103c:	87 95       	ror	r24
+    103e:	97 f9       	bld	r25, 7
+    1040:	08 95       	ret
+
+Disassembly of section .text:
+
+00001852 <__fp_inf>:
+    1852:	97 f9       	bld	r25, 7
+    1854:	9f 67       	ori	r25, 0x7F	; 127
+    1856:	80 e8       	ldi	r24, 0x80	; 128
+    1858:	70 e0       	ldi	r23, 0x00	; 0
+    185a:	60 e0       	ldi	r22, 0x00	; 0
+    185c:	08 95       	ret
+
+Disassembly of section .text:
+
+00001884 <__fp_nan>:
+    1884:	9f ef       	ldi	r25, 0xFF	; 255
+    1886:	80 ec       	ldi	r24, 0xC0	; 192
+    1888:	08 95       	ret
+
+Disassembly of section .text:
+
+00001828 <__fp_pscA>:
+    1828:	00 24       	eor	r0, r0
+    182a:	0a 94       	dec	r0
+    182c:	16 16       	cp	r1, r22
+    182e:	17 06       	cpc	r1, r23
+    1830:	18 06       	cpc	r1, r24
+    1832:	09 06       	cpc	r0, r25
+    1834:	08 95       	ret
+
+Disassembly of section .text:
+
+00001836 <__fp_pscB>:
+    1836:	00 24       	eor	r0, r0
+    1838:	0a 94       	dec	r0
+    183a:	12 16       	cp	r1, r18
+    183c:	13 06       	cpc	r1, r19
+    183e:	14 06       	cpc	r1, r20
+    1840:	05 06       	cpc	r0, r21
+    1842:	08 95       	ret
+
+Disassembly of section .text:
+
+00001790 <__fp_round>:
+    1790:	09 2e       	mov	r0, r25
+    1792:	03 94       	inc	r0
+    1794:	00 0c       	add	r0, r0
+    1796:	11 f4       	brne	.+4      	; 0x179c <__fp_round+0xc>
+    1798:	88 23       	and	r24, r24
+    179a:	52 f0       	brmi	.+20     	; 0x17b0 <__fp_round+0x20>
+    179c:	bb 0f       	add	r27, r27
+    179e:	40 f4       	brcc	.+16     	; 0x17b0 <__fp_round+0x20>
+    17a0:	bf 2b       	or	r27, r31
+    17a2:	11 f4       	brne	.+4      	; 0x17a8 <__fp_round+0x18>
+    17a4:	60 ff       	sbrs	r22, 0
+    17a6:	04 c0       	rjmp	.+8      	; 0x17b0 <__fp_round+0x20>
+    17a8:	6f 5f       	subi	r22, 0xFF	; 255
+    17aa:	7f 4f       	sbci	r23, 0xFF	; 255
+    17ac:	8f 4f       	sbci	r24, 0xFF	; 255
+    17ae:	9f 4f       	sbci	r25, 0xFF	; 255
+    17b0:	08 95       	ret
+
+Disassembly of section .text:
+
+0000145e <__fp_split3>:
+    145e:	57 fd       	sbrc	r21, 7
+    1460:	90 58       	subi	r25, 0x80	; 128
+    1462:	44 0f       	add	r20, r20
+    1464:	55 1f       	adc	r21, r21
+    1466:	59 f0       	breq	.+22     	; 0x147e <__fp_splitA+0x10>
+    1468:	5f 3f       	cpi	r21, 0xFF	; 255
+    146a:	71 f0       	breq	.+28     	; 0x1488 <__fp_splitA+0x1a>
+    146c:	47 95       	ror	r20
+
+0000146e <__fp_splitA>:
+    146e:	88 0f       	add	r24, r24
+    1470:	97 fb       	bst	r25, 7
+    1472:	99 1f       	adc	r25, r25
+    1474:	61 f0       	breq	.+24     	; 0x148e <__fp_splitA+0x20>
+    1476:	9f 3f       	cpi	r25, 0xFF	; 255
+    1478:	79 f0       	breq	.+30     	; 0x1498 <__fp_splitA+0x2a>
+    147a:	87 95       	ror	r24
+    147c:	08 95       	ret
+    147e:	12 16       	cp	r1, r18
+    1480:	13 06       	cpc	r1, r19
+    1482:	14 06       	cpc	r1, r20
+    1484:	55 1f       	adc	r21, r21
+    1486:	f2 cf       	rjmp	.-28     	; 0x146c <__fp_split3+0xe>
+    1488:	46 95       	lsr	r20
+    148a:	f1 df       	rcall	.-30     	; 0x146e <__fp_splitA>
+    148c:	08 c0       	rjmp	.+16     	; 0x149e <__fp_splitA+0x30>
+    148e:	16 16       	cp	r1, r22
+    1490:	17 06       	cpc	r1, r23
+    1492:	18 06       	cpc	r1, r24
+    1494:	99 1f       	adc	r25, r25
+    1496:	f1 cf       	rjmp	.-30     	; 0x147a <__fp_splitA+0xc>
+    1498:	86 95       	lsr	r24
+    149a:	71 05       	cpc	r23, r1
+    149c:	61 05       	cpc	r22, r1
+    149e:	08 94       	sec
+    14a0:	08 95       	ret
+
+Disassembly of section .text:
+
+00001844 <__fp_zero>:
+    1844:	e8 94       	clt
+
+00001846 <__fp_szero>:
+    1846:	bb 27       	eor	r27, r27
+    1848:	66 27       	eor	r22, r22
+    184a:	77 27       	eor	r23, r23
+    184c:	cb 01       	movw	r24, r22
+    184e:	97 f9       	bld	r25, 7
+    1850:	08 95       	ret
+
+Disassembly of section .text:
+
+0000187c <__mulsf3>:
+    187c:	0e 94 7d 05 	call	0xafa	; 0xafa <__mulsf3x>
+    1880:	0c 94 c8 0b 	jmp	0x1790	; 0x1790 <__fp_round>
+
+Disassembly of section .text:
+
+00000afa <__mulsf3x>:
+ afa:	0f c0       	rjmp	.+30     	; 0xb1a <__mulsf3x+0x20>
+ afc:	0e 94 14 0c 	call	0x1828	; 0x1828 <__fp_pscA>
+ b00:	38 f0       	brcs	.+14     	; 0xb10 <__mulsf3x+0x16>
+ b02:	0e 94 1b 0c 	call	0x1836	; 0x1836 <__fp_pscB>
+ b06:	20 f0       	brcs	.+8      	; 0xb10 <__mulsf3x+0x16>
+ b08:	95 23       	and	r25, r21
+ b0a:	11 f0       	breq	.+4      	; 0xb10 <__mulsf3x+0x16>
+ b0c:	0c 94 29 0c 	jmp	0x1852	; 0x1852 <__fp_inf>
+ b10:	0c 94 42 0c 	jmp	0x1884	; 0x1884 <__fp_nan>
+ b14:	11 24       	eor	r1, r1
+ b16:	0c 94 23 0c 	jmp	0x1846	; 0x1846 <__fp_szero>
+ b1a:	0e 94 2f 0a 	call	0x145e	; 0x145e <__fp_split3>
+ b1e:	70 f3       	brcs	.-36     	; 0xafc <__mulsf3x+0x2>
+
+00000b20 <__mulsf3_pse>:
+ b20:	95 9f       	mul	r25, r21
+ b22:	c1 f3       	breq	.-16     	; 0xb14 <__mulsf3x+0x1a>
+ b24:	95 0f       	add	r25, r21
+ b26:	50 e0       	ldi	r21, 0x00	; 0
+ b28:	55 1f       	adc	r21, r21
+ b2a:	62 9f       	mul	r22, r18
+ b2c:	f0 01       	movw	r30, r0
+ b2e:	72 9f       	mul	r23, r18
+ b30:	bb 27       	eor	r27, r27
+ b32:	f0 0d       	add	r31, r0
+ b34:	b1 1d       	adc	r27, r1
+ b36:	63 9f       	mul	r22, r19
+ b38:	aa 27       	eor	r26, r26
+ b3a:	f0 0d       	add	r31, r0
+ b3c:	b1 1d       	adc	r27, r1
+ b3e:	aa 1f       	adc	r26, r26
+ b40:	64 9f       	mul	r22, r20
+ b42:	66 27       	eor	r22, r22
+ b44:	b0 0d       	add	r27, r0
+ b46:	a1 1d       	adc	r26, r1
+ b48:	66 1f       	adc	r22, r22
+ b4a:	82 9f       	mul	r24, r18
+ b4c:	22 27       	eor	r18, r18
+ b4e:	b0 0d       	add	r27, r0
+ b50:	a1 1d       	adc	r26, r1
+ b52:	62 1f       	adc	r22, r18
+ b54:	73 9f       	mul	r23, r19
+ b56:	b0 0d       	add	r27, r0
+ b58:	a1 1d       	adc	r26, r1
+ b5a:	62 1f       	adc	r22, r18
+ b5c:	83 9f       	mul	r24, r19
+ b5e:	a0 0d       	add	r26, r0
+ b60:	61 1d       	adc	r22, r1
+ b62:	22 1f       	adc	r18, r18
+ b64:	74 9f       	mul	r23, r20
+ b66:	33 27       	eor	r19, r19
+ b68:	a0 0d       	add	r26, r0
+ b6a:	61 1d       	adc	r22, r1
+ b6c:	23 1f       	adc	r18, r19
+ b6e:	84 9f       	mul	r24, r20
+ b70:	60 0d       	add	r22, r0
+ b72:	21 1d       	adc	r18, r1
+ b74:	82 2f       	mov	r24, r18
+ b76:	76 2f       	mov	r23, r22
+ b78:	6a 2f       	mov	r22, r26
+ b7a:	11 24       	eor	r1, r1
+ b7c:	9f 57       	subi	r25, 0x7F	; 127
+ b7e:	50 40       	sbci	r21, 0x00	; 0
+ b80:	9a f0       	brmi	.+38     	; 0xba8 <__mulsf3_pse+0x88>
+ b82:	f1 f0       	breq	.+60     	; 0xbc0 <__mulsf3_pse+0xa0>
+ b84:	88 23       	and	r24, r24
+ b86:	4a f0       	brmi	.+18     	; 0xb9a <__mulsf3_pse+0x7a>
+ b88:	ee 0f       	add	r30, r30
+ b8a:	ff 1f       	adc	r31, r31
+ b8c:	bb 1f       	adc	r27, r27
+ b8e:	66 1f       	adc	r22, r22
+ b90:	77 1f       	adc	r23, r23
+ b92:	88 1f       	adc	r24, r24
+ b94:	91 50       	subi	r25, 0x01	; 1
+ b96:	50 40       	sbci	r21, 0x00	; 0
+ b98:	a9 f7       	brne	.-22     	; 0xb84 <__mulsf3_pse+0x64>
+ b9a:	9e 3f       	cpi	r25, 0xFE	; 254
+ b9c:	51 05       	cpc	r21, r1
+ b9e:	80 f0       	brcs	.+32     	; 0xbc0 <__mulsf3_pse+0xa0>
+ ba0:	0c 94 29 0c 	jmp	0x1852	; 0x1852 <__fp_inf>
+ ba4:	0c 94 23 0c 	jmp	0x1846	; 0x1846 <__fp_szero>
+ ba8:	5f 3f       	cpi	r21, 0xFF	; 255
+ baa:	e4 f3       	brlt	.-8      	; 0xba4 <__mulsf3_pse+0x84>
+ bac:	98 3e       	cpi	r25, 0xE8	; 232
+ bae:	d4 f3       	brlt	.-12     	; 0xba4 <__mulsf3_pse+0x84>
+ bb0:	86 95       	lsr	r24
+ bb2:	77 95       	ror	r23
+ bb4:	67 95       	ror	r22
+ bb6:	b7 95       	ror	r27
+ bb8:	f7 95       	ror	r31
+ bba:	e7 95       	ror	r30
+ bbc:	9f 5f       	subi	r25, 0xFF	; 255
+ bbe:	c1 f7       	brne	.-16     	; 0xbb0 <__mulsf3_pse+0x90>
+ bc0:	fe 2b       	or	r31, r30
+ bc2:	88 0f       	add	r24, r24
+ bc4:	91 1d       	adc	r25, r1
+ bc6:	96 95       	lsr	r25
+ bc8:	87 95       	ror	r24
+ bca:	97 f9       	bld	r25, 7
+ bcc:	08 95       	ret
+
+Disassembly of section .text.libgcc.div:
+
+00001768 <__udivmodhi4>:
+    1768:	aa 1b       	sub	r26, r26
+    176a:	bb 1b       	sub	r27, r27
+    176c:	51 e1       	ldi	r21, 0x11	; 17
+    176e:	07 c0       	rjmp	.+14     	; 0x177e <__udivmodhi4_ep>
+
+00001770 <__udivmodhi4_loop>:
+    1770:	aa 1f       	adc	r26, r26
+    1772:	bb 1f       	adc	r27, r27
+    1774:	a6 17       	cp	r26, r22
+    1776:	b7 07       	cpc	r27, r23
+    1778:	10 f0       	brcs	.+4      	; 0x177e <__udivmodhi4_ep>
+    177a:	a6 1b       	sub	r26, r22
+    177c:	b7 0b       	sbc	r27, r23
+
+0000177e <__udivmodhi4_ep>:
+    177e:	88 1f       	adc	r24, r24
+    1780:	99 1f       	adc	r25, r25
+    1782:	5a 95       	dec	r21
+    1784:	a9 f7       	brne	.-22     	; 0x1770 <__udivmodhi4_loop>
+    1786:	80 95       	com	r24
+    1788:	90 95       	com	r25
+    178a:	bc 01       	movw	r22, r24
+    178c:	cd 01       	movw	r24, r26
+    178e:	08 95       	ret
+
+Disassembly of section .text.libgcc.div:
+
+000014a2 <__udivmodsi4>:
+    14a2:	a1 e2       	ldi	r26, 0x21	; 33
+    14a4:	1a 2e       	mov	r1, r26
+    14a6:	aa 1b       	sub	r26, r26
+    14a8:	bb 1b       	sub	r27, r27
+    14aa:	fd 01       	movw	r30, r26
+    14ac:	0d c0       	rjmp	.+26     	; 0x14c8 <__udivmodsi4_ep>
+
+000014ae <__udivmodsi4_loop>:
+    14ae:	aa 1f       	adc	r26, r26
+    14b0:	bb 1f       	adc	r27, r27
+    14b2:	ee 1f       	adc	r30, r30
+    14b4:	ff 1f       	adc	r31, r31
+    14b6:	a2 17       	cp	r26, r18
+    14b8:	b3 07       	cpc	r27, r19
+    14ba:	e4 07       	cpc	r30, r20
+    14bc:	f5 07       	cpc	r31, r21
+    14be:	20 f0       	brcs	.+8      	; 0x14c8 <__udivmodsi4_ep>
+    14c0:	a2 1b       	sub	r26, r18
+    14c2:	b3 0b       	sbc	r27, r19
+    14c4:	e4 0b       	sbc	r30, r20
+    14c6:	f5 0b       	sbc	r31, r21
+
+000014c8 <__udivmodsi4_ep>:
+    14c8:	66 1f       	adc	r22, r22
+    14ca:	77 1f       	adc	r23, r23
+    14cc:	88 1f       	adc	r24, r24
+    14ce:	99 1f       	adc	r25, r25
+    14d0:	1a 94       	dec	r1
+    14d2:	69 f7       	brne	.-38     	; 0x14ae <__udivmodsi4_loop>
+    14d4:	60 95       	com	r22
+    14d6:	70 95       	com	r23
+    14d8:	80 95       	com	r24
+    14da:	90 95       	com	r25
+    14dc:	9b 01       	movw	r18, r22
+    14de:	ac 01       	movw	r20, r24
+    14e0:	bd 01       	movw	r22, r26
+    14e2:	cf 01       	movw	r24, r30
+    14e4:	08 95       	ret
+
+Disassembly of section .text.libgcc:
+
+000017b2 <__movmemx_qi>:
+    17b2:	99 27       	eor	r25, r25
+
+000017b4 <__movmemx_hi>:
+    17b4:	77 fd       	sbrc	r23, 7
+    17b6:	05 c0       	rjmp	.+10     	; 0x17c2 <__movmemx_hi+0xe>
+    17b8:	05 90       	lpm	r0, Z+
+    17ba:	0d 92       	st	X+, r0
+    17bc:	01 97       	sbiw	r24, 0x01	; 1
+    17be:	e1 f7       	brne	.-8      	; 0x17b8 <__movmemx_hi+0x4>
+    17c0:	08 95       	ret
+    17c2:	01 90       	ld	r0, Z+
+    17c4:	0d 92       	st	X+, r0
+    17c6:	01 97       	sbiw	r24, 0x01	; 1
+    17c8:	e1 f7       	brne	.-8      	; 0x17c2 <__movmemx_hi+0xe>
+    17ca:	08 95       	ret
+
+Disassembly of section .text.__dummy_fini:
+
+00001894 <_fini>:
+    1894:	08 95       	ret
+
+Disassembly of section .text.__dummy_funcs_on_exit:
+
+00001896 <__funcs_on_exit>:
+    1896:	08 95       	ret
+
+Disassembly of section .text.__dummy_simulator_exit:
+
+00001898 <__simulator_exit>:
+    1898:	08 95       	ret
+
+Disassembly of section .text.exit:
+
+000017e2 <exit>:
+    17e2:	ec 01       	movw	r28, r24
+    17e4:	0e 94 4b 0c 	call	0x1896	; 0x1896 <__funcs_on_exit>
+    17e8:	0e 94 4a 0c 	call	0x1894	; 0x1894 <_fini>
+    17ec:	ce 01       	movw	r24, r28
+    17ee:	0e 94 4c 0c 	call	0x1898	; 0x1898 <__simulator_exit>
+    17f2:	ce 01       	movw	r24, r28
+    17f4:	0e 94 47 0c 	call	0x188e	; 0x188e <_Exit>
+
+Disassembly of section .text._Exit:
+
+0000188e <_Exit>:
+    188e:	0e 94 5b 00 	call	0xb6	; 0xb6 <_exit>
